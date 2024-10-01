@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN C13 [get_ports {S[0]}]
+set_property PACKAGE_PIN C14 [get_ports {S[1]}]
+set_property PACKAGE_PIN E1 [get_ports {B[1]}]
+set_property PACKAGE_PIN E2 [get_ports {B[0]}]
+set_property PACKAGE_PIN F2 [get_ports {A[0]}]
+set_property PACKAGE_PIN F1 [get_ports {A[1]}]
+set_property PACKAGE_PIN G1 [get_ports c_in]
+set_property PACKAGE_PIN D14 [get_ports c_out]

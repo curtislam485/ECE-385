@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/design_source/Control.sv" \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/design_source/HexDriver.sv" \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/design_source/Processor.sv" \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/design_source/Reg_4.sv" \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/design_source/Register_unit.sv" \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/design_source/Router.sv" \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/design_source/Synchronizers.sv" \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/design_source/compute.sv" \
+"../../../../../../../../../../Downloads/lab22_provided_sp24/sim_sources/testbench_8.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

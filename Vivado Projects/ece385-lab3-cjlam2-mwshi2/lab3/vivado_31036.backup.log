@@ -1,0 +1,644 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Sep 27 02:32:35 2024
+# Process ID: 31036
+# Current directory: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5688 C:\Users\curti\OneDrive\Documents\UIUC\ECE 385\Vivado Projects\ece385-lab3-cjlam2-mwshi2\lab3\lab3.xpr
+# Log file: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/vivado.log
+# Journal file: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3\vivado.jou
+# Running On: Curtis-Laptop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34014 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 02:32:59 2024...
+t find the directory 'C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.gen/sources_1'.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/hex_driver.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/hex_driver.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/lookahead_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/lookahead_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/select_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/select_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/hex_driver.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/hex_driver.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/lookahead_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/lookahead_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/select_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/select_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/hex_driver.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/hex_driver.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/lookahead_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/lookahead_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/select_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/select_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/curti/OneDrive/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc'; using path 'C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1146.605 ; gain = 342.848
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.srcs/utils_1/imports/synth_1/adder_toplevel.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/synth_1/adder_toplevel.dcp
+launch_runs synth_1 -jobs 10
+[Fri Sep 27 02:33:21 2024] Launched synth_1...
+Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/synth_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.srcs/utils_1/imports/synth_1/adder_toplevel.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/synth_1/adder_toplevel.dcp
+launch_runs synth_1 -jobs 10
+[Fri Sep 27 02:34:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s50csga324-1
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1494.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port reset can not be placed on PACKAGE_PIN J1 because the PACKAGE_PIN is occupied by port run_i [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'a_val[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_val[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_val[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x_val'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x_val'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_grid[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_grid[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_grid[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_grid[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_grid[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_grid[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_grid[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_grid[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hex_seg[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'reset_load_clear'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'run'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'run'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'run_IBUF'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:175]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'reset_load_clear'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:178]
+WARNING: [Vivado 12-507] No nets matched 'a_val_OBUF[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+WARNING: [Vivado 12-507] No nets matched 'a_val_OBUF[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+WARNING: [Vivado 12-507] No nets matched 'a_val_OBUF[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+WARNING: [Vivado 12-507] No nets matched 'a_val_OBUF[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+WARNING: [Vivado 12-507] No nets matched 'a_val_OBUF[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+WARNING: [Vivado 12-507] No nets matched 'a_val_OBUF[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+WARNING: [Vivado 12-507] No nets matched 'a_val_OBUF[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+WARNING: [Vivado 12-507] No nets matched 'a_val_OBUF[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:180]
+WARNING: [Vivado 12-507] No nets matched 'b_val_OBUF[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'b_val_OBUF[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'b_val_OBUF[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'b_val_OBUF[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'b_val_OBUF[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'b_val_OBUF[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'b_val_OBUF[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'b_val_OBUF[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'Data_Out_d[0]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'Data_Out_d[1]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'Data_Out_d[2]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'Data_Out_d[3]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'Data_Out_d[4]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'Data_Out_d[5]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'Data_Out_d[6]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'Data_Out_d[7]'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'run_IBUF'. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:183]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc:183]
+Finished Parsing XDC File [C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1625.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1763.715 ; gain = 610.105
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list clk_IBUF ]]
+set_property target_constrs_file C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1763.715 ; gain = 0.000
+[Fri Sep 27 02:35:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/curti/Downloads/lab3_provided_fa24-1/pin_assignment/top.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/curti/Downloads/top.xdc
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.srcs/utils_1/imports/synth_1/adder_toplevel.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/synth_1/adder_toplevel.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Sep 27 02:39:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/synth_1/runme.log
+[Fri Sep 27 02:39:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/runme.log
+startgroup
+set_property package_pin "" [get_ports [list  run_i]]
+place_ports reset J1
+endgroup
+place_ports run_i J2
+set_property IOSTANDARD LVCMOS25 [get_ports [list run_i]]
+set_property target_constrs_file C:/Users/curti/Downloads/top.xdc [current_fileset -constrset]
+save_constraints -force
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2156.953 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/887100000005A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4290.027 ; gain = 2133.074
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/adder_toplevel.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-2302] Device xc7s50 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/adder_toplevel.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list clk_IBUF ]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Sep 27 02:42:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4355.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/curti/Downloads/top.xdc]
+Finished Parsing XDC File [C:/Users/curti/Downloads/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+place_ports {sw_i[0]} G1
+place_ports {sw_i[1]} F2
+place_ports {sw_i[2]} F1
+place_ports {sw_i[3]} E2
+place_ports {sw_i[4]} E1
+place_ports {sw_i[5]} D2
+place_ports {sw_i[6]} D1
+place_ports {sw_i[7]} C2
+place_ports {sw_i[8]} B2
+place_ports {sw_i[9]} A4
+place_ports {sw_i[10]} A5
+place_ports {sw_i[11]} A6
+place_ports {sw_i[12]} C7
+place_ports {sw_i[13]} A7
+place_ports {sw_i[14]} B7
+place_ports {sw_i[15]} A8
+set_property IOSTANDARD LVCMOS25 [get_ports [list {sw_i[15]} {sw_i[14]} {sw_i[13]} {sw_i[12]} {sw_i[11]} {sw_i[10]} {sw_i[9]} {sw_i[8]} {sw_i[7]} {sw_i[6]} {sw_i[5]} {sw_i[4]} {sw_i[3]} {sw_i[2]} {sw_i[1]} {sw_i[0]}]]
+place_ports {hex_grid_a[3]} B3
+place_ports {hex_grid_a[2]} C3
+place_ports {hex_grid_a[1]} H6
+place_ports {hex_grid_a[0]} G6
+set_property IOSTANDARD LVCMOS25 [get_ports [list {hex_grid_a[3]} {hex_grid_a[2]} {hex_grid_a[1]} {hex_grid_a[0]}]]
+place_ports {hex_seg_a[0]} E6
+place_ports {hex_seg_a[1]} B4
+place_ports {hex_seg_a[2]} D5
+place_ports {hex_seg_a[3]} C5
+place_ports {hex_seg_a[4]} D7
+place_ports {hex_seg_a[5]} D6
+place_ports {hex_seg_a[6]} C4
+place_ports {hex_seg_a[7]} B5
+set_property IOSTANDARD LVCMOS25 [get_ports [list {hex_seg_a[7]} {hex_seg_a[6]} {hex_seg_a[5]} {hex_seg_a[4]} {hex_seg_a[3]} {hex_seg_a[2]} {hex_seg_a[1]} {hex_seg_a[0]}]]
+place_ports {hex_grid_b[0]} E4
+place_ports {hex_grid_b[1]} E3
+place_ports {hex_grid_b[2]} F5
+place_ports {hex_grid_b[3]} H5
+set_property IOSTANDARD LVCMOS25 [get_ports [list {hex_grid_b[3]} {hex_grid_b[2]} {hex_grid_b[1]} {hex_grid_b[0]}]]
+place_ports {hex_seg_b[0]} F3
+place_ports {hex_seg_b[1]} G5
+place_ports {hex_seg_b[2]} J3
+place_ports {hex_seg_b[3]} H4
+place_ports {hex_seg_b[4]} F4
+place_ports {hex_seg_b[5]} H3
+place_ports {hex_seg_b[6]} E5
+place_ports {hex_seg_b[7]} J4
+set_property IOSTANDARD LVCMOS25 [get_ports [list {hex_seg_b[7]} {hex_seg_b[6]} {hex_seg_b[5]} {hex_seg_b[4]} {hex_seg_b[3]} {hex_seg_b[2]} {hex_seg_b[1]} {hex_seg_b[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+place_ports clk N15
+place_ports sign_led C13
+set_property IOSTANDARD LVCMOS33 [get_ports [list sign_led]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list reset]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list run_i]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 4411.277 ; gain = 4.461
+[Fri Sep 27 02:51:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/adder_toplevel.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/adder_toplevel.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.runs/impl_1/adder_toplevel.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-2302] Device xc7s50 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes clk_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-27 02:55:22
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes clk_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Sep-27 02:55:44
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-27 02:55:45
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes clk_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Sep-27 02:55:58
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-27 02:55:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-27 02:55:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-27 02:56:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-27 02:56:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-27 02:56:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-27 02:56:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes clk_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-27 02:56:20
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Sep-27 02:56:32
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-27 02:56:33
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes clk_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Sep-27 02:56:54
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-27 02:56:55
+save_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab3-cjlam2-mwshi2/lab3/lab3.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 02:57:08 2024...

@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Control.sv,1726001657,systemVerilog,C:/Users/curti/Downloads/lab22_provided_sp24/design_source/HexDriver.sv;C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Processor.sv;C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Reg_4.sv;C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Register_unit.sv;C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Router.sv;C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Synchronizers.sv;C:/Users/curti/Downloads/lab22_provided_sp24/design_source/compute.sv;C:/Users/curti/Downloads/lab22_provided_sp24/sim_sources/testbench_8.sv,C:/Users/curti/Downloads/lab22_provided_sp24/design_source/HexDriver.sv,,$unit_Control_sv_1411822023;control,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/design_source/HexDriver.sv,1725983785,systemVerilog,,C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Processor.sv,,HexDriver,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Processor.sv,1726169395,systemVerilog,,C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Reg_4.sv,,Processor,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Reg_4.sv,1725985738,systemVerilog,,C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Register_unit.sv,,reg_4,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Register_unit.sv,1725985636,systemVerilog,,C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Router.sv,,register_unit,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Router.sv,1725982295,systemVerilog,,C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Synchronizers.sv,,router,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/design_source/Synchronizers.sv,1725982295,systemVerilog,,C:/Users/curti/Downloads/lab22_provided_sp24/design_source/compute.sv,,sync_debounce,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/design_source/compute.sv,1725982294,systemVerilog,,C:/Users/curti/Downloads/lab22_provided_sp24/sim_sources/testbench_8.sv,,compute,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/sim_sources/testbench.sv,1725982294,systemVerilog,,,,testbench,,uvm,,,,,,
+C:/Users/curti/Downloads/lab22_provided_sp24/sim_sources/testbench_8.sv,1726004134,systemVerilog,,,,testbench8,,uvm,,,,,,
+C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/lab2_2/lab2_2.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,

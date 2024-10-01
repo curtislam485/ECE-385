@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv,1726592838,systemVerilog,,,,adder_toplevel;full_adder,,uvm,,,,,,
+C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/hex_driver.sv,1726520463,systemVerilog,C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv;C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv;C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv;C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv;C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv,C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv,,$unit_hex_driver_sv_768700508;hex_driver,,uvm,,,,,,
+C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/load_reg.sv,1726520463,systemVerilog,,C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv,,load_reg,,uvm,,,,,,
+C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/negedge_detector.sv,1726520463,systemVerilog,,C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv,,negedge_detector,,uvm,,,,,,
+C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/ripple_adder.sv,1726592920,systemVerilog,,C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv,,ripple_adder,,uvm,,,,,,
+C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/sync_debounce.sv,1726520463,systemVerilog,,C:/Users/curti/Downloads/lab3_provided_fa24-1/design_source/adder_toplevel.sv,,sync_debounce,,uvm,,,,,,
+C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/lab3/lab3.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
