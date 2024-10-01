@@ -59,6 +59,8 @@ logic ben;
 assign mem_addr = mar;
 assign mem_wdata = mdr;
 
+logic [15:0] pc_next;
+
 // State machine, you need to fill in the code here as well
 // .* auto-infers module input/output connections which have the same name
 // This can help visually condense modules with large instantiations, 
@@ -67,6 +69,19 @@ control cpu_control (
     .*
 );
 
+always_comb
+begin
+    if (pcmux == 2'b00)
+    begin
+        pc_next = pc + 1;
+    end
+    else if (pcmux == 2'b01)
+    begin
+    end
+    else if (pcmux == 2'b10)
+    begin
+    end
+end
 
 assign led_o = ir;
 assign hex_display_debug = ir;
@@ -76,7 +91,7 @@ load_reg #(.DATA_WIDTH(16)) ir_reg (
     .reset  (reset),
 
     .load   (ld_ir),
-    .data_i (),
+    .data_i (mdr),
 
     .data_q (ir)
 );
@@ -86,7 +101,7 @@ load_reg #(.DATA_WIDTH(16)) pc_reg (
     .reset(reset),
 
     .load(ld_pc),
-    .data_i(),
+    .data_i(pc_next),
 
     .data_q(pc)
 );
