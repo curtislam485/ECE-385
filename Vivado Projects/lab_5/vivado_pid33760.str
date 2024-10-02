@@ -148,3 +148,407 @@ dismissDialog("Open Project"); // bq
 // [GUI Memory]: 113 MB (+18797kb) [00:00:50]
 // WARNING: HEventQueue.dispatchEvent() is taking  1265 ms.
 // Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 990 MB (+11024kb) [00:01:01]
+// PAPropertyPanels.initPanels (processor_top.sv) elapsed time: 0.2s
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 120 MB (+1163kb) [00:01:07]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 113 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor_top.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// [GUI Memory]: 127 MB (+795kb) [00:14:25]
+// Elapsed time: 730 seconds
+selectCodeEditor("cpu.sv", 267, 293); // ac
+// Elapsed time: 191 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor_top.sv", 1); // o
+selectCodeEditor("processor_top.sv", 262, 339); // ac
+// Elapsed time: 293 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv), ir_reg : load_reg (load_reg.sv)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv), ir_reg : load_reg (load_reg.sv)]", 6, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv), cpu_control : control (control.sv)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv), cpu_control : control (control.sv)]", 5, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor_top.sv", 1); // o
+// Elapsed time: 69 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+// Elapsed time: 181 seconds
+selectCodeEditor("control.sv", 269, 175); // ac
+// Elapsed time: 19 seconds
+selectCodeEditor("control.sv", 301, 283); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 69 MB. Current time: 10/1/24, 1:22:31 PM CDT
+// Elapsed time: 68 seconds
+selectCodeEditor("control.sv", 384, 341); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("control.sv", 272, 281); // ac
+// Elapsed time: 33 seconds
+selectCodeEditor("control.sv", 271, 283); // ac
+// Elapsed time: 53 seconds
+selectCodeEditor("control.sv", 248, 269, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("control.sv", 212, 266); // ac
+selectCodeEditor("control.sv", 204, 262); // ac
+selectCodeEditor("control.sv", 227, 237); // ac
+selectCodeEditor("control.sv", 304, 225); // ac
+selectCodeEditor("control.sv", 384, 198); // ac
+selectCodeEditor("control.sv", 347, 189); // ac
+selectCodeEditor("control.sv", 335, 181); // ac
+selectCodeEditor("control.sv", 320, 150); // ac
+selectCodeEditor("control.sv", 310, 141); // ac
+selectCodeEditor("control.sv", 320, 117); // ac
+selectCodeEditor("control.sv", 336, 85); // ac
+selectCodeEditor("control.sv", 333, 75); // ac
+selectCodeEditor("control.sv", 324, 55); // ac
+selectCodeEditor("control.sv", 324, 55, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("control.sv", 335, 51); // ac
+selectCodeEditor("control.sv", 348, 52); // ac
+selectCodeEditor("control.sv", 373, 220); // ac
+selectCodeEditor("control.sv", 363, 203); // ac
+// Elapsed time: 109 seconds
+selectCodeEditor("control.sv", 270, 251); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("control.sv", 210, 307); // ac
+selectCodeEditor("control.sv", 327, 303); // ac
+selectCodeEditor("control.sv", 243, 381); // ac
+selectCodeEditor("control.sv", 243, 381, false, false, false, false, true); // ac - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("cpu.sv", 333, 214); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ld_led", true); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv), cpu_control : control (control.sv)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("cpu.sv", 151, 149); // ac
+// Elapsed time: 16 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "control"); // d.c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 18 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ld_led"); // d.c
+selectCodeEditor("cpu.sv", 89, 179); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "load_reg.sv", 4); // o
+selectCodeEditor("control.sv", 248, 329); // ac
+selectCodeEditor("control.sv", 248, 329, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectCodeEditor("cpu.sv", 167, 166); // ac
+selectCodeEditor("cpu.sv", 124, 179); // ac
+selectCodeEditor("cpu.sv", 140, 266); // ac
+selectCodeEditor("cpu.sv", 140, 266, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("cpu.sv", 198, 281); // ac
+selectCodeEditor("cpu.sv", 198, 281, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("slc3.sv", 294, 172); // ac
+// Elapsed time: 29 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "hex_displa"); // d.c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectCodeEditor("cpu.sv", 252, 376); // ac
+selectCodeEditor("cpu.sv", 252, 376, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("cpu.sv", 126, 372); // ac
+selectCodeEditor("cpu.sv", 126, 372, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("cpu.sv", 235, 376); // ac
+selectCodeEditor("cpu.sv", 120, 302); // ac
+selectCodeEditor("cpu.sv", 120, 302, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("cpu.sv", 143, 315); // ac
+selectCodeEditor("cpu.sv", 143, 315, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("cpu.sv", 141, 295); // ac
+selectCodeEditor("cpu.sv", 141, 295, false, false, false, false, true); // ac - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv)]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv), ir_reg : load_reg (load_reg.sv)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), cpu : cpu (cpu.sv), ir_reg : load_reg (load_reg.sv)]", 6, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "load_reg.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "load_reg.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectCodeEditor("cpu.sv", 130, 334); // ac
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "load_reg.sv", 4); // o
+selectCodeEditor("load_reg.sv", 322, 180); // ac
+selectCodeEditor("load_reg.sv", 322, 180, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("load_reg.sv", 326, 388); // ac
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "load_reg.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+selectCodeEditor("control.sv", 213, 262); // ac
+selectCodeEditor("control.sv", 213, 262, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("control.sv", 214, 265); // ac
+selectCodeEditor("control.sv", 214, 265, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("control.sv", 230, 243); // ac
+selectCodeEditor("control.sv", 230, 243, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectCodeEditor("cpu.sv", 106, 327); // ac
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+// Elapsed time: 44 seconds
+selectCodeEditor("control.sv", 196, 95); // ac
+selectCodeEditor("control.sv", 196, 95, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "load_reg.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 14 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pc"); // d.c
+selectCodeEditor("cpu.sv", 127, 263); // ac
+selectCodeEditor("cpu.sv", 127, 263, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pc_mux", true); // d.c
+selectCodeEditor("cpu.sv", 97, 257); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectCodeEditor("cpu.sv", 250, 222); // ac
+selectCodeEditor("cpu.sv", 327, 291); // ac
+selectCodeEditor("cpu.sv", 227, 332); // ac
+selectCodeEditor("cpu.sv", 47, 221); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcmux"); // d.c
+selectCodeEditor("cpu.sv", 104, 278); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 42 seconds
+selectCodeEditor("cpu.sv", 120, 248); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectCodeEditor("control.sv", 342, 255); // ac
+selectCodeEditor("control.sv", 300, 167); // ac
+selectCodeEditor("control.sv", 306, 184); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 36 seconds
+selectCodeEditor("cpu.sv", 111, 199); // ac
+selectCodeEditor("cpu.sv", 171, 176); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectCodeEditor("cpu.sv", 203, 174); // ac
+selectCodeEditor("cpu.sv", 162, 207); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectCodeEditor("cpu.sv", 170, 182); // ac
+selectCodeEditor("cpu.sv", 178, 184); // ac
+selectCodeEditor("cpu.sv", 117, 207); // ac
+selectCodeEditor("cpu.sv", 226, 182); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cpu.sv", 144, 345); // ac
+selectCodeEditor("cpu.sv", 144, 345, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "cpu.sv", 'c'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("cpu.sv", 166, 139); // ac
+typeControlKey((HResource) null, "cpu.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("cpu.sv", 113, 267); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectCodeEditor("control.sv", 94, 266); // ac
+selectCodeEditor("control.sv", 94, 266, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("control.sv", 288, 158); // ac
+selectCodeEditor("control.sv", 288, 158, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("cpu.sv", 191, 206); // ac
+selectCodeEditor("cpu.sv", 191, 206, false, false, false, false, true); // ac - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+selectCodeEditor("cpu.sv", 228, 288); // ac
+selectCodeEditor("cpu.sv", 228, 288, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("cpu.sv", 231, 352); // ac
+selectCodeEditor("cpu.sv", 231, 352, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("cpu.sv", 112, 231); // ac
+selectCodeEditor("cpu.sv", 118, 245); // ac
+selectCodeEditor("cpu.sv", 118, 245, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "cpu.sv", 'c'); // ac
+selectCodeEditor("cpu.sv", 110, 328); // ac
+selectCodeEditor("cpu.sv", 104, 304); // ac
+typeControlKey((HResource) null, "cpu.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 190 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectCodeEditor("control.sv", 289, 259); // ac
+// Elapsed time: 24 seconds
+selectCodeEditor("control.sv", 239, 236); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("control.sv", 240, 263); // ac
+selectCodeEditor("control.sv", 240, 263, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "hex_displa"); // d.c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+selectCodeEditor("control.sv", 213, 262); // ac
+selectCodeEditor("control.sv", 213, 262, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 4); // o
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem_mem_ena"); // d.c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem_mem_ena"); // d.c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem_mem_ena"); // d.c
+selectCodeEditor("slc3.sv", 299, 238); // ac
+selectCodeEditor("slc3.sv", 294, 242); // ac
+selectCodeEditor("slc3.sv", 294, 242, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+// Elapsed time: 17 seconds
+selectCodeEditor("slc3.sv", 122, 182); // ac
+selectCodeEditor("slc3.sv", 122, 182, false, false, false, false, true); // ac - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), io_bridge : cpu_to_io (cpu_to_io.sv)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), slc3 : slc3 (slc3.sv), io_bridge : cpu_to_io (cpu_to_io.sv)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu_to_io.sv", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu_to_io.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu_to_io.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+typeControlKey((HResource) null, "slc3.sv", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu_to_io.sv", 3); // o
+selectCodeEditor("cpu_to_io.sv", 308, 97); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cpu_mem_ena"); // d.c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu_to_io.sv", 3); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 64 MB. Current time: 10/1/24, 1:52:32 PM CDT
+// Elapsed time: 72 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cpu_mem_ena"); // d.c
+selectCodeEditor("cpu_to_io.sv", 309, 374); // ac
+selectCodeEditor("cpu_to_io.sv", 309, 374, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu_to_io.sv", 3); // o
+selectCodeEditor("cpu_to_io.sv", 253, 222); // ac
+selectCodeEditor("cpu_to_io.sv", 253, 222, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "cpu_to_io.sv", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectCodeEditor("slc3.sv", 250, 149); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sram_rdata"); // d.c
+selectCodeEditor("slc3.sv", 261, 306); // ac
+selectCodeEditor("slc3.sv", 261, 306, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor_top.sv", 1); // o
+// Elapsed time: 27 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sram_rdata"); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv)]", 8, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv), init_ram : instantiate_ram (instantiate_ram.sv)]", 9, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slc3.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "processor_top.sv", 1); // o
+selectCodeEditor("processor_top.sv", 80, 369); // ac
+selectCodeEditor("processor_top.sv", 80, 369, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory.sv", 7); // o
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "readout"); // d.c
+selectCodeEditor("memory.sv", 248, 372); // ac
+selectCodeEditor("memory.sv", 248, 372, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv), sram0 : xil_defaultlib.blk_mem_gen_0]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv), sram0 : xil_defaultlib.blk_mem_gen_0]", 10, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv), sram0 : xil_defaultlib.blk_mem_gen_0]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv), sram0 : xil_defaultlib.blk_mem_gen_0]", 10, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv), sram0 : xil_defaultlib.blk_mem_gen_0]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top (processor_top.sv), mem_subsystem : memory (memory.sv), sram0 : xil_defaultlib.blk_mem_gen_0]", 10, false); // D
+// Elapsed time: 165 seconds
+selectCodeEditor("memory.sv", 180, 369); // ac
+selectCodeEditor("memory.sv", 180, 369, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 37 seconds
+selectCodeEditor("memory.sv", 39, 243); // ac
+selectCodeEditor("memory.sv", 228, 366); // ac
+selectCodeEditor("memory.sv", 215, 373); // ac
+selectCodeEditor("memory.sv", 215, 373, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("memory.sv", 273, 313); // ac
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 9156387ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9156390 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 64 MB. Current time: 10/1/24, 4:35:14 PM CDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2858 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 62 MB. Current time: 10/1/24, 5:05:14 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 63 MB. Current time: 10/1/24, 5:35:17 PM CDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3300 ms. Increasing delay to 9900 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 62 MB. Current time: 10/1/24, 6:05:21 PM CDT

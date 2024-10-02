@@ -60,6 +60,7 @@ assign mem_addr = mar;
 assign mem_wdata = mdr;
 
 logic [15:0] pc_next;
+logic [15:0] mar_next;
 
 // State machine, you need to fill in the code here as well
 // .* auto-infers module input/output connections which have the same name
@@ -73,7 +74,8 @@ always_comb
 begin
     if (pcmux == 2'b00)
     begin
-        pc_next = pc + 1;
+        pc_next <= pc + 1'b1;
+        mar_next = pc_next;
     end
     else if (pcmux == 2'b01)
     begin
@@ -104,6 +106,26 @@ load_reg #(.DATA_WIDTH(16)) pc_reg (
     .data_i(pc_next),
 
     .data_q(pc)
+);
+
+load_reg #(.DATA_WIDTH(16)) mar_reg (
+    .clk    (clk),
+    .reset  (reset),
+
+    .load   (ld_mar),
+    .data_i (mar_next),
+
+    .data_q (mar)
+);
+
+load_reg #(.DATA_WIDTH(16)) mdr_reg (
+    .clk(clk),
+    .reset(reset),
+
+    .load(ld_mdr),
+    .data_i(mem_rdata),
+
+    .data_q(mdr)
 );
 
 
