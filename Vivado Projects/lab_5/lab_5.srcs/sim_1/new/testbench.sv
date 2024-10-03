@@ -64,6 +64,18 @@ module testbench(); //even though the testbench doesn't create any hardware, it 
 	    #10;
 	    run_i = 0;
 	    
+	    #30;
+	    continue_i = 1;
+	    #10
+	    continue_i = 0;
+	    #50
+	    
+	    #10;
+	    continue_i = 1;
+	    #10
+	    continue_i = 0;
+	    #50
+	    
 	    #10;
 	    continue_i = 1;
 	    #10

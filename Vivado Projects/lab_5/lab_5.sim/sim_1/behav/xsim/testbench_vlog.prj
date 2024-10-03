@@ -1,21 +1,21 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../lab_5.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
-"../../../../lab_5.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v" \
+"../../../../lab_5.gen/sources_1/ip/blk_mem_gen_0_2/sim/blk_mem_gen_0.v" \
+"../../../../lab_5.gen/sources_1/ip/blk_mem_gen_1_1/sim/blk_mem_gen_1.v" \
 
 sv xil_defaultlib  \
-"../../../../../lab5_provided_fa24/srcs/control.sv" \
-"../../../../../lab5_provided_fa24/srcs/cpu.sv" \
-"../../../../../lab5_provided_fa24/srcs/cpu_to_io.sv" \
-"../../../../../lab5_provided_fa24/srcs/hex_driver.sv" \
-"../../../../../lab5_provided_fa24/srcs/types.sv" \
-"../../../../../lab5_provided_fa24/srcs/instantiate_ram.sv" \
-"../../../../../lab5_provided_fa24/srcs/load_reg.sv" \
-"../../../../../lab5_provided_fa24/srcs/memory.sv" \
-"../../../../../lab5_provided_fa24/srcs/slc3.sv" \
-"../../../../../lab5_provided_fa24/srcs/sync.sv" \
-"../../../../../lab5_provided_fa24/srcs/processor_top.sv" \
-"../../../../../lab5_provided_fa24/srcs/test_memory.sv" \
+"../../../../lab5_provided_fa24/srcs/control.sv" \
+"../../../../lab5_provided_fa24/srcs/cpu.sv" \
+"../../../../lab5_provided_fa24/srcs/test_memory.sv" \
+"../../../../lab5_provided_fa24/srcs/types.sv" \
+"../../../../lab5_provided_fa24/srcs/cpu_to_io.sv" \
+"../../../../lab5_provided_fa24/srcs/slc3.sv" \
+"../../../../lab5_provided_fa24/srcs/memory.sv" \
+"../../../../lab5_provided_fa24/srcs/sync.sv" \
+"../../../../lab5_provided_fa24/srcs/processor_top.sv" \
+"../../../../lab5_provided_fa24/srcs/hex_driver.sv" \
+"../../../../lab5_provided_fa24/srcs/instantiate_ram.sv" \
+"../../../../lab5_provided_fa24/srcs/load_reg.sv" \
 "../../../../lab_5.srcs/sim_1/new/testbench.sv" \
 
 # compile glbl module

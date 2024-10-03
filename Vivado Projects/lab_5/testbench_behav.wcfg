@@ -6,22 +6,22 @@
       <db_ref path="testbench_behav.wdb" id="1">
          <top_modules>
             <top_module name="SLC3_TYPES" />
-            <top_module name="\$unit_control_sv_4210430550 " />
+            <top_module name="\$unit_control_sv_3391659018 " />
             <top_module name="glbl" />
             <top_module name="testbench" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,832.156 ns"></ZoomEndTime>
-      <Cursor1Time time="1,200.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="6.041391 us"></ZoomEndTime>
+      <Cursor1Time time="0.369309 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="17" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -54,6 +54,10 @@
       <obj_property name="ElementShortName">led_o[15:0]</obj_property>
       <obj_property name="ObjectShortName">led_o[15:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/cpu_control/ir" type="array">
+      <obj_property name="ElementShortName">ir[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ir[15:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/testbench/hex_seg_left" type="array">
       <obj_property name="ElementShortName">hex_seg_left[7:0]</obj_property>
       <obj_property name="ObjectShortName">hex_seg_left[7:0]</obj_property>
@@ -69,5 +73,29 @@
    <wvobject fp_name="/testbench/hex_grid_right" type="array">
       <obj_property name="ElementShortName">hex_grid_right[3:0]</obj_property>
       <obj_property name="ObjectShortName">hex_grid_right[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/ir_reg/data_d" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_d[15:0]</obj_property>
+      <obj_property name="label">ir_reg_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/pc_reg/data_d" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_d[15:0]</obj_property>
+      <obj_property name="label">pc_reg_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/mar_reg/data_d" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_d[15:0]</obj_property>
+      <obj_property name="label">mar_reg_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/mdr_reg/data_d" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_d[15:0]</obj_property>
+      <obj_property name="label">mdr_reg_d</obj_property>
    </wvobject>
 </wave_config>

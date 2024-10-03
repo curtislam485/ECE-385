@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.statsThreshold 360
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -88,20 +87,24 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/control.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/cpu.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/cpu_to_io.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/hex_driver.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/types.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/instantiate_ram.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/load_reg.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/memory.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/slc3.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/sync.sv}
-  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/srcs/processor_top.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/control.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/test_memory.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/types.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu_to_io.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/slc3.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/memory.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/sync.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/processor_top.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/hex_driver.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/instantiate_ram.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/load_reg.sv}
 }
-read_ip -quiet {{c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc}}]
+read_ip -quiet {{C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.gen/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0_ooc.xdc}}]
+
+read_ip -quiet {{C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.gen/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -112,10 +115,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/pin_assignment/top.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab5_provided_fa24/pin_assignment/top.xdc}}]
+read_xdc {{C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/pin_assignment/top.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/pin_assignment/top.xdc}}]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/utils_1/imports/synth_1/processor_top.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
