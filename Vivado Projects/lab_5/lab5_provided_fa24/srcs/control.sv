@@ -192,6 +192,7 @@ module control (
 			// LDR state
 			s_6:
 			    begin
+			        
 			    end
 		    s_25_1, s_25_2, s_25_3:
 		        begin

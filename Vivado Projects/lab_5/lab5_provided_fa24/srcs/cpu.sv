@@ -69,6 +69,16 @@ logic sr1_mux;
 // 1 - IR[4:0] SEXT
 logic sr2_mux;
 
+// 0 - SR1 output
+// 1 - PC reg
+logic addr1_mux;
+
+// 00 - SEXT(ir[10:0])
+// 01 - SEXT(ir[8:0])
+// 10 - SEXT(ir[5:0])
+// 11 - 0
+logic [1:0] addr2_mux;
+
 // 00 - ADD
 // 01 - AND
 // 10 - NOT
@@ -93,8 +103,6 @@ logic [15:0] bus_data;
 logic [15:0] pc_next;
 logic [15:0] mar_next;
 
-
-
 // State machine, you need to fill in the code here as well
 // .* auto-infers module input/output connections which have the same name
 // This can help visually condense modules with large instantiations, 
@@ -111,6 +119,7 @@ begin
     end
     else if (pc_mux == 2'b01)
     begin
+        pc_next = addr_adder_output;
     end
     else if (pc_mux == 2'b10)
     begin
@@ -179,6 +188,47 @@ alu alu_mod (
     .aluk_mux   (aluk_mux),
     
     .alu_output (alu_output)
+);
+
+logic [15:0] addr_adder_input1;
+logic [15:0] addr_adder_input2;
+logic [15:0] addr_adder_output;
+
+// addr1_mux
+always_comb begin
+    addr_adder_input1 = 16'bz;
+    if (addr1_mux == 1'b0) begin
+        addr_adder_input1 = sr1_out;
+    end
+    
+    else begin
+        addr_adder_input1 = pc;
+    end
+end
+
+// addr2_mux
+always_comb begin
+    addr_adder_input2 = 16'bz;
+    if (addr2_mux == 2'b00) begin
+        addr_adder_input2 = {{5{ir[10]}}, ir[10:0]};
+    end
+    else if (addr2_mux == 2'b01) begin
+        addr_adder_input2 = {{7{ir[10]}}, ir[8:0]};
+    end
+    else if (addr2_mux == 2'b10) begin
+        addr_adder_input2 = {{10{ir[10]}}, ir[5:0]};
+    end
+    else begin
+        addr_adder_input2 = 16'b0;
+    end    
+end
+
+// address adder, input 1 is left, input 2 is right
+address_adder addr_adder (
+    .input1         (addr_adder_input1),
+    .input2         (addr_adder_input2),
+    
+    .addr_output    (addr_adder_output)
 );
 
 // set BEN
