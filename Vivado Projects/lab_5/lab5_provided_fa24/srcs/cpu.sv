@@ -45,6 +45,7 @@ logic ld_pc;
 logic ld_led;
 
 logic ld_reg;
+logic ld_cc;
 
 logic gate_pc;
 logic gate_mdr;
@@ -68,7 +69,9 @@ logic sr1_mux;
 // 1 - IR[4:0] SEXT
 logic sr2_mux;
 
-// 00 - regular adder
+// 00 - ADD
+// 01 - AND
+// 10 - NOT
 logic aluk_mux;
 
 logic set_ben;
@@ -90,7 +93,6 @@ logic [15:0] bus_data;
 logic [15:0] pc_next;
 logic [15:0] mar_next;
 
-logic [15:0] reg_file [8]; // register file (8 registers of 16 bits each)
 
 
 // State machine, you need to fill in the code here as well
@@ -118,6 +120,7 @@ end
 
 always_comb
 begin
+    bus_data = 16'bz;
     if (gate_pc == 1'b1)
     begin
         bus_data = pc;
@@ -132,35 +135,50 @@ begin
     end
     else if (gate_alu == 1'b1)
     begin
-//        bus_data = 
-    end
-end
-
-// register file control (maybe make a module for this) 
-always_comb
-begin
-    // writing into file
-    if (ld_reg == 1'b1)
-    begin
-        if (dr_mux == 1'b0) begin
-            reg_file[ir[11:9]] = bus_data;
-        end
+        bus_data = alu_output;
     end
 end
 
 logic [15:0] sr1_out;
 logic [15:0] sr2_out;
 
+// register file
 register_file register_file_mod (
-    dr_mux,
-    ld_reg,
-    bus_data,   // this is your load data
-    sr1_mux,
-    ir[2:0],    // sr2
-    ir,
+    .dr_mux     (dr_mux),
+    .ld_reg     (ld_reg),
+    .ld_data    (bus_data),   // this is your load data
+    .sr1_mux    (sr1_mux),
+    .sr2        (ir[2:0]),    // sr2
+    .ir         (ir),
     
-    sr1_out,
-    sr2_out
+    .sr1_out    (sr1_out),
+    .sr2_out    (sr2_out)
+);
+
+logic [15:0] alu_a_input;
+logic [15:0] alu_b_input;
+logic [15:0] alu_output;
+
+assign alu_a_input = sr1_out;
+
+// sr2_mux
+always_comb begin
+    if (sr2_mux == 1'b0) begin
+        alu_b_input = sr2_out;
+    end
+    else begin
+        alu_b_input = {{10{ir[4]}}, ir[4:0]};
+    end
+end
+
+
+// ALU
+alu alu_mod (
+    .a      (alu_a_input),
+    .b      (alu_b_input),
+    .aluk_mux   (aluk_mux),
+    
+    .alu_output (alu_output)
 );
 
 // set BEN
@@ -169,6 +187,17 @@ begin
     if (set_ben)
     begin
         ben = (ir[11] & cc[2]) + (ir[10] & cc[1]) + (ir[9] + cc[0]);
+    end
+end
+
+// set cc
+always_comb
+begin
+    if (ld_cc) begin
+        // set Z
+        cc[1] = (bus_data == 16'b0);
+        cc[2] = bus_data[15] == 1'b1 && !cc[1];
+        cc[0] = bus_data[15] == 1'b0 && !cc[1];
     end
 end
 

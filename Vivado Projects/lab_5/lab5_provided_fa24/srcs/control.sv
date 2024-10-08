@@ -40,6 +40,7 @@ module control (
 	output logic        ld_led,
 	
 	output logic        ld_reg,
+	output logic        ld_cc,
 						
 	output logic		gate_pc,
 	output logic		gate_mdr,
@@ -49,7 +50,7 @@ module control (
 	output logic [1:0]	pc_mux,
 	output logic        dr_mux,
     output logic        sr1_mux,
-    output logic        sr2_mux,
+    output logic        sr2_mux,    // we might not need this at all since it is determined by ir
     output logic        aluk_mux,
 
 	
@@ -113,6 +114,7 @@ module control (
 		ld_led = 1'b0;
 		
 		ld_reg = 1'b0;
+		ld_cc = 1'b0;
 		
 		gate_pc = 1'b0;
 		gate_mdr = 1'b0;
@@ -154,15 +156,59 @@ module control (
 			        set_ben = 1'b1;
 			    end
 			
+			// ADD state
 			s_1 :
 			    begin
-			        dr_mux = 1'b1;
+			        dr_mux = 1'b0;
 			        sr1_mux = 1'b1;
+			        sr2_mux = ir[5];
 			        aluk_mux = 2'b00;
 			        ld_reg = 1'b1;
+                    ld_cc = 1'b1;
 			        gate_alu = 1'b1;
 			    end
-			        
+			
+			// AND state    
+			s_5 :
+			    begin
+			        dr_mux = 1'b0;
+			        sr2_mux = ir[5];
+			        aluk_mux = 2'b01;
+			        ld_reg = 1'b1;
+                    ld_cc = 1'b1;
+			        gate_alu = 1'b1;
+			    end
+			
+			// NOT state
+			s_9:
+			    begin
+			        dr_mux = 1'b0;
+			        aluk_mux = 2'b10;
+			        ld_reg = 1'b1;
+                    ld_cc = 1'b1;
+			        gate_alu = 1'b1;
+			    end
+			
+			// LDR state
+			s_6:
+			    begin
+			    end
+		    s_25_1, s_25_2, s_25_3:
+		        begin
+		        end
+		    s_27:
+		        begin
+		        end
+//		s_7,
+//		s_23,
+//		s_16_1,
+//		s_16_2,
+//		s_16_3,
+//		s_0,
+//		s_22,
+//		s_12,
+//		s_4,
+//		s_21
 			    
 			    
 			s_0 : ;

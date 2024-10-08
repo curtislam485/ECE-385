@@ -32,6 +32,32 @@ module register_file(
     output logic    [15:0]  sr2_out
     );
     
-    // fill this out next, will make life less cancer
+    logic [15:0] reg_file [8]; // register file (8 registers of 16 bits each)
     
+    // fill this out next, will make life less cancer
+    always_comb
+    begin
+        // set sr1 out
+        if (sr1_mux == 1'b0) begin
+            sr1_out = reg_file[ir[11:9]];
+        end
+        
+        else begin
+            sr1_out = reg_file[ir[8:6]];
+        end
+        
+        // set sr2 out
+        sr2_out = reg_file[ir[2:0]];
+        
+        // load register condition
+        if (ld_reg == 1'b1) begin
+            if (dr_mux == 1'b0) begin
+                reg_file[ir[11:9]] = ld_data;
+            end
+            
+            else begin
+                reg_file[3'b111] = ld_data;
+            end
+        end
+    end
 endmodule
