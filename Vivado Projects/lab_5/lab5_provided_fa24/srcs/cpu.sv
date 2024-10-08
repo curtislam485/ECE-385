@@ -44,18 +44,42 @@ logic ld_ir;
 logic ld_pc; 
 logic ld_led;
 
+logic ld_reg;
+
 logic gate_pc;
 logic gate_mdr;
 logic gate_marmux;
 logic gate_alu;
 
-logic [1:0] pcmux;
+// 00 - increment pc
+// 01 - load sum of addr1mux and addr2mux
+// 10 - load bus pc
+logic [1:0] pc_mux;
+
+// 0 - IR[11:9]
+// 1 - 111
+logic dr_mux;
+
+// 0 - IR[11:9]
+// 1 - IR[8:6]
+logic sr1_mux;
+
+// 0 - SR2 out
+// 1 - IR[4:0] SEXT
+logic sr2_mux;
+
+// 00 - regular adder
+logic aluk_mux;
+
+logic set_ben;
 
 logic [15:0] mar; 
 logic [15:0] mdr;
 logic [15:0] ir;
 logic [15:0] pc;
 logic ben;
+
+logic [2:0] cc; // condition codes (NZP)
 
 
 assign mem_addr = mar;
@@ -65,6 +89,8 @@ logic [15:0] bus_data;
 
 logic [15:0] pc_next;
 logic [15:0] mar_next;
+
+logic [15:0] reg_file [8]; // register file (8 registers of 16 bits each)
 
 
 // State machine, you need to fill in the code here as well
@@ -77,14 +103,14 @@ control cpu_control (
 
 always_comb
 begin
-    if (pcmux == 2'b00)
+    if (pc_mux == 2'b00)
     begin
         pc_next = pc + 1'b1;
     end
-    else if (pcmux == 2'b01)
+    else if (pc_mux == 2'b01)
     begin
     end
-    else if (pcmux == 2'b10)
+    else if (pc_mux == 2'b10)
     begin
         pc_next = bus_data;
     end
@@ -110,6 +136,44 @@ begin
     end
 end
 
+// register file control (maybe make a module for this) 
+always_comb
+begin
+    // writing into file
+    if (ld_reg == 1'b1)
+    begin
+        if (dr_mux == 1'b0) begin
+            reg_file[ir[11:9]] = bus_data;
+        end
+    end
+end
+
+logic [15:0] sr1_out;
+logic [15:0] sr2_out;
+
+register_file register_file_mod (
+    dr_mux,
+    ld_reg,
+    bus_data,   // this is your load data
+    sr1_mux,
+    ir[2:0],    // sr2
+    ir,
+    
+    sr1_out,
+    sr2_out
+);
+
+// set BEN
+always_comb
+begin
+    if (set_ben)
+    begin
+        ben = (ir[11] & cc[2]) + (ir[10] & cc[1]) + (ir[9] + cc[0]);
+    end
+end
+
+
+// LED outputs
 assign led_o = ir;
 assign hex_display_debug = ir;
 

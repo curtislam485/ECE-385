@@ -2,18 +2,16 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sun Oct  6 12:14:32 2024
-# Process ID: 7872
-# Current directory: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/ece385-lab4-cjlam2-mwshi2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8532 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado Projects\ece385-lab4-cjlam2-mwshi2\lab4_1.xpr
-# Log file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/ece385-lab4-cjlam2-mwshi2/vivado.log
-# Journal file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/ece385-lab4-cjlam2-mwshi2\vivado.jou
+# Start of session at: Mon Oct  7 15:01:59 2024
+# Process ID: 23260
+# Current directory: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9876 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado Projects\lab_5\lab_5.xpr
+# Log file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/vivado.log
+# Journal file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5\vivado.jou
 # Running On: Curtis-Laptop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34014 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/ece385-lab4-cjlam2-mwshi2/lab4_1.xpr}
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/ece385-lab4-cjlam2-mwshi2'
+open_project {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.xpr}
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -78,14 +76,9 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE 385/Vivado Projects/ece385-lab4-cjlam2-mwshi2' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/ece385-lab4-cjlam2-mwshi2/lab4_1.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1143.637 ; gain = 337.023
-update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Oct  6 12:27:09 2024...
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1113.207 ; gain = 328.914

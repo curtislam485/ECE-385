@@ -38,18 +38,27 @@ module control (
 	output logic		ld_ir,
 	output logic		ld_pc,
 	output logic        ld_led,
+	
+	output logic        ld_reg,
 						
 	output logic		gate_pc,
 	output logic		gate_mdr,
 	output logic        gate_marmux,
 	output logic        gate_alu,
 						
-	output logic [1:0]	pcmux,
+	output logic [1:0]	pc_mux,
+	output logic        dr_mux,
+    output logic        sr1_mux,
+    output logic        sr2_mux,
+    output logic        aluk_mux,
+
 	
 	//You should add additional control signals according to the SLC-3 datapath design
 
 	output logic		mem_mem_ena, // Mem Operation Enable
-	output logic		mem_wr_ena  // Mem Write Enable
+	output logic		mem_wr_ena,  // Mem Write Enable
+	
+	output logic        set_ben
 );
 
 	enum logic [4:0] {
@@ -60,7 +69,26 @@ module control (
 		s_33_1,
 		s_33_2,
 		s_33_3,
-		s_35
+		s_35,
+		s_32,
+		s_1,
+		s_5,
+		s_9,
+		s_6,
+		s_25_1,
+		s_25_2,
+		s_25_3,
+		s_27,
+		s_7,
+		s_23,
+		s_16_1,
+		s_16_2,
+		s_16_3,
+		s_0,
+		s_22,
+		s_12,
+		s_4,
+		s_21
 	} state, state_nxt;   // Internal state logic
 
 
@@ -84,12 +112,17 @@ module control (
 		ld_pc = 1'b0;
 		ld_led = 1'b0;
 		
+		ld_reg = 1'b0;
+		
 		gate_pc = 1'b0;
 		gate_mdr = 1'b0;
 		gate_marmux = 1'b0;
 		gate_alu = 1'b0;
 		 
-		pcmux = 2'b00;
+		pc_mux = 2'b00;
+		dr_mux = 1'b0;
+		
+		set_ben = 1'b0;
 		
 	
 		// Assign relevant control signals based on current state
@@ -99,7 +132,7 @@ module control (
 				begin 
 					gate_pc = 1'b1;
 					ld_mar = 1'b1;
-					pcmux = 2'b00;
+					pc_mux = 2'b00;
 					ld_pc = 1'b1;
 				end
 			s_33_1, s_33_2, s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
@@ -115,6 +148,30 @@ module control (
 			pause_ir1: ld_led = 1'b1; 
 			pause_ir2: ld_led = 1'b1; 
 			// you need to finish the rest of state output logic..... 
+			
+			s_32 :
+			    begin
+			        set_ben = 1'b1;
+			    end
+			
+			s_1 :
+			    begin
+			        dr_mux = 1'b1;
+			        sr1_mux = 1'b1;
+			        aluk_mux = 2'b00;
+			        ld_reg = 1'b1;
+			        gate_alu = 1'b1;
+			    end
+			        
+			    
+			    
+			s_0 : ;
+			s_22 :
+			    begin
+			        // PC <- PC + sext[PCoffset9]
+			    end
+			    
+			    
 
 			default : ;
 		endcase
@@ -139,7 +196,7 @@ module control (
 			s_33_3 : 
 				state_nxt = s_35;
 			s_35 : 
-				state_nxt = pause_ir1;
+				state_nxt = s_32;   // changed from pause_ir1 from 5.1
 			// pause_ir1 and pause_ir2 are only for week 1 such that TAs can see 
 			// the values in ir.
 			pause_ir1 : 
@@ -150,6 +207,75 @@ module control (
 					state_nxt = s_18;
 			// you need to finish the rest of state transition logic.....
 			
+			// decode state
+			s_32 :
+			    // find IR[15:12]
+			    unique case (ir[15:12])
+                    1 :
+                        state_nxt = s_1;
+                    5 :
+                        state_nxt = s_5;
+                    9 :
+                        state_nxt = s_9;
+                    6 :
+                        state_nxt = s_6;
+                    7 :
+                        state_nxt = s_7;
+                    4 :
+                        state_nxt = s_4;
+                    12 :
+                        state_nxt = s_12;
+                    0 :
+                        state_nxt = s_0;
+                    13 :
+                        state_nxt = pause_ir1;
+                    default: ;
+                endcase
+            
+            s_1 :   // ADD state needs to check for sext
+                state_nxt = s_18;
+            s_5 :   // AND state needs to check for sext
+                state_nxt = s_18;
+            s_9 :
+                state_nxt = s_18;
+            s_6 :
+                state_nxt = s_25_1;
+            s_25_1 :
+                state_nxt = s_25_2;
+            s_25_2 :
+                state_nxt = s_25_3;
+            s_25_3 :
+                state_nxt = s_27;
+            s_27:
+                state_nxt = s_18;
+            s_7 :
+                state_nxt = s_23;
+            s_23 :
+                state_nxt = s_16_1;
+            s_16_1 :
+                state_nxt = s_16_2;
+            s_16_2 :
+                state_nxt = s_16_3;
+            s_16_3 :
+                state_nxt = s_18;
+            s_4 :
+                state_nxt = s_21;
+            s_21 :
+                state_nxt = s_18;
+            s_12 :
+                state_nxt = s_18;
+            s_0 :
+                if (ben == 1'b1)
+                begin
+                    state_nxt = s_22;
+                end
+                else if (ben == 1'b0)
+                begin
+                    state_nxt = s_18;
+                end
+            s_22 :
+                state_nxt = s_18;
+            
 			default :;
 		endcase
 	end
