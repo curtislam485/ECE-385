@@ -84,6 +84,10 @@ logic [1:0] addr2_mux;
 // 10 - NOT
 logic aluk_mux;
 
+// 0 - data_bus
+// 1 - memory_output
+logic mio_en;
+
 logic set_ben;
 
 logic [15:0] mar; 
@@ -140,7 +144,7 @@ begin
     end
     else if (gate_marmux == 1'b1)
     begin
-//        bus_data = 
+        bus_data = addr_adder_output;
     end
     else if (gate_alu == 1'b1)
     begin
@@ -286,12 +290,24 @@ load_reg #(.DATA_WIDTH(16)) mar_reg (
     .data_q (mar)
 );
 
+// mdr mux
+logic [15:0] next_mdr;
+always_comb begin
+    if (mio_en == 1'b0) begin
+        next_mdr = bus_data;
+    end
+    else begin
+        next_mdr = mem_rdata;
+    end
+end
+
+
 load_reg #(.DATA_WIDTH(16)) mdr_reg (
     .clk(clk),
     .reset(reset),
 
     .load(ld_mdr),
-    .data_i(mem_rdata),
+    .data_i(next_mdr),
 
     .data_q(mdr)
 );

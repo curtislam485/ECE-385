@@ -51,6 +51,8 @@ module control (
 	output logic        dr_mux,
     output logic        sr1_mux,
     output logic        sr2_mux,    // we might not need this at all since it is determined by ir
+    output logic        addr1_mux,
+    output logic        addr2_mux,
     output logic        aluk_mux,
 
 	
@@ -58,6 +60,8 @@ module control (
 
 	output logic		mem_mem_ena, // Mem Operation Enable
 	output logic		mem_wr_ena,  // Mem Write Enable
+	
+	output logic        mio_en,
 	
 	output logic        set_ben
 );
@@ -126,6 +130,8 @@ module control (
 		
 		set_ben = 1'b0;
 		
+		mem_mem_ena = 1'b0;
+		mem_wr_ena = 1'b0;
 	
 		// Assign relevant control signals based on current state
 		case (state)
@@ -137,9 +143,14 @@ module control (
 					pc_mux = 2'b00;
 					ld_pc = 1'b1;
 				end
-			s_33_1, s_33_2, s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
+			s_33_1, s_33_2 :
+			    begin
+			        mem_mem_ena = 1'b1;
+			    end
+			s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
 				begin
 					mem_mem_ena = 1'b1;
+					mio_en = 1'b1;
 					ld_mdr = 1'b1;
 				end
 			s_35 : 
@@ -172,6 +183,7 @@ module control (
 			s_5 :
 			    begin
 			        dr_mux = 1'b0;
+			        sr1_mux = 1'b1;
 			        sr2_mux = ir[5];
 			        aluk_mux = 2'b01;
 			        ld_reg = 1'b1;
@@ -183,6 +195,7 @@ module control (
 			s_9:
 			    begin
 			        dr_mux = 1'b0;
+			        sr1_mux = 1'b1;
 			        aluk_mux = 2'b10;
 			        ld_reg = 1'b1;
                     ld_cc = 1'b1;
@@ -190,15 +203,28 @@ module control (
 			    end
 			
 			// LDR state
-			s_6:
+			s_6: // MAR <- B + off6
 			    begin
-			        
+			        sr1_mux = 1'b1;
+			        addr1_mux = 1'b0;
+			        addr2_mux = 2'b10;
+			        gate_marmux = 1'b1;
+			        ld_mar = 1'b1;
 			    end
-		    s_25_1, s_25_2, s_25_3:
+		    s_25_1, s_25_2:   // MDR <- M[MAR] wait
 		        begin
+		            mem_mem_ena = 1'b1;
 		        end
-		    s_27:
+		    s_25_3:   // MDR <- M[MAR]
 		        begin
+		            mem_mem_ena = 1'b1;
+					mio_en = 1'b1;
+		            ld_mdr = 1'b1;
+		        end
+		    s_27:     // DR <- MDR, set CC
+		        begin
+		            dr_mux = 1'b0;
+		            ld_cc = 1'b1;
 		        end
 //		s_7,
 //		s_23,
