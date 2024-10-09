@@ -82,6 +82,7 @@ logic [1:0] addr2_mux;
 // 00 - ADD
 // 01 - AND
 // 10 - NOT
+// 11 - pass through
 logic aluk_mux;
 
 // 0 - data_bus

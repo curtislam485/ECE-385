@@ -223,29 +223,75 @@ module control (
 		        end
 		    s_27:     // DR <- MDR, set CC
 		        begin
+		            gate_mdr = 1'b1;
 		            dr_mux = 1'b0;
+		            ld_reg = 1'b1;
 		            ld_cc = 1'b1;
 		        end
-//		s_7,
-//		s_23,
-//		s_16_1,
-//		s_16_2,
-//		s_16_3,
-//		s_0,
-//		s_22,
-//		s_12,
-//		s_4,
-//		s_21
-			    
-			    
-			s_0 : ;
-			s_22 :
-			    begin
-			        // PC <- PC + sext[PCoffset9]
-			    end
-			    
-			    
-
+		    
+		    // STR state
+            s_7:    // MAR <- B + off6
+                begin
+			        sr1_mux = 1'b1;
+			        addr1_mux = 1'b0;
+			        addr2_mux = 2'b10;
+			        gate_marmux = 1'b1;
+			        ld_mar = 1'b1;
+                end
+            s_23:   // MDR <- SR
+                begin
+                    sr1_mux = 1'b0;
+                    aluk_mux = 2'b11;
+                    gate_alu = 1'b1;
+                    mio_en = 1'b0;
+                    ld_mdr = 1'b1;
+                end
+            s_16_1, s_16_2: // M[MAR] <- MDR
+                begin
+                    mem_mem_ena = 1'b1;
+                end
+            s_16_3: // M[MAR] <- MDR
+                begin
+		            mem_mem_ena = 1'b1;
+		            mem_wr_ena = 1'b1;
+                end
+                
+            // BEN state
+            s_0:
+                begin   // nothing happens in here lol
+                end
+            s_22:   // PC <- PC + off9
+                begin
+                    addr1_mux = 1'b1;
+                    addr2_mux = 2'b01;
+                    pc_mux = 2'b01;
+                    ld_pc = 1'b1;
+                end
+                
+            // JMP state
+		    s_12: // PC <- BaseR
+		        begin
+		            sr1_mux = 1'b1;
+		            addr1_mux = 1'b0;
+		            addr2_mux = 2'b11;
+		            pc_mux = 2'b01;
+		            ld_pc = 1'b1;
+		        end
+		    
+		    // JSR state
+            s_4: // R7 <- PC
+                begin
+                    dr_mux = 1'b1;
+                    gate_pc = 1'b1;
+                    ld_reg = 1'b1;
+                end
+            s_21:   // PC <- PC + off11
+                begin
+                    addr1_mux = 1'b1;
+                    addr2_mux = 2'b00;
+                    pc_mux = 2'b01;
+                    ld_pc = 1'b1;
+                end
 			default : ;
 		endcase
 	end 
@@ -270,6 +316,8 @@ module control (
 				state_nxt = s_35;
 			s_35 : 
 				state_nxt = s_32;   // changed from pause_ir1 from 5.1
+				
+//				state_nxt = pause_ir1;
 			// pause_ir1 and pause_ir2 are only for week 1 such that TAs can see 
 			// the values in ir.
 			pause_ir1 : 
