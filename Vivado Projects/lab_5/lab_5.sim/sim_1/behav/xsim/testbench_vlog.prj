@@ -20,6 +20,7 @@ sv xil_defaultlib  \
 "../../../../lab_5.srcs/sources_1/new/alu.sv" \
 "../../../../lab_5.srcs/sources_1/new/address_adder.sv" \
 "../../../../lab_5.srcs/sim_1/new/testbench.sv" \
+"../../../../lab_5.srcs/sim_1/new/testbench2.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

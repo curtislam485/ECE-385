@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 5
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -99,6 +101,9 @@ read_verilog -library xil_defaultlib -sv {
   {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/hex_driver.sv}
   {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/instantiate_ram.sv}
   {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/load_reg.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/new/register_file.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/new/alu.sv}
+  {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/new/address_adder.sv}
 }
 read_ip -quiet {{C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.gen/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0_ooc.xdc}}]

@@ -4,9 +4,9 @@ Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'addr2_mux' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:115]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'ld_data' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:162]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'aluk_mux' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:192]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'addr2_mux' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:116]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'ld_data' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:163]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'aluk_mux' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:193]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/types.sv" Line 39. Module SLC3_TYPES doesn't have a timescale but at least one module in design has a timescale.
@@ -95,7 +95,7 @@ WARNING: [XSIM 43-4099] "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado P
 WARNING: [XSIM 43-4099] "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/test_memory.sv" Line 31. Module test_memory doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_control_sv_2223217386
+Compiling package xil_defaultlib.$unit_control_sv_133312552
 Compiling package xil_defaultlib.SLC3_TYPES
 Compiling module xil_defaultlib.sync_debounce
 Compiling module xil_defaultlib.sync_flop
