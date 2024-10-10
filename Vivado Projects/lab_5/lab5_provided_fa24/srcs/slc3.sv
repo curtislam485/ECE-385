@@ -105,6 +105,5 @@ module slc3 (
 		.hex_grid   (hex_grid_debug)
 	);
 
-
 	
 endmodule

@@ -5,8 +5,8 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'addr2_mux' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:116]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'ld_data' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:163]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'aluk_mux' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:193]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'ld_data' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:172]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'aluk_mux' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/cpu.sv:197]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/srcs/types.sv" Line 39. Module SLC3_TYPES doesn't have a timescale but at least one module in design has a timescale.

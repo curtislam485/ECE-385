@@ -31,7 +31,7 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 1,
+                                "rightIndex": 4,
                                 "portIndex": 0,
                                 "nets": [
                                     {
@@ -45,6 +45,18 @@
                                             {
                                                 "name": "slc3/cpu/cpu_control/state[3]",
                                                 "parentNetId": 1
+                                            },
+                                            {
+                                                "name": "slc3/cpu/cpu_control/state[2]",
+                                                "parentNetId": 2
+                                            },
+                                            {
+                                                "name": "slc3/cpu/cpu_control/state[1]",
+                                                "parentNetId": 3
+                                            },
+                                            {
+                                                "name": "slc3/cpu/cpu_control/state[0]",
+                                                "parentNetId": 4
                                             }
                                         ]
                                     }
@@ -55,64 +67,14 @@
                                 "id": 1,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": true,
+                                "isVector": false,
                                 "leftIndex": 0,
-                                "rightIndex": 15,
+                                "rightIndex": 0,
                                 "portIndex": 1,
                                 "nets": [
                                     {
-                                        "name": "slc3/cpu/pc",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "slc3/cpu/pc[15]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[14]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[13]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[12]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[11]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[10]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[9]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[8]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[7]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[6]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[5]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[4]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[3]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[2]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[1]"
-                                            },
-                                            {
-                                                "name": "slc3/cpu/pc[0]"
-                                            }
-                                        ]
+                                        "name": "run_i_IBUF",
+                                        "isBus": false
                                     }
                                 ]
                             }
@@ -125,115 +87,115 @@
                         "name": "slc3/cpu/cpu_control/state[4]",
                         "state_reg": [
                             {
-                                "name": "slc3/cpu/cpu_control/FSM_sequential_state_reg[4]",
+                                "name": "slc3/cpu/cpu_control/state_reg[4]",
                                 "states": [
-                                    {
-                                        "name": "s_25_2",
-                                        "val": "01100"
-                                    },
-                                    {
-                                        "name": "s_25_1",
-                                        "val": "01011"
-                                    },
-                                    {
-                                        "name": "s_6",
-                                        "val": "01010"
-                                    },
-                                    {
-                                        "name": "s_16_1",
-                                        "val": "10001"
-                                    },
-                                    {
-                                        "name": "s_23",
-                                        "val": "10000"
-                                    },
-                                    {
-                                        "name": "s_18",
-                                        "val": "00001"
-                                    },
-                                    {
-                                        "name": "pause_ir2",
-                                        "val": "11010"
-                                    },
-                                    {
-                                        "name": "s_7",
-                                        "val": "01111"
-                                    },
-                                    {
-                                        "name": "s_27",
-                                        "val": "01110"
-                                    },
-                                    {
-                                        "name": "s_21",
-                                        "val": "10101"
-                                    },
-                                    {
-                                        "name": "pause_ir1",
-                                        "val": "11001"
-                                    },
-                                    {
-                                        "name": "s_22",
-                                        "val": "11000"
-                                    },
-                                    {
-                                        "name": "s_0",
-                                        "val": "10111"
-                                    },
-                                    {
-                                        "name": "s_9",
-                                        "val": "01001"
-                                    },
                                     {
                                         "name": "halted",
                                         "val": "00000"
                                     },
                                     {
-                                        "name": "s_4",
-                                        "val": "10100"
-                                    },
-                                    {
-                                        "name": "s_5",
-                                        "val": "01000"
-                                    },
-                                    {
-                                        "name": "s_35",
-                                        "val": "00101"
-                                    },
-                                    {
-                                        "name": "s_12",
-                                        "val": "10110"
-                                    },
-                                    {
-                                        "name": "s_16_3",
-                                        "val": "10011"
-                                    },
-                                    {
-                                        "name": "s_33_3",
-                                        "val": "00100"
-                                    },
-                                    {
-                                        "name": "s_16_2",
-                                        "val": "10010"
-                                    },
-                                    {
-                                        "name": "s_1",
-                                        "val": "00111"
-                                    },
-                                    {
-                                        "name": "s_32",
-                                        "val": "00110"
-                                    },
-                                    {
-                                        "name": "s_33_2",
+                                        "name": "s_18",
                                         "val": "00011"
                                     },
                                     {
-                                        "name": "s_25_3",
+                                        "name": "s_33_1",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "s_33_2",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "s_33_3",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "s_35",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "pause_ir1",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "pause_ir2",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "s_32",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "s_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "s_5",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "s_9",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "s_6",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "s_25_1",
                                         "val": "01101"
                                     },
                                     {
-                                        "name": "s_33_1",
-                                        "val": "00010"
+                                        "name": "s_25_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "s_25_3",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "s_27",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "s_7",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "s_23",
+                                        "val": "10010"
+                                    },
+                                    {
+                                        "name": "s_16_1",
+                                        "val": "10011"
+                                    },
+                                    {
+                                        "name": "s_16_2",
+                                        "val": "10100"
+                                    },
+                                    {
+                                        "name": "s_16_3",
+                                        "val": "10101"
+                                    },
+                                    {
+                                        "name": "s_4",
+                                        "val": "11001"
+                                    },
+                                    {
+                                        "name": "s_21",
+                                        "val": "11010"
+                                    },
+                                    {
+                                        "name": "s_12",
+                                        "val": "11000"
+                                    },
+                                    {
+                                        "name": "s_0",
+                                        "val": "10110"
+                                    },
+                                    {
+                                        "name": "s_22",
+                                        "val": "10111"
                                     }
                                 ]
                             }
@@ -244,115 +206,472 @@
                         "name": "slc3/cpu/cpu_control/state[3]",
                         "state_reg": [
                             {
-                                "name": "slc3/cpu/cpu_control/FSM_sequential_state_reg[3]",
+                                "name": "slc3/cpu/cpu_control/state_reg[3]",
                                 "states": [
-                                    {
-                                        "name": "s_25_2",
-                                        "val": "01100"
-                                    },
-                                    {
-                                        "name": "s_25_1",
-                                        "val": "01011"
-                                    },
-                                    {
-                                        "name": "s_6",
-                                        "val": "01010"
-                                    },
-                                    {
-                                        "name": "s_16_1",
-                                        "val": "10001"
-                                    },
-                                    {
-                                        "name": "s_23",
-                                        "val": "10000"
-                                    },
-                                    {
-                                        "name": "s_18",
-                                        "val": "00001"
-                                    },
-                                    {
-                                        "name": "pause_ir2",
-                                        "val": "11010"
-                                    },
-                                    {
-                                        "name": "s_7",
-                                        "val": "01111"
-                                    },
-                                    {
-                                        "name": "s_27",
-                                        "val": "01110"
-                                    },
-                                    {
-                                        "name": "s_21",
-                                        "val": "10101"
-                                    },
-                                    {
-                                        "name": "pause_ir1",
-                                        "val": "11001"
-                                    },
-                                    {
-                                        "name": "s_22",
-                                        "val": "11000"
-                                    },
-                                    {
-                                        "name": "s_0",
-                                        "val": "10111"
-                                    },
-                                    {
-                                        "name": "s_9",
-                                        "val": "01001"
-                                    },
                                     {
                                         "name": "halted",
                                         "val": "00000"
                                     },
                                     {
-                                        "name": "s_4",
-                                        "val": "10100"
-                                    },
-                                    {
-                                        "name": "s_5",
-                                        "val": "01000"
-                                    },
-                                    {
-                                        "name": "s_35",
-                                        "val": "00101"
-                                    },
-                                    {
-                                        "name": "s_12",
-                                        "val": "10110"
-                                    },
-                                    {
-                                        "name": "s_16_3",
-                                        "val": "10011"
-                                    },
-                                    {
-                                        "name": "s_33_3",
-                                        "val": "00100"
-                                    },
-                                    {
-                                        "name": "s_16_2",
-                                        "val": "10010"
-                                    },
-                                    {
-                                        "name": "s_1",
-                                        "val": "00111"
-                                    },
-                                    {
-                                        "name": "s_32",
-                                        "val": "00110"
-                                    },
-                                    {
-                                        "name": "s_33_2",
+                                        "name": "s_18",
                                         "val": "00011"
                                     },
                                     {
-                                        "name": "s_25_3",
+                                        "name": "s_33_1",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "s_33_2",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "s_33_3",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "s_35",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "pause_ir1",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "pause_ir2",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "s_32",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "s_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "s_5",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "s_9",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "s_6",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "s_25_1",
                                         "val": "01101"
                                     },
                                     {
+                                        "name": "s_25_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "s_25_3",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "s_27",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "s_7",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "s_23",
+                                        "val": "10010"
+                                    },
+                                    {
+                                        "name": "s_16_1",
+                                        "val": "10011"
+                                    },
+                                    {
+                                        "name": "s_16_2",
+                                        "val": "10100"
+                                    },
+                                    {
+                                        "name": "s_16_3",
+                                        "val": "10101"
+                                    },
+                                    {
+                                        "name": "s_4",
+                                        "val": "11001"
+                                    },
+                                    {
+                                        "name": "s_21",
+                                        "val": "11010"
+                                    },
+                                    {
+                                        "name": "s_12",
+                                        "val": "11000"
+                                    },
+                                    {
+                                        "name": "s_0",
+                                        "val": "10110"
+                                    },
+                                    {
+                                        "name": "s_22",
+                                        "val": "10111"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "slc3/cpu/cpu_control/state[2]",
+                        "state_reg": [
+                            {
+                                "name": "slc3/cpu/cpu_control/state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "halted",
+                                        "val": "00000"
+                                    },
+                                    {
+                                        "name": "s_18",
+                                        "val": "00011"
+                                    },
+                                    {
                                         "name": "s_33_1",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "s_33_2",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "s_33_3",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "s_35",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "pause_ir1",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "pause_ir2",
                                         "val": "00010"
+                                    },
+                                    {
+                                        "name": "s_32",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "s_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "s_5",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "s_9",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "s_6",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "s_25_1",
+                                        "val": "01101"
+                                    },
+                                    {
+                                        "name": "s_25_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "s_25_3",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "s_27",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "s_7",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "s_23",
+                                        "val": "10010"
+                                    },
+                                    {
+                                        "name": "s_16_1",
+                                        "val": "10011"
+                                    },
+                                    {
+                                        "name": "s_16_2",
+                                        "val": "10100"
+                                    },
+                                    {
+                                        "name": "s_16_3",
+                                        "val": "10101"
+                                    },
+                                    {
+                                        "name": "s_4",
+                                        "val": "11001"
+                                    },
+                                    {
+                                        "name": "s_21",
+                                        "val": "11010"
+                                    },
+                                    {
+                                        "name": "s_12",
+                                        "val": "11000"
+                                    },
+                                    {
+                                        "name": "s_0",
+                                        "val": "10110"
+                                    },
+                                    {
+                                        "name": "s_22",
+                                        "val": "10111"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "name": "slc3/cpu/cpu_control/state[1]",
+                        "state_reg": [
+                            {
+                                "name": "slc3/cpu/cpu_control/state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "halted",
+                                        "val": "00000"
+                                    },
+                                    {
+                                        "name": "s_18",
+                                        "val": "00011"
+                                    },
+                                    {
+                                        "name": "s_33_1",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "s_33_2",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "s_33_3",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "s_35",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "pause_ir1",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "pause_ir2",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "s_32",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "s_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "s_5",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "s_9",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "s_6",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "s_25_1",
+                                        "val": "01101"
+                                    },
+                                    {
+                                        "name": "s_25_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "s_25_3",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "s_27",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "s_7",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "s_23",
+                                        "val": "10010"
+                                    },
+                                    {
+                                        "name": "s_16_1",
+                                        "val": "10011"
+                                    },
+                                    {
+                                        "name": "s_16_2",
+                                        "val": "10100"
+                                    },
+                                    {
+                                        "name": "s_16_3",
+                                        "val": "10101"
+                                    },
+                                    {
+                                        "name": "s_4",
+                                        "val": "11001"
+                                    },
+                                    {
+                                        "name": "s_21",
+                                        "val": "11010"
+                                    },
+                                    {
+                                        "name": "s_12",
+                                        "val": "11000"
+                                    },
+                                    {
+                                        "name": "s_0",
+                                        "val": "10110"
+                                    },
+                                    {
+                                        "name": "s_22",
+                                        "val": "10111"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "slc3/cpu/cpu_control/state[0]",
+                        "state_reg": [
+                            {
+                                "name": "slc3/cpu/cpu_control/state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "halted",
+                                        "val": "00000"
+                                    },
+                                    {
+                                        "name": "s_18",
+                                        "val": "00011"
+                                    },
+                                    {
+                                        "name": "s_33_1",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "s_33_2",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "s_33_3",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "s_35",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "pause_ir1",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "pause_ir2",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "s_32",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "s_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "s_5",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "s_9",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "s_6",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "s_25_1",
+                                        "val": "01101"
+                                    },
+                                    {
+                                        "name": "s_25_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "s_25_3",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "s_27",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "s_7",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "s_23",
+                                        "val": "10010"
+                                    },
+                                    {
+                                        "name": "s_16_1",
+                                        "val": "10011"
+                                    },
+                                    {
+                                        "name": "s_16_2",
+                                        "val": "10100"
+                                    },
+                                    {
+                                        "name": "s_16_3",
+                                        "val": "10101"
+                                    },
+                                    {
+                                        "name": "s_4",
+                                        "val": "11001"
+                                    },
+                                    {
+                                        "name": "s_21",
+                                        "val": "11010"
+                                    },
+                                    {
+                                        "name": "s_12",
+                                        "val": "11000"
+                                    },
+                                    {
+                                        "name": "s_0",
+                                        "val": "10110"
+                                    },
+                                    {
+                                        "name": "s_22",
+                                        "val": "10111"
                                     }
                                 ]
                             }

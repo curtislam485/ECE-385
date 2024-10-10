@@ -7,20 +7,24 @@
   <device name="xc7s50_0" gui_info="dashboard1=hw_ila_1[xc7s50_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7s50_0/hw_ila_1/Status=ILA_STATUS_1;xc7s50_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7s50_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7s50_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7s50_0" gui_info="">
-      <Properties Property="FULL_PROBES.FILE" value=""/>
-      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/processor_top.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/processor_top.ltx"/>
       <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/processor_top.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
     <Object name="u_ila_0" gui_info="">
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
-    <Object name="run_i_IBUF" gui_info=""/>
+    <Object name="run_i_IBUF" gui_info="Trigger Setup=0"/>
     <Object name="slc3/cpu/cpu_control/state[2:0]" gui_info="Trigger Setup=0"/>
   </ObjectList>
   <probeset name="hw project" active="false">
@@ -63,18 +67,18 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bF"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe6[0]"/>
+        <Option Id="MAP" value="probe1[0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bF"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -107,6 +111,58 @@
         <Option Id="ENUM.s_35" value="eq3&apos;b101"/>
       </probeOptions>
       <nets>
+        <net name="slc3/cpu/cpu_control/state[2]"/>
+        <net name="slc3/cpu/cpu_control/state[1]"/>
+        <net name="slc3/cpu/cpu_control/state[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq5&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[4:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+        <Option Id="ENUM.halted" value="eq5&apos;b00000"/>
+        <Option Id="ENUM.pause_ir1" value="eq5&apos;b00001"/>
+        <Option Id="ENUM.pause_ir2" value="eq5&apos;b00010"/>
+        <Option Id="ENUM.s_0" value="eq5&apos;b10110"/>
+        <Option Id="ENUM.s_1" value="eq5&apos;b01001"/>
+        <Option Id="ENUM.s_12" value="eq5&apos;b11000"/>
+        <Option Id="ENUM.s_16_1" value="eq5&apos;b10011"/>
+        <Option Id="ENUM.s_16_2" value="eq5&apos;b10100"/>
+        <Option Id="ENUM.s_16_3" value="eq5&apos;b10101"/>
+        <Option Id="ENUM.s_18" value="eq5&apos;b00011"/>
+        <Option Id="ENUM.s_21" value="eq5&apos;b11010"/>
+        <Option Id="ENUM.s_22" value="eq5&apos;b10111"/>
+        <Option Id="ENUM.s_23" value="eq5&apos;b10010"/>
+        <Option Id="ENUM.s_25_1" value="eq5&apos;b01101"/>
+        <Option Id="ENUM.s_25_2" value="eq5&apos;b01110"/>
+        <Option Id="ENUM.s_25_3" value="eq5&apos;b01111"/>
+        <Option Id="ENUM.s_27" value="eq5&apos;b10000"/>
+        <Option Id="ENUM.s_32" value="eq5&apos;b01000"/>
+        <Option Id="ENUM.s_33_1" value="eq5&apos;b00100"/>
+        <Option Id="ENUM.s_33_2" value="eq5&apos;b00101"/>
+        <Option Id="ENUM.s_33_3" value="eq5&apos;b00110"/>
+        <Option Id="ENUM.s_35" value="eq5&apos;b00111"/>
+        <Option Id="ENUM.s_4" value="eq5&apos;b11001"/>
+        <Option Id="ENUM.s_5" value="eq5&apos;b01010"/>
+        <Option Id="ENUM.s_6" value="eq5&apos;b01100"/>
+        <Option Id="ENUM.s_7" value="eq5&apos;b10001"/>
+        <Option Id="ENUM.s_9" value="eq5&apos;b01011"/>
+      </probeOptions>
+      <nets>
+        <net name="slc3/cpu/cpu_control/state[4]"/>
+        <net name="slc3/cpu/cpu_control/state[3]"/>
         <net name="slc3/cpu/cpu_control/state[2]"/>
         <net name="slc3/cpu/cpu_control/state[1]"/>
         <net name="slc3/cpu/cpu_control/state[0]"/>

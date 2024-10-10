@@ -52,9 +52,9 @@ logic gate_mdr;
 logic gate_marmux;
 logic gate_alu;
 
-// 00 - increment pc
+// 00 - load bus pc
 // 01 - load sum of addr1mux and addr2mux
-// 10 - load bus pc
+// 10 - increment pc
 logic [1:0] pc_mux;
 
 // 0 - IR[11:9]
@@ -116,11 +116,20 @@ control cpu_control (
     .*
 );
 
+logic [15:0] addr_adder_input1;
+logic [15:0] addr_adder_input2;
+logic [15:0] addr_adder_output;
+
+logic [15:0] alu_a_input;
+logic [15:0] alu_b_input;
+logic [15:0] alu_output;
+
+// PC mux
 always_comb
 begin
     if (pc_mux == 2'b00)
     begin
-        pc_next = pc + 1'b1;
+        pc_next = bus_data;
     end
     else if (pc_mux == 2'b01)
     begin
@@ -128,7 +137,7 @@ begin
     end
     else if (pc_mux == 2'b10)
     begin
-        pc_next = bus_data;
+        pc_next = pc + 1'b1;
     end
 end
 
@@ -169,14 +178,9 @@ register_file register_file_mod (
     .sr2_out    (sr2_out)
 );
 
-logic [15:0] alu_a_input;
-logic [15:0] alu_b_input;
-logic [15:0] alu_output;
-
-assign alu_a_input = sr1_out;
-
 // sr2_mux
 always_comb begin
+    alu_a_input = sr1_out;
     if (sr2_mux == 1'b0) begin
         alu_b_input = sr2_out;
     end
@@ -194,10 +198,6 @@ alu alu_mod (
     
     .alu_output (alu_output)
 );
-
-logic [15:0] addr_adder_input1;
-logic [15:0] addr_adder_input2;
-logic [15:0] addr_adder_output;
 
 // addr1_mux
 always_comb begin

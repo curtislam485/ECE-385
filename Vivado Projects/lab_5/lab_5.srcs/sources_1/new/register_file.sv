@@ -34,6 +34,14 @@ module register_file(
     
     logic [15:0] reg_file [8]; // register file (8 registers of 16 bits each)
     
+    integer i;
+    initial begin
+        for (i = 0; i < 8; i = i + 1) begin
+            reg_file[i] = 16'h0000;
+        end
+    end
+    
+    
     // fill this out next, will make life less cancer
     always_comb
     begin
@@ -42,7 +50,7 @@ module register_file(
             sr1_out = reg_file[ir[11:9]];
         end
         
-        else begin
+        else if (sr1_mux == 1'b1) begin
             sr1_out = reg_file[ir[8:6]];
         end
         

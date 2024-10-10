@@ -124,23 +124,22 @@ module control (
 		gate_mdr = 1'b0;
 		gate_marmux = 1'b0;
 		gate_alu = 1'b0;
-		 
-		pc_mux = 2'b00;
-		dr_mux = 1'b0;
-		
-		set_ben = 1'b0;
 		
 		mem_mem_ena = 1'b0;
 		mem_wr_ena = 1'b0;
+		
+		mio_en = 1'b0;
+		
+		set_ben = 1'b0;
 	
 		// Assign relevant control signals based on current state
 		case (state)
 			halted: ; 
-			s_18 : 
+			s_18 : // MAR <- PC; PC <- PC + 1
 				begin 
 					gate_pc = 1'b1;
 					ld_mar = 1'b1;
-					pc_mux = 2'b00;
+					pc_mux = 2'b10;
 					ld_pc = 1'b1;
 				end
 			s_33_1, s_33_2 :
@@ -249,6 +248,7 @@ module control (
             s_16_1, s_16_2: // M[MAR] <- MDR
                 begin
                     mem_mem_ena = 1'b1;
+		            mem_wr_ena = 1'b1;
                 end
             s_16_3: // M[MAR] <- MDR
                 begin

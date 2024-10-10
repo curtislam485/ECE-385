@@ -29,7 +29,7 @@ module alu(
     );
     
     always_comb begin
-        alu_output = 16'bz;
+        alu_output = 16'b0;
         // ADD
         if (aluk_mux == 2'b00) begin
             alu_output = a + b;
