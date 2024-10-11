@@ -60,7 +60,7 @@ module testbench(); //even though the testbench doesn't create any hardware, it 
 		reset = 0;
 		#10
 		
-		sw_i = 16'h0003;
+		sw_i = 16'h0006;
 		#10
 		
 		#20
@@ -74,8 +74,28 @@ module testbench(); //even though the testbench doesn't create any hardware, it 
 		#20
 		run_i = 0;
 		
+		#100
+		sw_i = 16'h1111;
+		#20
+		
 		#10
-//		sw_i = 16'h1111;
+		continue_i = 1;
+		#20
+		continue_i = 0;
+		#10
+		
+		#20
+		sw_i = 16'h1010;
+		#20
+		
+		continue_i = 1;
+		#20
+		continue_i = 0;
+		#10
+		
+		#20
+		sw_i = 16'h1234;
+		#20
 		
 		#50
 		

@@ -1,0 +1,7 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.sim/sim_1/synth/func/xsim/testbench_func_synth.v,1728630972,verilog,,,,address_adder;alu;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_4_5;blk_mem_gen_0_blk_mem_gen_v8_4_5_synth;control;cpu;cpu_to_io;glbl;hex_driver;instantiate_ram;load_reg;load_reg_17;load_reg_18;load_reg_19;memory;processor_top;register_file;slc3;sync_debounce;sync_debounce_0;sync_debounce_1;sync_flop;sync_flop_10;sync_flop_11;sync_flop_12;sync_flop_13;sync_flop_14;sync_flop_15;sync_flop_16;sync_flop_2;sync_flop_3;sync_flop_4;sync_flop_5;sync_flop_6;sync_flop_7;sync_flop_8;sync_flop_9,,uvm,,,,,,
+C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sim_1/new/testbench.sv,1727981550,systemVerilog,,C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sim_1/new/testbench2.sv,,,,uvm,,,,,,
+C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sim_1/new/testbench2.sv,1728629465,systemVerilog,,,,testbench,,uvm,,,,,,

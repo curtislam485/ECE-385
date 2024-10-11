@@ -83,10 +83,10 @@ logic [1:0] addr2_mux;
 // 01 - AND
 // 10 - NOT
 // 11 - pass through
-logic aluk_mux;
+logic [1:0] aluk_mux;
 
-// 0 - data_bus
-// 1 - memory_output
+// 0 - memory_output
+// 1 - bus_data
 logic mio_en;
 
 logic set_ben;
@@ -167,6 +167,8 @@ logic [15:0] sr2_out;
 
 // register file
 register_file register_file_mod (
+    .clk        (clk),
+    .reset      (reset),
     .dr_mux     (dr_mux),
     .ld_reg     (ld_reg),
     .ld_data    (bus_data),   // this is your load data
@@ -185,7 +187,7 @@ always_comb begin
         alu_b_input = sr2_out;
     end
     else begin
-        alu_b_input = {{10{ir[4]}}, ir[4:0]};
+        alu_b_input = {{11{ir[4]}}, ir[4:0]};
     end
 end
 
@@ -225,7 +227,7 @@ always_comb begin
     end
     else begin
         addr_adder_input2 = 16'b0;
-    end    
+    end
 end
 
 // address adder, input 1 is left, input 2 is right
@@ -249,16 +251,32 @@ begin
 end
 
 // set cc
-always_comb
-begin
+always_comb begin
     if (ld_cc) begin
-        // set Z
-        cc[1] = (bus_data == 16'b0);
-        cc[2] = bus_data[15] == 1'b1 && !cc[1];
-        cc[0] = bus_data[15] == 1'b0 && !cc[1];
+        cc = 3'b000; // Default all zeros
+        if (bus_data == 16'b0) begin
+            cc[1] = 1'b1; // Zero flag
+        end
+        else if (bus_data[15] == 1'b1) begin
+            cc[2] = 1'b1; // Negative flag
+        end
+        else begin
+            cc[0] = 1'b1; // Positive flag
+        end
     end
 end
 
+// mdr mux
+logic [15:0] next_mdr;
+
+always_comb begin
+    if (mio_en == 1'b0) begin
+        next_mdr = mem_rdata;
+    end
+    else begin
+        next_mdr = bus_data;
+    end
+end
 
 // LED outputs
 assign led_o = ir;
@@ -293,18 +311,6 @@ load_reg #(.DATA_WIDTH(16)) mar_reg (
 
     .data_q (mar)
 );
-
-// mdr mux
-logic [15:0] next_mdr;
-always_comb begin
-    if (mio_en == 1'b0) begin
-        next_mdr = bus_data;
-    end
-    else begin
-        next_mdr = mem_rdata;
-    end
-end
-
 
 load_reg #(.DATA_WIDTH(16)) mdr_reg (
     .clk(clk),

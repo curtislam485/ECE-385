@@ -44,6 +44,10 @@ module alu(
         else if (aluk_mux == 2'b10) begin
             alu_output = ~a;
         end
+        
+        // pass through
+        else if (aluk_mux == 2'b11) begin
+            alu_output = a;
+        end
     end
-    
 endmodule

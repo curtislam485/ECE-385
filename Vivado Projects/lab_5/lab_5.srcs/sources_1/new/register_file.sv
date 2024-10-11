@@ -21,6 +21,8 @@
 
 
 module register_file(
+    input logic             clk,
+    input logic             reset,
     input logic             dr_mux,
     input logic             ld_reg,
     input logic     [15:0]  ld_data,
@@ -32,40 +34,39 @@ module register_file(
     output logic    [15:0]  sr2_out
     );
     
-    logic [15:0] reg_file [8]; // register file (8 registers of 16 bits each)
-    
-    integer i;
-    initial begin
-        for (i = 0; i < 8; i = i + 1) begin
-            reg_file[i] = 16'h0000;
+    logic [15:0] reg_file [7:0]; // Register file (8 registers of 16 bits each)
+
+    // Synchronous reset and register update
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset) begin
+            // Initialize register file to 0 on reset
+            for (int i = 0; i < 8; i = i + 1) begin
+                reg_file[i] <= 16'h0000;
+            end
+        end else if (ld_reg) begin
+            // Load register based on dr_mux
+            if (dr_mux == 1'b0) begin
+                reg_file[ir[11:9]] <= ld_data;  // Write to register specified by ir[11:9]
+            end else begin
+                reg_file[3'b111] <= ld_data;    // Write to register R7
+            end
         end
     end
-    
-    
-    // fill this out next, will make life less cancer
-    always_comb
-    begin
-        // set sr1 out
+
+    // Combinational logic for outputs
+    always_comb begin
+        // Set default values for sr1_out and sr2_out
+        sr1_out = 16'b0;
+        sr2_out = 16'b0;
+
+        // Select sr1_out based on sr1_mux
         if (sr1_mux == 1'b0) begin
-            sr1_out = reg_file[ir[11:9]];
+            sr1_out = reg_file[ir[11:9]];  // Register indicated by ir[11:9]
+        end else begin
+            sr1_out = reg_file[ir[8:6]];   // Register indicated by ir[8:6]
         end
-        
-        else if (sr1_mux == 1'b1) begin
-            sr1_out = reg_file[ir[8:6]];
-        end
-        
-        // set sr2 out
-        sr2_out = reg_file[ir[2:0]];
-        
-        // load register condition
-        if (ld_reg == 1'b1) begin
-            if (dr_mux == 1'b0) begin
-                reg_file[ir[11:9]] = ld_data;
-            end
-            
-            else begin
-                reg_file[3'b111] = ld_data;
-            end
-        end
+
+        // Set sr2_out to the value from register indicated by ir[2:0]
+        sr2_out = reg_file[sr2];
     end
 endmodule

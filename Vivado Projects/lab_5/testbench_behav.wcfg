@@ -13,15 +13,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,828.666 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,890.267 ns"></ZoomEndTime>
-      <Cursor1Time time="1,860.000 ns"></Cursor1Time>
+      <ZoomStartTime time="1,641.700 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,697.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,660.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="140"></NameColumnWidth>
+      <NameColumnWidth column_width="203"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="23" />
+   <WVObjectSize size="30" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -66,17 +66,9 @@
       <obj_property name="ElementShortName">ben</obj_property>
       <obj_property name="ObjectShortName">ben</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/processor0/slc3/cpu/alu_a_input" type="array">
-      <obj_property name="ElementShortName">alu_a_input[15:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_a_input[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/processor0/slc3/cpu/alu_b_input" type="array">
-      <obj_property name="ElementShortName">alu_b_input[15:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_b_input[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/processor0/slc3/cpu/register_file_mod/sr1_out" type="array">
-      <obj_property name="ElementShortName">sr1_out[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sr1_out[15:0]</obj_property>
+   <wvobject fp_name="/testbench/processor0/slc3/io_bridge/hex_display_d" type="array">
+      <obj_property name="ElementShortName">hex_display_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_display_d[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/hex_seg_left" type="array">
       <obj_property name="ElementShortName">hex_seg_left[7:0]</obj_property>
@@ -93,12 +85,6 @@
    <wvobject fp_name="/testbench/hex_grid_right" type="array">
       <obj_property name="ElementShortName">hex_grid_right[3:0]</obj_property>
       <obj_property name="ObjectShortName">hex_grid_right[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/processor0/slc3/cpu/ir_reg/data_d" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">data_d[15:0]</obj_property>
-      <obj_property name="ObjectShortName">data_d[15:0]</obj_property>
-      <obj_property name="label">ir_reg_d</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/processor0/slc3/cpu/pc_reg/data_d" type="array">
       <obj_property name="DisplayName">label</obj_property>
@@ -118,8 +104,48 @@
       <obj_property name="ObjectShortName">data_d[15:0]</obj_property>
       <obj_property name="label">mdr_reg_d</obj_property>
    </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/next_mdr" type="array">
+      <obj_property name="ElementShortName">next_mdr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">next_mdr[15:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/testbench/processor0/slc3/cpu/register_file_mod/reg_file" type="array">
       <obj_property name="ElementShortName">reg_file[0:7][15:0]</obj_property>
       <obj_property name="ObjectShortName">reg_file[0:7][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/io_bridge/cpu_addr" type="array">
+      <obj_property name="ElementShortName">cpu_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/io_bridge/cpu_wdata" type="array">
+      <obj_property name="ElementShortName">cpu_wdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_wdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/mem_rdata" type="array">
+      <obj_property name="ElementShortName">mem_rdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_rdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/sr1_out" type="array">
+      <obj_property name="ElementShortName">sr1_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sr1_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/alu_output" type="array">
+      <obj_property name="ElementShortName">alu_output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_output[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/alu_mod/aluk_mux" type="array">
+      <obj_property name="ElementShortName">aluk_mux[1:0]</obj_property>
+      <obj_property name="ObjectShortName">aluk_mux[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/io_bridge/cpu_wr_ena" type="logic">
+      <obj_property name="ElementShortName">cpu_wr_ena</obj_property>
+      <obj_property name="ObjectShortName">cpu_wr_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/io_bridge/cpu_mem_ena" type="logic">
+      <obj_property name="ElementShortName">cpu_mem_ena</obj_property>
+      <obj_property name="ObjectShortName">cpu_mem_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/cpu_control/mio_en" type="logic">
+      <obj_property name="ElementShortName">mio_en</obj_property>
+      <obj_property name="ObjectShortName">mio_en</obj_property>
    </wvobject>
 </wave_config>

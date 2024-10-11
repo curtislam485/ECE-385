@@ -125,6 +125,14 @@ module control (
 		gate_marmux = 1'b0;
 		gate_alu = 1'b0;
 		
+		pc_mux = 2'b00;
+        dr_mux = 1'b0;
+        sr1_mux = 1'b0;
+        sr2_mux = 1'b0;
+        addr1_mux = 1'b0;
+        addr2_mux = 2'b00;
+        aluk_mux = 2'b00;
+		
 		mem_mem_ena = 1'b0;
 		mem_wr_ena = 1'b0;
 		
@@ -142,12 +150,12 @@ module control (
 					pc_mux = 2'b10;
 					ld_pc = 1'b1;
 				end
-			s_33_1, s_33_2, s_33_3:
+			s_33_1, s_33_2, s_33_3 :
 			    begin
 			        mem_mem_ena = 1'b1;
-					mio_en = 1'b1;
+			        mio_en = 1'b0;
 					ld_mdr = 1'b1;
-		        end
+		        end 
 			s_35 : 
 				begin 
 					gate_mdr = 1'b1;
@@ -206,16 +214,15 @@ module control (
 			        gate_marmux = 1'b1;
 			        ld_mar = 1'b1;
 			    end
-		    s_25_1, s_25_2: // MDR <- M[MAR] wait
+		    s_25_1, s_25_2 : // MDR <- M[MAR] wait
 		        begin
 		            mem_mem_ena = 1'b1;
 		        end
-		    s_25_3:   
+		    s_25_3 :
 		        begin
 		            mem_mem_ena = 1'b1;
-					mio_en = 1'b1;
 		            ld_mdr = 1'b1;
-		        end
+		        end		    
 		    s_27:     // DR <- MDR, set CC
 		        begin
 		            gate_mdr = 1'b1;
@@ -235,10 +242,10 @@ module control (
                 end
             s_23:   // MDR <- SR
                 begin
-                    sr1_mux = 1'b0;
-                    aluk_mux = 2'b11;
+                    sr1_mux = 1'b0; // [11:9]
+                    aluk_mux = 2'b11;   // pass through
                     gate_alu = 1'b1;
-                    mio_en = 1'b0;
+                    mio_en = 1'b1;  // load from bus
                     ld_mdr = 1'b1;
                 end
             s_16_1, s_16_2, s_16_3: // M[MAR] <- MDR
