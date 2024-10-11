@@ -218,10 +218,10 @@ always_comb begin
         addr_adder_input2 = {{5{ir[10]}}, ir[10:0]};
     end
     else if (addr2_mux == 2'b01) begin
-        addr_adder_input2 = {{7{ir[10]}}, ir[8:0]};
+        addr_adder_input2 = {{7{ir[8]}}, ir[8:0]};
     end
     else if (addr2_mux == 2'b10) begin
-        addr_adder_input2 = {{10{ir[10]}}, ir[5:0]};
+        addr_adder_input2 = {{10{ir[5]}}, ir[5:0]};
     end
     else begin
         addr_adder_input2 = 16'b0;
@@ -239,9 +239,12 @@ address_adder addr_adder (
 // set BEN
 always_comb
 begin
-    if (set_ben)
+    if (set_ben == 1'b1)
     begin
-        ben = (ir[11] & cc[2]) + (ir[10] & cc[1]) + (ir[9] + cc[0]);
+        ben = (ir[11] & cc[2]) + (ir[10] & cc[1]) + (ir[9] & cc[0]);
+    end
+    else begin
+        // don't change ben
     end
 end
 

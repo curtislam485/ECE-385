@@ -62,10 +62,20 @@ module testbench(); //even though the testbench doesn't create any hardware, it 
 		
 		sw_i = 16'h0003;
 		#10
+		
+		#20
+		reset = 1;
+		#10
+		reset = 0;
+		#10
+		
 		run_i = 1;
 		
 		#20
 		run_i = 0;
+		
+		#10
+//		sw_i = 16'h1111;
 		
 		#50
 		

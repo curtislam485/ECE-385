@@ -1,0 +1,8 @@
+Sample in Buffer,Sample in Window,TRIGGER,slc3/cpu/cpu_control/state[4:0],sw_i_IBUF[15:0],run_i_IBUF
+Radix - UNSIGNED,UNSIGNED,UNSIGNED,HEX,HEX,HEX
+0,0,0,"pause_ir1",0000,1
+1,1,1,"pause_ir1",0000,0
+2,0,0,"pause_ir1",0000,1
+3,1,1,"pause_ir1",0000,0
+4,0,0,"pause_ir1",0000,1
+5,1,1,"pause_ir1",0000,0

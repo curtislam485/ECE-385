@@ -23,7 +23,7 @@
 module register_file(
     input logic             dr_mux,
     input logic             ld_reg,
-    input logic             ld_data,
+    input logic     [15:0]  ld_data,
     input logic             sr1_mux,
     input logic     [2:0]   sr2,
     input logic     [15:0]  ir,

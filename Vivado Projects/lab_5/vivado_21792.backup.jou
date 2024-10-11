@@ -1,0 +1,372 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Oct  9 15:15:33 2024
+# Process ID: 21792
+# Current directory: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5388 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado Projects\lab_5\lab_5.xpr
+# Log file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/vivado.log
+# Journal file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5\vivado.jou
+# Running On: Curtis-Laptop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34014 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.xpr}
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sim_1/new/testbench2.sv} w ]
+add_files -fileset sim_1 {{C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sim_1/new/testbench2.sv}}
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+open_run synth_1 -name synth_1
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*state*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*state*" ]
+set_property mark_debug true [get_nets [list {slc3/cpu/cpu_control/state[3]} {slc3/cpu/cpu_control/state[4]}]]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*pc*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 2 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {slc3/cpu/cpu_control/state[3]} {slc3/cpu/cpu_control/state[4]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {slc3/cpu/pc[0]} {slc3/cpu/pc[1]} {slc3/cpu/pc[2]} {slc3/cpu/pc[3]} {slc3/cpu/pc[4]} {slc3/cpu/pc[5]} {slc3/cpu/pc[6]} {slc3/cpu/pc[7]} {slc3/cpu/pc[8]} {slc3/cpu/pc[9]} {slc3/cpu/pc[10]} {slc3/cpu/pc[11]} {slc3/cpu/pc[12]} {slc3/cpu/pc[13]} {slc3/cpu/pc[14]} {slc3/cpu/pc[15]} ]]
+set_property target_constrs_file {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab5_provided_fa24/pin_assignment/top.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+save_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+save_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+delete_debug_core [get_debug_cores {u_ila_0 }]
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 5 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {slc3/cpu/cpu_control/state[0]} {slc3/cpu/cpu_control/state[1]} {slc3/cpu/cpu_control/state[2]} {slc3/cpu/cpu_control/state[3]} {slc3/cpu/cpu_control/state[4]} ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*run*" ]
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 5 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {slc3/cpu/cpu_control/state[0]} {slc3/cpu/cpu_control/state[1]} {slc3/cpu/cpu_control/state[2]} {slc3/cpu/cpu_control/state[3]} {slc3/cpu/cpu_control/state[4]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list run_i_IBUF ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+close_design
+save_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+set_property PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+open_run synth_1 -name synth_1
+set_property PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {run_i_IBUF} }
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes run_i_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes run_i_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*ir*" ]
+close_design
+save_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+save_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+save_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+add_bp {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/new/register_file.sv} 42
+remove_bps -file {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.srcs/sources_1/new/register_file.sv} -line 42
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+save_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+set_property PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+close_sim
+launch_simulation
+open_wave_config {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/testbench_behav.wcfg}
+source testbench.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado Projects/lab_5/lab_5.runs/impl_1/processor_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s50_0] -filter {CELL_NAME=~"u_ila_0"}]]

@@ -19,7 +19,10 @@
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
     <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.DATA_DEPTH" value="2"/>
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="1"/>
+      <Properties Property="CONTROL.WINDOW_COUNT" value="500"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
   </ObjectList>
@@ -74,7 +77,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe1[0]"/>
+        <Option Id="MAP" value="probe2[0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -276,6 +279,42 @@
         <net name="slc3/cpu/pc[2]"/>
         <net name="slc3/cpu/pc[1]"/>
         <net name="slc3/cpu/pc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="sw_i_IBUF[15]"/>
+        <net name="sw_i_IBUF[14]"/>
+        <net name="sw_i_IBUF[13]"/>
+        <net name="sw_i_IBUF[12]"/>
+        <net name="sw_i_IBUF[11]"/>
+        <net name="sw_i_IBUF[10]"/>
+        <net name="sw_i_IBUF[9]"/>
+        <net name="sw_i_IBUF[8]"/>
+        <net name="sw_i_IBUF[7]"/>
+        <net name="sw_i_IBUF[6]"/>
+        <net name="sw_i_IBUF[5]"/>
+        <net name="sw_i_IBUF[4]"/>
+        <net name="sw_i_IBUF[3]"/>
+        <net name="sw_i_IBUF[2]"/>
+        <net name="sw_i_IBUF[1]"/>
+        <net name="sw_i_IBUF[0]"/>
       </nets>
     </probe>
   </probeset>

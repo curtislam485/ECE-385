@@ -52,8 +52,8 @@ module control (
     output logic        sr1_mux,
     output logic        sr2_mux,    // we might not need this at all since it is determined by ir
     output logic        addr1_mux,
-    output logic        addr2_mux,
-    output logic        aluk_mux,
+    output logic [1:0]  addr2_mux,
+    output logic [1:0]  aluk_mux,
 
 	
 	//You should add additional control signals according to the SLC-3 datapath design
@@ -142,16 +142,12 @@ module control (
 					pc_mux = 2'b10;
 					ld_pc = 1'b1;
 				end
-			s_33_1, s_33_2 :
+			s_33_1, s_33_2, s_33_3:
 			    begin
 			        mem_mem_ena = 1'b1;
-			    end
-			s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
-				begin
-					mem_mem_ena = 1'b1;
 					mio_en = 1'b1;
 					ld_mdr = 1'b1;
-				end
+		        end
 			s_35 : 
 				begin 
 					gate_mdr = 1'b1;
@@ -210,11 +206,11 @@ module control (
 			        gate_marmux = 1'b1;
 			        ld_mar = 1'b1;
 			    end
-		    s_25_1, s_25_2:   // MDR <- M[MAR] wait
+		    s_25_1, s_25_2: // MDR <- M[MAR] wait
 		        begin
 		            mem_mem_ena = 1'b1;
 		        end
-		    s_25_3:   // MDR <- M[MAR]
+		    s_25_3:   
 		        begin
 		            mem_mem_ena = 1'b1;
 					mio_en = 1'b1;
@@ -245,14 +241,9 @@ module control (
                     mio_en = 1'b0;
                     ld_mdr = 1'b1;
                 end
-            s_16_1, s_16_2: // M[MAR] <- MDR
+            s_16_1, s_16_2, s_16_3: // M[MAR] <- MDR
                 begin
                     mem_mem_ena = 1'b1;
-		            mem_wr_ena = 1'b1;
-                end
-            s_16_3: // M[MAR] <- MDR
-                begin
-		            mem_mem_ena = 1'b1;
 		            mem_wr_ena = 1'b1;
                 end
                 
