@@ -13,15 +13,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,641.700 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,697.001 ns"></ZoomEndTime>
-      <Cursor1Time time="1,660.000 ns"></Cursor1Time>
+      <ZoomStartTime time="3,090.700 ns"></ZoomStartTime>
+      <ZoomEndTime time="3,146.501 ns"></ZoomEndTime>
+      <Cursor1Time time="3,100.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="203"></NameColumnWidth>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="30" />
+   <WVObjectSize size="32" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -109,8 +109,8 @@
       <obj_property name="ObjectShortName">next_mdr[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/processor0/slc3/cpu/register_file_mod/reg_file" type="array">
-      <obj_property name="ElementShortName">reg_file[0:7][15:0]</obj_property>
-      <obj_property name="ObjectShortName">reg_file[0:7][15:0]</obj_property>
+      <obj_property name="ElementShortName">reg_file[7:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_file[7:0][15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/processor0/slc3/io_bridge/cpu_addr" type="array">
       <obj_property name="ElementShortName">cpu_addr[15:0]</obj_property>
@@ -147,5 +147,13 @@
    <wvobject fp_name="/testbench/processor0/slc3/cpu/cpu_control/mio_en" type="logic">
       <obj_property name="ElementShortName">mio_en</obj_property>
       <obj_property name="ObjectShortName">mio_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/cc" type="array">
+      <obj_property name="ElementShortName">cc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cc[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/processor0/slc3/cpu/ben" type="logic">
+      <obj_property name="ElementShortName">ben</obj_property>
+      <obj_property name="ObjectShortName">ben</obj_property>
    </wvobject>
 </wave_config>

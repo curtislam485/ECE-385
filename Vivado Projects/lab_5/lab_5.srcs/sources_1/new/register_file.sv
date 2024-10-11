@@ -35,15 +35,17 @@ module register_file(
     );
     
     logic [15:0] reg_file [7:0]; // Register file (8 registers of 16 bits each)
-
-    // Synchronous reset and register update
+    
+    logic [15:0] ld_data_next;
+    
     always_ff @(posedge clk or posedge reset) begin
         if (reset) begin
             // Initialize register file to 0 on reset
             for (int i = 0; i < 8; i = i + 1) begin
                 reg_file[i] <= 16'h0000;
             end
-        end else if (ld_reg) begin
+        end 
+        else if (ld_reg) begin
             // Load register based on dr_mux
             if (dr_mux == 1'b0) begin
                 reg_file[ir[11:9]] <= ld_data;  // Write to register specified by ir[11:9]

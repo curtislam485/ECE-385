@@ -139,6 +139,10 @@ begin
     begin
         pc_next = pc + 1'b1;
     end
+    else
+    begin
+        pc_next = pc + 1'b1;
+    end
 end
 
 always_comb
@@ -203,7 +207,7 @@ alu alu_mod (
 
 // addr1_mux
 always_comb begin
-    addr_adder_input1 = 16'bz;
+    // addr_adder_input1 = 16'bz;
     if (addr1_mux == 1'b0) begin
         addr_adder_input1 = sr1_out;
     end
@@ -215,7 +219,7 @@ end
 
 // addr2_mux
 always_comb begin
-    addr_adder_input2 = 16'bz;
+//    addr_adder_input2 = 16'bz;
     if (addr2_mux == 2'b00) begin
         addr_adder_input2 = {{5{ir[10]}}, ir[10:0]};
     end
@@ -243,15 +247,17 @@ always_comb
 begin
     if (set_ben == 1'b1)
     begin
-        ben = (ir[11] & cc[2]) + (ir[10] & cc[1]) + (ir[9] & cc[0]);
+        ben = (ir[11] & cc[2]) | (ir[10] & cc[1]) | (ir[9] & cc[0]);
     end
     else begin
         // don't change ben
+        ben = ben;
     end
 end
 
 // set cc
 always_comb begin
+    cc = cc;
     if (ld_cc) begin
         cc = 3'b000; // Default all zeros
         if (bus_data == 16'b0) begin
