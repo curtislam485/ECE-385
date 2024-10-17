@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct 17 12:46:13 2024
+# Process ID: 35780
+# Current directory: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8580 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab_6\lab_6.xpr
+# Log file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/vivado.log
+# Journal file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6\vivado.jou
+# Running On: Curtis-Laptop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34014 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+startgroup
+set_property CONFIG.C_GPIO_WIDTH {1} [get_bd_cells axi_gpio_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run mb_block_axi_gpio_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+startgroup
+set_property CONFIG.C_GPIO_WIDTH {16} [get_bd_cells axi_gpio_0]
+endgroup
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/mb_intro_top.xsa
+close_hw_manager
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property location {2 399 -459} [get_bd_cells axi_gpio_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+set_property location {2 538 -610} [get_bd_cells axi_gpio_2]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {16} \
+] [get_bd_cells axi_gpio_2]
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS {0} \
+  CONFIG.C_GPIO_WIDTH {4} \
+] [get_bd_cells axi_gpio_1]
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS {0} \
+] [get_bd_cells axi_gpio_2]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_1/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_2/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_2/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_2/S_AXI]
+endgroup
+startgroup
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_bd_design {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+open_bd_design {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+open_bd_design {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+open_bd_design {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+open_bd_design {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+open_bd_design {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+validate_bd_design -force
+make_wrapper -files [get_files C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6/mb_intro_top.xsa
