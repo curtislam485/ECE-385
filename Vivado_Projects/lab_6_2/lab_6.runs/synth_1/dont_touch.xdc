@@ -3,8 +3,6 @@
 
 # XDC: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc
 
-# XDC: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/lab6_1_provided/pin_assignment/mb_intro_top.xdc
-
 # Block Designs: bd/mb_block/mb_block.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block || ORIG_REF_NAME==mb_block} -quiet] -quiet
 

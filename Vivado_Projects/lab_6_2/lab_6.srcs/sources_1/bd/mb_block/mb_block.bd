@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x32B97EE8B0F30064",
+      "boundary_crc": "0x32B97EE8A829CDD0",
       "device": "xc7s50csga324-1",
       "gen_directory": "../../../../lab_6.gen/sources_1/bd/mb_block",
       "name": "mb_block",
@@ -43,11 +43,6 @@
       "xlconcat_0": ""
     },
     "interface_ports": {
-      "gpio_rtl_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
-      },
       "uart_rtl_0": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:uart:1.0",
@@ -62,16 +57,6 @@
             "direction": "O"
           }
         }
-      },
-      "gpio_rtl_1": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
-      },
-      "gpio_rtl_2": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
       },
       "gpio_usb_int": {
         "mode": "Master",

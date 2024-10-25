@@ -51,7 +51,26 @@ module  ball
 
         //modify to control ball motion with the keycode
         if (keycode == 8'h1A)
+        begin
+            Ball_X_Motion_next = 10'd0;
             Ball_Y_Motion_next = -10'd1;
+        end
+        else if (keycode == 8'h16)
+        begin
+            Ball_X_Motion_next = 10'd0;
+            Ball_Y_Motion_next = 10'd1;
+        end
+        else if (keycode == 8'h04)
+        begin
+            Ball_X_Motion_next = -10'd1;
+            Ball_Y_Motion_next = 10'd0;
+        end
+        else if (keycode == 8'h07)
+        begin
+            Ball_X_Motion_next = 10'd1;
+            Ball_Y_Motion_next = 10'd0;
+        end
+        
 
 
         if ( (BallY + BallS) >= Ball_Y_Max )  // Ball is at the bottom edge, BOUNCE!
@@ -63,6 +82,14 @@ module  ball
             Ball_Y_Motion_next = Ball_Y_Step;
         end  
        //fill in the rest of the motion equations here to bounce left and right
+       if ( (BallX + BallS) >= Ball_X_Max )  // Ball is at the bottom edge, BOUNCE!
+        begin
+            Ball_X_Motion_next = (~ (Ball_X_Step) + 1'b1);  // set to -1 via 2's complement.
+        end
+        else if ( (BallX - BallS) <= Ball_X_Min )  // Ball is at the top edge, BOUNCE!
+        begin
+            Ball_X_Motion_next = Ball_X_Step;
+        end  
 
     end
 
