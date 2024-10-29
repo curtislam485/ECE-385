@@ -1,0 +1,18 @@
+srcscan starts
+=============== Using precompiled files for SV std libs ===========
+INFO: The Verilog library search path for library "std" is now "C:/Xilinx/Vivado/2022.2/data/precomp_hsv/sv/std" (VERI-1509)
+INFO: The Verilog library search path for library "uvm" is now "C:/Xilinx/Vivado/2022.2/data/precomp_hsv/sv/uvm" (VERI-1509)
+INFO: analyzing module hdmi_text_controller_v1_0_AXI (VERI-9002)
+INFO: analyzing module hdmi_text_controller_v1_0 (VERI-9002)
+INFO: analyzing module hdmi_text_controller_tb (VERI-9002)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist13659883175228573217.tmp(130): WARNING: cannot omit port direction for function/task declarations (VERI-9024)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist13659883175228573217.tmp(240): WARNING: syntax error near ')' (VERI-1137)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist13659883175228573217.tmp(245): WARNING: syntax error near 'end' (VERI-1137)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist13659883175228573217.tmp(245): ERROR: SystemVerilog 2012 keyword 'end' used in incorrect context (VERI-2344)
+INFO: analyzing module hdmi_text_controller_tb (VERI-9002)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist12171939250524209597.tmp(130): WARNING: cannot omit port direction for function/task declarations (VERI-9024)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist12171939250524209597.tmp(240): WARNING: syntax error near ')' (VERI-1137)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist12171939250524209597.tmp(245): WARNING: syntax error near 'end' (VERI-1137)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist12171939250524209597.tmp(245): ERROR: SystemVerilog 2012 keyword 'end' used in incorrect context (VERI-2344)
+C:/Users/curti/AppData/Local/Temp/VivadoEditorAssist12171939250524209597.tmp(15): WARNING: overwriting previous definition of module 'hdmi_text_controller_tb' (VERI-1206)
+srcscan exits with return value 0
