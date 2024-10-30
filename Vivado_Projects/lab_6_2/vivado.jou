@@ -12,3 +12,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/lab_6.xpr
+update_compile_order -fileset sources_1
