@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hdmi_text_controller_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

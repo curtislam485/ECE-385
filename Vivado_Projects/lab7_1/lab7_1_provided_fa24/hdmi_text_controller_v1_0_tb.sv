@@ -242,17 +242,18 @@ module hdmi_text_controller_tb();
                 // deassert ARVALID and ARREADY
                 read_addr_valid <= 1'b0;
                 read_addr_ready <= 1'b0;
-            end
             
-            wait(read_data_valid);  // wait for slave to assert RVALID
-            data <= read_data; // load in Read Data channel into output
-            
-            @(posedge aclk);
-            if (read_data_ready && read_data_valid)   // if RREADY and RVALID are asserted, they can be deasserted
-            begin
-                // deassert RREADY and RVALID
-                read_data_ready <= 1'b0;
-                read_data_valid <= 1'b0;
+                wait(read_data_valid);  // wait for slave to assert RVALID
+                data <= read_data; // load in Read Data channel into output
+                
+                @(posedge aclk);
+                if (read_data_ready && read_data_valid)   // if RREADY and RVALID are asserted, they can be deasserted
+                begin
+                    // deassert RREADY and RVALID
+                    read_data_ready <= 1'b0;
+                    read_data_valid <= 1'b0;
+                end
+                
             end
         end
     endtask;

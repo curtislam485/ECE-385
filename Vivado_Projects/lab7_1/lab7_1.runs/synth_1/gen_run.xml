@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1730239411">
   <File Type="PA-TCL" Name="mb_usb_hdmi_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="mb_usb_hdmi_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mb_usb_hdmi_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="mb_usb_hdmi_top.vds"/>
   <File Type="RDS-UTIL" Name="mb_usb_hdmi_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="mb_usb_hdmi_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="mb_usb_hdmi_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="mb_usb_hdmi_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="mb_usb_hdmi_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
@@ -97,22 +94,20 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_1_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_axi_intc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_axi_intc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_mdm_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_hdmi_text_controller_0_0"/>
 </GenRun>

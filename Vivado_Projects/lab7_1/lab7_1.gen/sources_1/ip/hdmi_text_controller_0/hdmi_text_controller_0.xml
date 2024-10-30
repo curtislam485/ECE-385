@@ -217,7 +217,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI.ADDR_WIDTH">4</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI.ADDR_WIDTH">16</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -820,11 +820,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Oct 29 23:14:29 UTC 2024</spirit:value>
+            <spirit:value>Wed Oct 30 20:44:56 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:50f02cb7</spirit:value>
+            <spirit:value>9:9bfdc5b1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -915,7 +915,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_ADDR_WIDTH&apos;)) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1067,7 +1067,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_ADDR_WIDTH&apos;)) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1186,7 +1186,7 @@
         <spirit:name>C_AXI_ADDR_WIDTH</spirit:name>
         <spirit:displayName>C AXI ADDR WIDTH</spirit:displayName>
         <spirit:description>Width of S_AXI address bus</spirit:description>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">16</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -1238,7 +1238,7 @@
       <spirit:name>C_AXI_ADDR_WIDTH</spirit:name>
       <spirit:displayName>C AXI ADDR WIDTH</spirit:displayName>
       <spirit:description>Width of S_AXI address bus</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">16</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -1279,7 +1279,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>hdmi_text_controller_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.ADDR_WIDTH" xilinx:valueSource="auto"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.ARUSER_WIDTH" xilinx:valueSource="constant"/>
@@ -1299,16 +1299,17 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.READ_WRITE_MODE" xilinx:valueSource="constant"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.RUSER_WIDTH" xilinx:valueSource="constant"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.WUSER_WIDTH" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_AXI_ADDR_WIDTH" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="bf247e1e"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a151191a"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="60746b78"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="25069307"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="b1ef242e"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="074852b0"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="b5eb228e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fefde6c4"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="3e16aceb"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="30bf43bf"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="246731e6"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

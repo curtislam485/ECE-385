@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 -- IP VLNV: xilinx.com:user:hdmi_text_controller:1.0
--- IP Revision: 2
+-- IP Revision: 4
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -59,7 +59,7 @@ COMPONENT hdmi_text_controller_0
     hdmi_tx_p : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     axi_aclk : IN STD_LOGIC;
     axi_aresetn : IN STD_LOGIC;
-    axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    axi_awaddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     axi_awvalid : IN STD_LOGIC;
     axi_awready : OUT STD_LOGIC;
@@ -70,7 +70,7 @@ COMPONENT hdmi_text_controller_0
     axi_bresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     axi_bvalid : OUT STD_LOGIC;
     axi_bready : IN STD_LOGIC;
-    axi_araddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    axi_araddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     axi_arprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     axi_arvalid : IN STD_LOGIC;
     axi_arready : OUT STD_LOGIC;

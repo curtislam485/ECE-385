@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:hdmi_text_controller:1.0
-// IP Revision: 2
+// IP Revision: 4
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -61,7 +61,7 @@ hdmi_text_controller_0 your_instance_name (
   .hdmi_tx_p(hdmi_tx_p),      // output wire [2 : 0] hdmi_tx_p
   .axi_aclk(axi_aclk),        // input wire axi_aclk
   .axi_aresetn(axi_aresetn),  // input wire axi_aresetn
-  .axi_awaddr(axi_awaddr),    // input wire [3 : 0] axi_awaddr
+  .axi_awaddr(axi_awaddr),    // input wire [15 : 0] axi_awaddr
   .axi_awprot(axi_awprot),    // input wire [2 : 0] axi_awprot
   .axi_awvalid(axi_awvalid),  // input wire axi_awvalid
   .axi_awready(axi_awready),  // output wire axi_awready
@@ -72,7 +72,7 @@ hdmi_text_controller_0 your_instance_name (
   .axi_bresp(axi_bresp),      // output wire [1 : 0] axi_bresp
   .axi_bvalid(axi_bvalid),    // output wire axi_bvalid
   .axi_bready(axi_bready),    // input wire axi_bready
-  .axi_araddr(axi_araddr),    // input wire [3 : 0] axi_araddr
+  .axi_araddr(axi_araddr),    // input wire [15 : 0] axi_araddr
   .axi_arprot(axi_arprot),    // input wire [2 : 0] axi_arprot
   .axi_arvalid(axi_arvalid),  // input wire axi_arvalid
   .axi_arready(axi_arready),  // output wire axi_arready
