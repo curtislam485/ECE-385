@@ -13,19 +13,11 @@ module hdmi_text_controller_v1_0 #
     // Modify parameters as necessary for access of full VRAM range
 
     parameter integer C_AXI_DATA_WIDTH	= 32,
-    parameter integer C_AXI_ADDR_WIDTH	= 4 
+    parameter integer C_AXI_ADDR_WIDTH	= 16
 )
 (
     // Users to add ports here
     
-    input logic Clk,
-    input logic reset_rtl_0,  
-    
-    output logic hdmi_tmds_clk_n,
-    output logic hdmi_tmds_clk_p,
-    output logic [2:0] hdmi_tmds_data_n,
-    output logic [2:0] hdmi_tmds_data_p,
-
     // User ports ends
     // Do not modify the ports beyond this line
 
@@ -61,16 +53,20 @@ logic [9:0] drawX, drawY;
 
 logic hsync, vsync, vde;
 logic [3:0] red, green, blue;
-logic reset_ah;
 
-assign reset_ah = reset_rtl_0;
+logic [10:0] font_addr;
+logic [7:0]  font_data;
 
+logic [C_AXI_DATA_WIDTH-1:0] slv_regs[601];
+
+//logic reset_ah;
 
 // Instantiation of Axi Bus Interface AXI
 hdmi_text_controller_v1_0_AXI # ( 
     .C_S_AXI_DATA_WIDTH(C_AXI_DATA_WIDTH),
     .C_S_AXI_ADDR_WIDTH(C_AXI_ADDR_WIDTH)
 ) hdmi_text_controller_v1_0_AXI_inst (
+    .slv_regs(slv_regs),
     .S_AXI_ACLK(axi_aclk),
     .S_AXI_ARESETN(axi_aresetn),
     .S_AXI_AWADDR(axi_awaddr),
@@ -94,7 +90,6 @@ hdmi_text_controller_v1_0_AXI # (
     .S_AXI_RREADY(axi_rready)
 );
 
-
 //Instiante clocking wizard, VGA sync generator modules, and VGA-HDMI IP here. For a hint, refer to the provided
 //top-level from the previous lab. You should get the IP to generate a valid HDMI signal (e.g. blue screen or gradient)
 //prior to working on the text drawing.
@@ -103,15 +98,21 @@ hdmi_text_controller_v1_0_AXI # (
 clk_wiz_0 clk_wiz (
     .clk_out1(clk_25MHz),
     .clk_out2(clk_125MHz),
-    .reset(reset_ah),
+    .reset(~axi_aresetn),
     .locked(locked),
-    .clk_in1(Clk)
+    .clk_in1(axi_aclk)
+);
+
+mini_mapper le_sperm (
+    .red    (red)
+    .green  (green)
+    .blue   (blue)
 );
 
 //VGA Sync signal generator
 vga_controller vga (
     .pixel_clk(clk_25MHz),
-    .reset(reset_ah),
+    .reset(~axi_aresetn),
     .hs(hsync),
     .vs(vsync),
     .active_nblank(vde),
@@ -126,7 +127,7 @@ hdmi_tx_0 vga_to_hdmi (
     .pix_clkx5(clk_125MHz),
     .pix_clk_locked(locked),
     //Reset is active LOW
-    .rst(reset_ah),
+    .rst(~axi_aresetn),
     //Color and Sync Signals
     .red(red),
     .green(green),
@@ -147,7 +148,6 @@ hdmi_tx_0 vga_to_hdmi (
     .TMDS_DATA_P(hdmi_tmds_data_p),         
     .TMDS_DATA_N(hdmi_tmds_data_n)          
 );
-
 // User logic ends
 
 endmodule

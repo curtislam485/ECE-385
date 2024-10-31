@@ -1,0 +1,167 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct 31 15:04:38 2024
+# Process ID: 9016
+# Current directory: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7788 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab7_1\lab7_1.xpr
+# Log file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/vivado.log
+# Journal file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1\vivado.jou
+# Running On: Curtis-Laptop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34014 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.xpr
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/component.xml
+update_compile_order -fileset sources_1
+launch_simulation
+set_property library xil_defaultlib [get_files]
+set_property -name {xsim.simulate.runtime} -value {all} -objects [get_filesets sim_1]
+set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
+launch_simulation
+set_property library xil_defaultlib [get_files]
+launch_simulation
+export_ip_user_files -of_objects  [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv] -no_script -reset -force -quiet
+remove_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv
+add_files -norecurse -scan_for_includes C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_text_controller_v1_0.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/VGA_controller.sv
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {175.402} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} \
+  CONFIG.CLKOUT2_JITTER {125.247} \
+  CONFIG.CLKOUT2_PHASE_ERROR {98.575} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {125} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {8} \
+  CONFIG.NUM_OUT_CLKS {2} \
+] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+generate_target all [get_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 10
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci] -directory c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project lab7_1
+current_project hdmi_text_controller_v1_0_project
+create_ip -name hdmi_tx -vendor realdigital.org -library realdigital -version 1.0 -module_name hdmi_tx_0 -dir c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src
+set_property -dict [list \
+  CONFIG.C_BLUE_WIDTH {4} \
+  CONFIG.C_GREEN_WIDTH {4} \
+  CONFIG.C_RED_WIDTH {4} \
+  CONFIG.MODE {HDMI} \
+] [get_ips hdmi_tx_0]
+generate_target {instantiation_template} [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+generate_target all [get_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+catch { config_ip_cache -export [get_ips -all hdmi_tx_0] }
+export_ip_user_files -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+launch_runs hdmi_tx_0_synth_1 -jobs 10
+wait_on_run hdmi_tx_0_synth_1
+export_simulation -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci] -directory c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_simulation
+source hdmi_text_controller_tb.tcl
+close_sim
+launch_simulation
+set_property library xil_defaultlib [get_files]
+launch_simulation
+launch_simulation
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_text_controller_v1_0.sv
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv] -no_script -reset -force -quiet
+remove_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {175.402} \
+  CONFIG.CLKOUT1_PHASE_ERROR {98.575} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} \
+  CONFIG.CLKOUT2_JITTER {125.247} \
+  CONFIG.CLKOUT2_PHASE_ERROR {98.575} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {125} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {8} \
+  CONFIG.NUM_OUT_CLKS {2} \
+] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_2/clk_wiz_0.xci]
+generate_target all [get_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_2/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_2/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_2/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 10
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_2/clk_wiz_0.xci] -directory c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse -scan_for_includes C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/VGA_controller.sv
+update_compile_order -fileset sources_1
+create_ip -name hdmi_tx -vendor realdigital.org -library realdigital -version 1.0 -module_name hdmi_tx_0 -dir c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src
+set_property -dict [list \
+  CONFIG.C_BLUE_WIDTH {4} \
+  CONFIG.C_GREEN_WIDTH {4} \
+  CONFIG.C_RED_WIDTH {4} \
+  CONFIG.MODE {HDMI} \
+] [get_ips hdmi_tx_0]
+generate_target {instantiation_template} [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_2/hdmi_tx_0.xci]
+generate_target all [get_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_2/hdmi_tx_0.xci]
+catch { config_ip_cache -export [get_ips -all hdmi_tx_0] }
+export_ip_user_files -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_2/hdmi_tx_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_2/hdmi_tx_0.xci]
+launch_runs hdmi_tx_0_synth_1 -jobs 10
+wait_on_run hdmi_tx_0_synth_1
+export_simulation -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_2/hdmi_tx_0.xci] -directory c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -name {xsim.simulate.runtime} -value {all} -objects [get_filesets sim_1]
+set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
+set_property library xil_defaultlib [get_files]
+launch_simulation
+launch_simulation
+source hdmi_text_controller_tb.tcl
+close_sim
+launch_simulation
+source hdmi_text_controller_tb.tcl
+close_sim
+launch_simulation
+source hdmi_text_controller_tb.tcl
+close_sim
+launch_simulation
+source hdmi_text_controller_tb.tcl
+close_sim
+launch_simulation
+source hdmi_text_controller_tb.tcl
+current_project lab7_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project hdmi_text_controller_v1_0_project
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {hdmi_text_controller_0 design_1_hdmi_text_controller_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {hdmi_text_controller_0 design_1_hdmi_text_controller_0_0}] -no_script -sync -force -quiet
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/component.xml
