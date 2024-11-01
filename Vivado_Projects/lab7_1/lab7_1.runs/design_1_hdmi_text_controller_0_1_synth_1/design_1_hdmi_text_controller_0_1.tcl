@@ -70,8 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_hdmi_text_controller_0_1_synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
+set_param chipscope.maxJobs 5
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -98,6 +98,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_ip -quiet C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.srcs/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0_late.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

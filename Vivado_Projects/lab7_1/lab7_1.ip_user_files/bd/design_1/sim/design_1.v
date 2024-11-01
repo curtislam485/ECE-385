@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Fri Nov  1 01:17:50 2024
+//Date        : Fri Nov  1 05:17:54 2024
 //Host        : Curtis-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -185,12 +185,12 @@ module design_1
         .reset(mdm_1_debug_sys_rst));
   design_1_hdmi_text_controller_0_1 hdmi_text_controller_0
        (.axi_aclk(microblaze_0_Clk),
-        .axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[15:0]),
+        .axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[11:0]),
         .axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
         .axi_arprot(microblaze_0_axi_periph_M02_AXI_ARPROT),
         .axi_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
         .axi_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
-        .axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[15:0]),
+        .axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[11:0]),
         .axi_awprot(microblaze_0_axi_periph_M02_AXI_AWPROT),
         .axi_awready(microblaze_0_axi_periph_M02_AXI_AWREADY),
         .axi_awvalid(microblaze_0_axi_periph_M02_AXI_AWVALID),

@@ -110,9 +110,9 @@
 -makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/design_1/lab7_1/lab7_1_provided_fa24/VGA_controller.sv" \
   "../../../bd/design_1/lab7_1/lab7_1_provided_fa24/font_rom.sv" \
-  "../../../bd/design_1/ipshared/4293/src/hdmi_text_controller_v1_0_AXI.sv" \
+  "../../../bd/design_1/ipshared/34c3/src/hdmi_text_controller_v1_0_AXI.sv" \
   "../../../bd/design_1/lab7_1/lab7_1_provided_fa24/mini_mapper.sv" \
-  "../../../bd/design_1/ipshared/4293/src/hdmi_text_controller_v1_0.sv" \
+  "../../../bd/design_1/ipshared/34c3/src/hdmi_text_controller_v1_0.sv" \
   "../../../bd/design_1/ip/design_1_hdmi_text_controller_0_1/sim/design_1_hdmi_text_controller_0_1.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

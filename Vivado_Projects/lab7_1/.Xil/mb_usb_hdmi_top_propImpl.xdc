@@ -1,6 +1,6 @@
 set_property SRC_FILE_INFO {cfile:c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc rfile:../lab7_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc id:1 order:EARLY scoped_inst:mb_block_i/microblaze_0/U0} [current_design]
 set_property SRC_FILE_INFO {cfile:c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0_1/design_1_clk_wiz_1_0.xdc rfile:../lab7_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0_1/design_1_clk_wiz_1_0.xdc id:2 order:EARLY scoped_inst:mb_block_i/clk_wiz_1/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0.xdc rfile:../lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0.xdc id:3 order:EARLY scoped_inst:mb_block_i/hdmi_text_controller_0/inst/clk_wiz/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc rfile:../lab7_1_provided_fa24/mb_usb_hdmi_top.xdc id:3} [current_design]
 set_property SRC_FILE_INFO {cfile:c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0_1/design_1_mdm_1_0.xdc rfile:../lab7_1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0_1/design_1_mdm_1_0.xdc id:4 order:LATE scoped_inst:mb_block_i/mdm_1/U0} [current_design]
 current_instance mb_block_i/microblaze_0/U0
 set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
@@ -174,10 +174,22 @@ current_instance mb_block_i/clk_wiz_1/inst
 set_property src_info {type:SCOPED_XDC file:2 line:57 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.100
 current_instance
-current_instance mb_block_i/hdmi_text_controller_0/inst/clk_wiz/inst
-set_property src_info {type:SCOPED_XDC file:3 line:57 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.100
-current_instance
+set_property src_info {type:XDC file:3 line:79 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V17   IOSTANDARD TMDS_33 } [get_ports {hdmi_tmds_clk_n}]
+set_property src_info {type:XDC file:3 line:80 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U16   IOSTANDARD TMDS_33 } [get_ports {hdmi_tmds_clk_p}]
+set_property src_info {type:XDC file:3 line:82 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U18   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_n[0]}]
+set_property src_info {type:XDC file:3 line:83 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R17   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_n[1]}]
+set_property src_info {type:XDC file:3 line:84 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T14   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_n[2]}]
+set_property src_info {type:XDC file:3 line:86 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U17   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_p[0]}]
+set_property src_info {type:XDC file:3 line:87 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R16   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_p[1]}]
+set_property src_info {type:XDC file:3 line:88 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R14   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_p[2]}]
 current_instance mb_block_i/mdm_1/U0
 set_property src_info {type:SCOPED_XDC file:4 line:58 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -quiet -scoped -user mdm -tags 12436 -type CDC -id CDC-10 -description "Debug protocol ensures stable signals" -from [get_pins -quiet MDM_Core_I1/JTAG_CONTROL_I/Debug_SYS_Rst_i_reg/C]
