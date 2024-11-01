@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 5
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -85,6 +83,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
+  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0
   c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0
   c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_tx_1.0
 } [current_project]
@@ -118,6 +117,8 @@ set_property used_in_implementation false [get_files -all c:/Users/curti/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/data/mb_bootloop_le.elf]
 

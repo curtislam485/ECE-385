@@ -171,3 +171,1767 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Tcl Message: open_project C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.xpr 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_tx_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'. 
+// [GUI Memory]: 127 MB (+3992kb) [00:00:17]
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1212.148 ; gain = 399.754 
+// Project name: lab7_1; location: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1; part: xc7s50csga324-1
+dismissDialog("Open Project"); // bq
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // f
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UserIP ;  ;  ;  ; ", 2); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "HDMI/DVI Encoder ;  ; Production ; Included ; realdigital.org:realdigital:hdmi_tx:1.0", 3, "HDMI/DVI Encoder", 0, false); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "HDMI/DVI Encoder ;  ; Production ; Included ; realdigital.org:realdigital:hdmi_tx:1.0", 3, "HDMI/DVI Encoder", 0, false, false, false, false, true, false); // z - Popup Trigger
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, true); // z - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, true, false, false, false, false, true); // z - Double Click - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "hdmi_text_controller_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:hdmi_text_controller:1.0", 2, "hdmi_text_controller_v1.0", 0, false); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "hdmi_text_controller_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:hdmi_text_controller:1.0", 2, "hdmi_text_controller_v1.0", 0, false, false, false, false, true, false); // z - Popup Trigger
+// [GUI Memory]: 138 MB (+4295kb) [00:00:33]
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ao
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project' 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,106 MB (+3886kb) [00:00:37]
+// WARNING: HEventQueue.dispatchEvent() is taking  1310 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,121 MB. GUI used memory: 132 MB. Current time: 10/31/24, 4:47:45 PM CDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_tx_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Edit in IP Packager"); // bq
+// [GUI Memory]: 146 MB (+1459kb) [00:00:41]
+// [GUI Memory]: 154 MB (+691kb) [00:00:42]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 169 MB (+7460kb) [00:01:17]
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // U
+// Tcl Message: export_ip_user_files -of_objects  [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv] -no_script -reset -force -quiet 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // s
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_text_controller_v1_0.sv");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_SCAN_AND_ADD_RTL_INCLUDE_FILES_INTO, "Scan and add RTL include files into project", false); // f: FALSE
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_SCAN_AND_ADD_RTL_INCLUDE_FILES_INTO, "Scan and add RTL include files into project", true); // f: TRUE
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_SOURCES_INTO, "Copy sources into IP Directory", false); // f: FALSE
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 8 seconds
+// [Engine Memory]: 1,168 MB (+6815kb) [00:01:50]
+dismissDialog("Add Sources"); // c
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -scan_for_includes C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_text_controller_v1_0.sv 
+dismissDialog("Add Sources"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 1,206 MB. GUI used memory: 97 MB. Current time: 10/31/24, 4:49:00 PM CDT
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ao
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top hdmi_text_controller_v1_0 [current_fileset] 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // f
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock wiz"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true); // z - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true, false, false, false, false, true); // z - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// [Engine Memory]: 1,253 MB (+27342kb) [00:02:05]
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Customize IP"); // i
+// HMemoryUtils.trashcanNow. Engine heap size: 1,312 MB. GUI used memory: 109 MB. Current time: 10/31/24, 4:49:15 PM CDT
+setText("PRIM IN FREQ", "25", true); // v
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [Engine Memory]: 1,317 MB (+1841kb) [00:02:10]
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Customize IP"); // m
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true); // z - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true, false, false, false, false, true); // z - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Customize IP"); // i
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cH
+setText("CLKOUT1 REQUESTED OUT FREQ", "25", true); // v
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", true); // f: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "125", true); // v
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cH
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // m
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.CLKOUT1_JITTER {175.402} \   CONFIG.CLKOUT1_PHASE_ERROR {98.575} \   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} \   CONFIG.CLKOUT2_JITTER {125.247} \   CONFIG.CLKOUT2_PHASE_ERROR {98.575} \   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {125} \   CONFIG.CLKOUT2_USED {true} \   CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} \   CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} \   CONFIG.MMCM_CLKOUT1_DIVIDE {8} \   CONFIG.NUM_OUT_CLKS {2} \ ] [get_ips clk_wiz_0] 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_3/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... 
+dismissDialog("Customize IP"); // bq
+// [GUI Memory]: 180 MB (+2203kb) [00:02:29]
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_3/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all clk_wiz_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_3/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_3/clk_wiz_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs clk_wiz_0_synth_1 -jobs 10 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_0 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Thu Oct 31 16:49:39 2024] Launched clk_wiz_0_synth_1... Run output will be captured here: c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/clk_wiz_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/VGA_controller.sv");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_SOURCES_INTO, "Copy sources into IP Directory", false); // f: FALSE
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 5 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -scan_for_includes C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/VGA_controller.sv 
+dismissDialog("Add Sources"); // bq
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,366 MB. GUI used memory: 120 MB. Current time: 10/31/24, 4:50:00 PM CDT
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UserIP ;  ;  ;  ; ", 4); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "HDMI/DVI Encoder ;  ; Production ; Included ; realdigital.org:realdigital:hdmi_tx:1.0", 5, "HDMI/DVI Encoder", 0, false); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "HDMI/DVI Encoder ;  ; Production ; Included ; realdigital.org:realdigital:hdmi_tx:1.0", 5); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "HDMI/DVI Encoder ;  ; Production ; Included ; realdigital.org:realdigital:hdmi_tx:1.0", 5, "HDMI/DVI Encoder", 0, false, false, false, false, false, true); // z - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+setText("Blue Channel Data Width", "4"); // v
+setText("Green Channel Data Width", "4"); // v
+setText("Red Channel Data Width", "4"); // v
+selectComboBox("Mode (MODE)", "HDMI", 0); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Customize IP"); // m
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name hdmi_tx -vendor realdigital.org -library realdigital -version 1.0 -module_name hdmi_tx_0 -dir c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.C_BLUE_WIDTH {4} \   CONFIG.C_GREEN_WIDTH {4} \   CONFIG.C_RED_WIDTH {4} \   CONFIG.MODE {HDMI} \ ] [get_ips hdmi_tx_0] 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_3/hdmi_tx_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_tx_0'... 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_3/hdmi_tx_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_tx_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_tx_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all hdmi_tx_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_tx_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_3/hdmi_tx_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_3/hdmi_tx_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,386 MB (+3363kb) [00:03:04]
+// Tcl Message: launch_runs hdmi_tx_0_synth_1 -jobs 10 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_tx_0 
+// Tcl Message: [Thu Oct 31 16:50:11 2024] Launched hdmi_tx_0_synth_1... Run output will be captured here: c:/users/curti/onedrive/documents/uiuc/ece-385/vivado_projects/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/hdmi_tx_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,406 MB. GUI used memory: 132 MB. Current time: 10/31/24, 4:50:55 PM CDT
+// Elapsed time: 85 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/font_rom.sv");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_SOURCES_INTO, "Copy sources into IP Directory", false); // f: FALSE
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 7 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -scan_for_includes C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/font_rom.sv 
+dismissDialog("Add Sources"); // bq
+// [GUI Memory]: 189 MB (+151kb) [00:04:56]
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, font_rom (font_rom.sv)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, font_rom (font_rom.sv)]", 6, false, false, false, false, false, true); // D - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci)]", 5); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Show IP Hierarchy"); // u
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, font_rom (font_rom.sv)]", 6, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Remove Sources"); // U
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), clk_wiz : clk_wiz_0 (clk_wiz_0.xci)]", 3); // D
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Show IP Hierarchy"); // u
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci)]", 5); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // u
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v)]", 6); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v), inst : hdmi_tx_v1_0 (hdmi_tx_v1_0.v)]", 7); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v), inst : hdmi_tx_v1_0 (hdmi_tx_v1_0.v), serial_b : serdes_10_to_1 (serdes_10_to_1.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v), inst : hdmi_tx_v1_0 (hdmi_tx_v1_0.v), serial_b : serdes_10_to_1 (serdes_10_to_1.v)]", 12, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v), inst : hdmi_tx_v1_0 (hdmi_tx_v1_0.v), srldly_0 : srldelay (srldelay.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v), inst : hdmi_tx_v1_0 (hdmi_tx_v1_0.v), srldly_0 : srldelay (srldelay.v)]", 8, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v), inst : hdmi_tx_v1_0 (hdmi_tx_v1_0.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v), inst : hdmi_tx_v1_0 (hdmi_tx_v1_0.v)]", 7, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 95 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectCodeEditor("hdmi_tx_v1_0.v", 216, 367); // F
+// Elapsed time: 52 seconds
+selectCodeEditor("hdmi_tx_v1_0.v", 194, 72); // F
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), clk_wiz : clk_wiz_0 (clk_wiz_0.xci)]", 3); // D
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Show IP Hierarchy"); // u
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), clk_wiz : clk_wiz_0 (clk_wiz_0.xci)]", 3); // D
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Show IP Hierarchy"); // u
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga : vga_controller (VGA_controller.sv)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga : vga_controller (VGA_controller.sv)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 8); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 33 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 7); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 7, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12); // D
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+// Elapsed time: 81 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 13); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 13, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 13); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 14, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 671, 192); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read", true); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "read"); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga : vga_controller (VGA_controller.sv)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga : vga_controller (VGA_controller.sv)]", 16, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 29 seconds
+selectCodeEditor("VGA_controller.sv", 360, 315); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("VGA_controller.sv", 400, 333); // ac
+selectCodeEditor("VGA_controller.sv", 423, 316); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("VGA_controller.sv", 350, 236); // ac
+selectCodeEditor("VGA_controller.sv", 350, 236, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("VGA_controller.sv", 185, 369); // ac
+selectCodeEditor("VGA_controller.sv", 185, 369, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 288, 182); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "axi_read"); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "axi_read"); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 8, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 8, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 192, 102); // ac
+// Elapsed time: 14 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "axi_read"); // d.c
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 8); // D
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA_controller.sv", 9); // o
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 9, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1); // D
+// Elapsed time: 73 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 92, 221); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, font_rom (font_rom.sv)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, font_rom (font_rom.sv)]", 6, false, false, false, false, false, true); // D - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 3); // o
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 3); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 163, 264); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 183, 270); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 157, 228, true, false, false, false, false); // ac - Shift Key
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 199 MB (+846kb) [00:19:17]
+// Elapsed time: 428 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 154, 321); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 262, 359); // ac
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 438, 132); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 438, 132, false, false, false, false, true); // ac - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 13, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 100 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4); // o
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4, false, true); // o - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_tx_v1_0.v", 7); // o
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_tx_v1_0.v", 7, false, true); // o - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4); // o
+selectCodeEditor("font_rom.sv", 323, 16); // ac
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 3); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 68, 397); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 294, 322); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4); // o
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 3); // o
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4); // o
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 3); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 70, 370); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 3); // o
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 115, 113, true, false, false, false, false); // ac - Shift Key
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'c'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 52, 142); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'v'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 11, 198); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 3); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 6, 209); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 117, 223); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 3, 220, true, false, false, false, false); // ac - Shift Key
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 223, 199); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 37, 226); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 215, 385); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 216, 368); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 189, 237); // ac
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12, true, false, false, false, false, true); // D - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 10); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 8); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 3); // o
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv), hdmi_text_controller_v1_0_inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci)]", 18, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 0); // o
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 308, 98); // ac
+// Elapsed time: 23 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "slv_reg"); // d.c
+// Elapsed time: 91 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 9); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA_controller.sv", 10); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+// Elapsed time: 20 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 270, 166); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 1,421 MB. GUI used memory: 137 MB. Current time: 10/31/24, 5:20:56 PM CDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 12, true, false, false, false, false, true); // D - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+// Elapsed time: 14 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 121, 377); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 121, 377, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 43 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 252, 369); // ac
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), fr : font_rom (font_rom.sv)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), fr : font_rom (font_rom.sv)]", 4, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 1); // o
+// Elapsed time: 192 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // o
+selectCodeEditor("font_rom.sv", 335, 72); // ac
+// Elapsed time: 70 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+// Elapsed time: 12 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 857, 180); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 856, 255); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 899, 200); // ac
+// Elapsed time: 129 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 371, 134); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 196, 324); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 228, 277); // ac
+// Elapsed time: 22 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "logic"); // d.c
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 406, 115); // ac
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - hdmi_text_controller", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 2); // o
+selectCodeEditor("font_rom.sv", 137, 28); // ac
+selectCodeEditor("font_rom.sv", 137, 28, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("font_rom.sv", 151, 36); // ac
+// Elapsed time: 155 seconds
+selectCodeEditor("font_rom.sv", 88, 37); // ac
+// Elapsed time: 103 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+// Elapsed time: 13 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 71, 308); // ac
+// Elapsed time: 115 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 2); // o
+selectCodeEditor("font_rom.sv", 155, 32); // ac
+// Elapsed time: 203 seconds
+selectCodeEditor("font_rom.sv", 278, 317); // ac
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 358, 160); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 367, 155); // ac
+// Elapsed time: 44 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 214, 147); // ac
+// Elapsed time: 68 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 156, 91); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 376, 336); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 297, 268); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 14 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 105, 266); // ac
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 0); // o
+// Elapsed time: 87 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 117, 265); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 136, 247); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 128 MB. Current time: 10/31/24, 5:50:58 PM CDT
+// Elapsed time: 437 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 173, 235); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 102, 359); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 89, 347); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 89, 347, false, false, false, false, true); // ac - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "red"); // d.c
+// Elapsed time: 34 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "red"); // d.c
+// Elapsed time: 59 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "red"); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mini_mapper"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HOptionPane Error: 'Please specify a valid directory name. (Invalid Directory Name)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceAtoD.CreateSrcFileDialog_SPECIFY_FILE_DIRECTORY, (String) null); // r
+// Elapsed time: 11 seconds
+setFolderChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 28 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/mini_mapper.sv w ] 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/mini_mapper.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 48, 332); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 55, 241); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 57, 399); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 54 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 58, 117); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 58, 117, false, false, false, false, true); // ac - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 203, 166); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 190, 171); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 206, 125); // ac
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), le_sperm : mini_mapper (mini_mapper.sv)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), le_sperm : mini_mapper (mini_mapper.sv)]", 6, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("mini_mapper.sv", 158, 492); // ac
+selectCodeEditor("mini_mapper.sv", 142, 406); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga : vga_controller (VGA_controller.sv)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga : vga_controller (VGA_controller.sv)]", 7, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 11); // o
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 0); // o
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA_controller.sv", 10); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 11); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 7); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+// Elapsed time: 11 seconds
+selectCodeEditor("mini_mapper.sv", 87, 410); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectCodeEditor("mini_mapper.sv", 174, 405); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+// Elapsed time: 58 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 240, 348); // ac
+// Elapsed time: 41 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci)]", 9); // D
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 168, 240); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 128, 240); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 128, 240, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v)]", 10); // D
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 211, 299); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 249, 296); // ac
+// Elapsed time: 18 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 166, 327); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 166, 327, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v)]", 10, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v)]", 10, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("hdmi_tx_0.v", 27, 166); // F
+selectCodeEditor("hdmi_tx_0.v", 27, 166, false, false, false, false, true); // F - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), le_sperm : xil_defaultlib.mini_mapper]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), le_sperm : xil_defaultlib.mini_mapper]", 7, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serdes_10_to_1.v", 7); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectCodeEditor("mini_mapper.sv", 141, 411); // ac
+selectCodeEditor("mini_mapper.sv", 215, 389); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 33, 202); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 100, 100, true, false, false, false, false); // ac - Shift Key
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 92, 401); // ac
+selectCodeEditor("mini_mapper.sv", 99, 386); // ac
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 38, 472); // ac
+selectCodeEditor("mini_mapper.sv", 134, 468); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 20 seconds
+selectCodeEditor("mini_mapper.sv", 123, 406); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 61, 461); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 10 seconds
+selectCodeEditor("mini_mapper.sv", 161, 114); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 144, 129); // ac
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v)]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci), hdmi_tx_0 (hdmi_tx_0.v)]", 9, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("hdmi_tx_0.v", 209, 211); // F
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "drawx"); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga_to_hdmi : hdmi_tx_0 (hdmi_tx_0.xci)]", 8, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga : vga_controller (VGA_controller.sv)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), vga : vga_controller (VGA_controller.sv)]", 7, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_tx_v1_0.v", 9); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+// Elapsed time: 12 seconds
+selectCodeEditor("mini_mapper.sv", 226, 177); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 152, 335); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("mini_mapper.sv", 69, 323); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("mini_mapper.sv", 199, 157); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 100, 289); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 3); // o
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 3); // o
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectCodeEditor("mini_mapper.sv", 153, 280); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectCodeEditor("mini_mapper.sv", 92, 161); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 123, 300); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "font_rom.sv", 3); // o
+selectCodeEditor("font_rom.sv", 244, 193); // ac
+selectCodeEditor("font_rom.sv", 322, 191); // ac
+selectCodeEditor("font_rom.sv", 329, 205); // ac
+selectCodeEditor("font_rom.sv", 329, 205, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("font_rom.sv", 377, 197); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 51 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 2); // o
+selectCodeEditor("mini_mapper.sv", 97, 159); // ac
+typeControlKey((HResource) null, "mini_mapper.sv", 'c'); // ac
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 184, 340); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("mini_mapper.sv", 222, 346); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 15 seconds
+selectCodeEditor("mini_mapper.sv", 124, 326); // ac
+selectCodeEditor("mini_mapper.sv", 124, 326, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 95 seconds
+selectCodeEditor("mini_mapper.sv", 286, 330); // ac
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 59 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 3, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 277, 149); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "slv_reg", true); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "slv_reg"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "slv_reg"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "slv_reg"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "slv_reg"); // d.c
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 299, 204); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 299, 204, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 305, 265); // ac
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 10); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 2); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 432, 170, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 277, 130); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 290, 138); // ac
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 3, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 428, 161); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 361, 376); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 361, 376, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 325, 223); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 325, 223, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 280, 143); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 292, 123); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 284, 132); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 427, 92); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+// Elapsed time: 56 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 540, 117, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 325, 178); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 292, 333); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 198, 351); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+selectCodeEditor("mini_mapper.sv", 211, 351); // ac
+selectCodeEditor("mini_mapper.sv", 109, 327); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("mini_mapper.sv", 372, 139); // ac
+selectCodeEditor("mini_mapper.sv", 211, 153); // ac
+selectCodeEditor("mini_mapper.sv", 210, 143, true, false, false, false, false); // ac - Shift Key
+typeControlKey((HResource) null, "mini_mapper.sv", 'c'); // ac
+selectCodeEditor("mini_mapper.sv", 180, 139); // ac
+selectCodeEditor("mini_mapper.sv", 34, 137, true, false, false, false, false); // ac - Shift Key
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+selectCodeEditor("mini_mapper.sv", 126, 128); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 189, 131); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 282, 138); // ac
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 2); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 365, 152); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 406, 153); // ac
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 211, 342); // ac
+// Elapsed time: 75 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 188, 343); // ac
+// Elapsed time: 29 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 53, 433); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 150, 282); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+typeControlKey(null, null, 'z');
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 445, 280); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 501, 285); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 438, 287); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 438, 287, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 2); // o
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 240, 281); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 517, 287); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 229, 296); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 235, 283); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 235, 283, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 2); // o
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 46, 328); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 46, 328, false, false, false, false, true); // ac - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 106, 326); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 106, 326, false, false, false, false, true); // ac - Double Click
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 291, 447); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 284, 457); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 284, 457, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 125, 288); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 125, 288, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 310, 418); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 310, 418, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'c'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 155, 282); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 155, 282, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 411, 288); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 395, 384); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 283, 226); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 283, 226, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'c'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 61, 407); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'v'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'v'); // ac
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 285, 223); // ac
+selectCodeEditor("hdmi_text_controller_v1_0.sv", 285, 223, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0.sv", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 2); // o
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 461, 225); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+selectCodeEditor("mini_mapper.sv", 246, 99); // ac
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+selectCodeEditor("mini_mapper.sv", 173, 95); // ac
+selectCodeEditor("mini_mapper.sv", 505, 125); // ac
+selectCodeEditor("mini_mapper.sv", 469, 182); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 42 seconds
+selectCodeEditor("mini_mapper.sv", 443, 180); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+selectCodeEditor("mini_mapper.sv", 59, 135); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 373, 147); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 518, 283); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mini_mapper.sv", 3); // o
+selectCodeEditor("mini_mapper.sv", 188, 197); // ac
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+selectCodeEditor("mini_mapper.sv", 38, 214); // ac
+selectCodeEditor("mini_mapper.sv", 63, 220); // ac
+selectCodeEditor("mini_mapper.sv", 63, 220, false, false, false, false, true); // ac - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 199, 333); // ac
+selectCodeEditor("mini_mapper.sv", 528, 216); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 130 MB. Current time: 10/31/24, 6:20:58 PM CDT
+selectCodeEditor("mini_mapper.sv", 126, 434); // ac
+selectCodeEditor("mini_mapper.sv", 126, 434, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("mini_mapper.sv", 372, 427); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 118 seconds
+selectCodeEditor("mini_mapper.sv", 583, 330); // ac
+// Elapsed time: 90 seconds
+selectCodeEditor("mini_mapper.sv", 347, 428); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 129 seconds
+selectCodeEditor("mini_mapper.sv", 286, 298); // ac
+selectCodeEditor("mini_mapper.sv", 67, 382); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 571, 301); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 531 seconds
+selectCodeEditor("mini_mapper.sv", 39, 329); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("mini_mapper.sv", 131, 292); // ac
+selectCodeEditor("mini_mapper.sv", 236, 322); // ac
+selectCodeEditor("mini_mapper.sv", 348, 323); // ac
+selectCodeEditor("mini_mapper.sv", 232, 326); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 412, 291); // ac
+selectCodeEditor("mini_mapper.sv", 412, 302); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("mini_mapper.sv", 230, 325); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("mini_mapper.sv", 571, 324); // ac
+// Elapsed time: 342 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 8); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 9); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 13, true); // D - Node
+// Tcl Message: current_project lab7_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, hdmi_text_controller_tb (hdmi_text_controller_v1_0_tb.sv)]", 11, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 2, true); // D - Node
+// Elapsed time: 194 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 39 seconds
+selectCodeEditor("mini_mapper.sv", 345, 325); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 131 MB. Current time: 10/31/24, 6:50:59 PM CDT
+// Elapsed time: 414 seconds
+selectCodeEditor("mini_mapper.sv", 514, 326); // ac
+// Elapsed time: 31 seconds
+selectCodeEditor("mini_mapper.sv", 553, 328); // ac
+selectCodeEditor("mini_mapper.sv", 490, 299); // ac
+selectCodeEditor("mini_mapper.sv", 490, 299, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("mini_mapper.sv", 557, 304); // ac
+selectCodeEditor("mini_mapper.sv", 557, 304, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("mini_mapper.sv", 537, 316); // ac
+// Elapsed time: 22 seconds
+selectCodeEditor("mini_mapper.sv", 417, 237); // ac
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1092 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 549446 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 548304ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 549302 ms. Increasing delay to 1647906 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 548305 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1584 ms. Increasing delay to 4752 ms.
+// Elapsed time: 879 seconds
+selectCodeEditor("mini_mapper.sv", 445, 328); // ac
+selectCodeEditor("mini_mapper.sv", 537, 342); // ac
+selectCodeEditor("mini_mapper.sv", 550, 333); // ac
+selectCodeEditor("mini_mapper.sv", 420, 325); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 189 seconds
+selectCodeEditor("mini_mapper.sv", 382, 323); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 492, 323); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("mini_mapper.sv", 467, 324); // ac
+// Elapsed time: 23 seconds
+selectCodeEditor("mini_mapper.sv", 334, 218); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("mini_mapper.sv", 549, 362); // ac
+selectCodeEditor("mini_mapper.sv", 549, 362); // ac
+// Elapsed time: 175 seconds
+selectCodeEditor("mini_mapper.sv", 515, 371); // ac
+selectCodeEditor("mini_mapper.sv", 425, 369); // ac
+// Elapsed time: 17 seconds
+selectCodeEditor("mini_mapper.sv", 563, 363); // ac
+selectCodeEditor("mini_mapper.sv", 590, 370); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 233 seconds
+selectCodeEditor("mini_mapper.sv", 611, 373); // ac
+selectCodeEditor("mini_mapper.sv", 487, 256); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("mini_mapper.sv", 593, 386); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project hdmi_text_controller_v1_0_project 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 130 MB. Current time: 10/31/24, 7:21:01 PM CDT
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 56 seconds
+selectCodeEditor("mini_mapper.sv", 593, 386); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("mini_mapper.sv", 396, 431); // ac
+selectCodeEditor("mini_mapper.sv", 318, 446); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectCodeEditor("mini_mapper.sv", 198, 451); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 359, 437); // ac
+selectCodeEditor("mini_mapper.sv", 354, 449); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 74 seconds
+selectCodeEditor("mini_mapper.sv", 345, 449); // ac
+selectCodeEditor("mini_mapper.sv", 403, 393); // ac
+selectCodeEditor("mini_mapper.sv", 779, 445); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 94 seconds
+selectCodeEditor("mini_mapper.sv", 150, 401); // ac
+// Elapsed time: 23 seconds
+selectCodeEditor("mini_mapper.sv", 574, 350); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 83 seconds
+selectCodeEditor("mini_mapper.sv", 574, 351); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("mini_mapper.sv", 321, 381); // ac
+selectCodeEditor("mini_mapper.sv", 321, 381, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("mini_mapper.sv", 321, 381); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 272, 415); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 69 seconds
+selectCodeEditor("mini_mapper.sv", 641, 389); // ac
+selectCodeEditor("mini_mapper.sv", 257, 294); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 28 seconds
+selectCodeEditor("mini_mapper.sv", 259, 386); // ac
+// Elapsed time: 43 seconds
+selectCodeEditor("mini_mapper.sv", 176, 423); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("mini_mapper.sv", 55, 467); // ac
+selectCodeEditor("mini_mapper.sv", 55, 467); // ac
+selectCodeEditor("mini_mapper.sv", 55, 467, false, false, false, false, true); // ac - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("mini_mapper.sv", 44, 474); // ac
+selectCodeEditor("mini_mapper.sv", 275, 303); // ac
+selectCodeEditor("mini_mapper.sv", 298, 301); // ac
+selectCodeEditor("mini_mapper.sv", 55, 369); // ac
+selectCodeEditor("mini_mapper.sv", 55, 369, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("mini_mapper.sv", 48, 384); // ac
+selectCodeEditor("mini_mapper.sv", 48, 384, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("mini_mapper.sv", 56, 409); // ac
+selectCodeEditor("mini_mapper.sv", 56, 409, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("mini_mapper.sv", 72, 393, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("mini_mapper.sv", 153, 397); // ac
+selectCodeEditor("mini_mapper.sv", 515, 415); // ac
+selectCodeEditor("mini_mapper.sv", 369, 404); // ac
+selectCodeEditor("mini_mapper.sv", 357, 398); // ac
+selectCodeEditor("mini_mapper.sv", 336, 468); // ac
+selectCodeEditor("mini_mapper.sv", 336, 468, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("mini_mapper.sv", 336, 468); // ac
+selectCodeEditor("mini_mapper.sv", 232, 432); // ac
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 210, 451); // ac
+selectCodeEditor("mini_mapper.sv", 173, 473); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 377, 516); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 11 seconds
+selectCodeEditor("mini_mapper.sv", 540, 342); // ac
+selectCodeEditor("mini_mapper.sv", 476, 369); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("mini_mapper.sv", 292, 134); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 195, 160); // ac
+selectCodeEditor("mini_mapper.sv", 195, 160, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "mini_mapper.sv", 'c'); // ac
+selectCodeEditor("mini_mapper.sv", 518, 370); // ac
+typeControlKey((HResource) null, "mini_mapper.sv", 'v'); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 14 ms. Decreasing delay to 2014 ms.
+// Elapsed time: 51 seconds
+selectCodeEditor("mini_mapper.sv", 328, 393); // ac
+selectCodeEditor("mini_mapper.sv", 294, 393, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("mini_mapper.sv", 254, 389); // ac
+selectCodeEditor("mini_mapper.sv", 254, 389); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 357 seconds
+selectCodeEditor("mini_mapper.sv", 522, 367); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mini_mapper.sv", 229, 412); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 99 seconds
+selectCodeEditor("mini_mapper.sv", 275, 400); // ac
+selectCodeEditor("mini_mapper.sv", 250, 417); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("mini_mapper.sv", 485, 413); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 143 seconds
+selectCodeEditor("mini_mapper.sv", 476, 409); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("mini_mapper.sv", 427, 418); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 131 seconds
+selectCodeEditor("mini_mapper.sv", 541, 409); // ac
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

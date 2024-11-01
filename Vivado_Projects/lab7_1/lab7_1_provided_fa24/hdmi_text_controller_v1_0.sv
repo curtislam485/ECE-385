@@ -17,6 +17,12 @@ module hdmi_text_controller_v1_0 #
 )
 (
     // Users to add ports here
+
+
+    output logic hdmi_clk_n,
+    output logic hdmi_clk_p,
+    output logic [2:0] hdmi_tx_n,
+    output logic [2:0] hdmi_tx_p,
     
     // User ports ends
     // Do not modify the ports beyond this line
@@ -104,8 +110,12 @@ clk_wiz_0 clk_wiz (
 );
 
 mini_mapper le_sperm (
-    .red    (red)
-    .green  (green)
+    .slv_regs   (slv_regs),
+    .drawX      (drawX),
+    .drawY      (drawY),
+    
+    .red    (red),
+    .green  (green),
     .blue   (blue)
 );
 

@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Oct 31 16:47:05 2024
-# Process ID: 30376
+# Start of session at: Fri Nov  1 00:48:49 2024
+# Process ID: 20216
 # Current directory: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35552 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab7_1\lab7_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent37244 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab7_1\lab7_1.xpr
 # Log file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/vivado.log
 # Journal file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1\vivado.jou
 # Running On: Curtis-Laptop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34014 MB
@@ -80,6 +80,13 @@ Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_tx_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1212.148 ; gain = 399.754
+WARNING: [IP_Flow 19-3664] IP 'design_1_hdmi_text_controller_0_1' generated file not found 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_hdmi_text_controller_0_1' generated file not found 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_hdmi_text_controller_0_1' generated file not found 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_hdmi_text_controller_0_1' generated file not found 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_hdmi_text_controller_0_1' generated file not found 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1286.223 ; gain = 471.508

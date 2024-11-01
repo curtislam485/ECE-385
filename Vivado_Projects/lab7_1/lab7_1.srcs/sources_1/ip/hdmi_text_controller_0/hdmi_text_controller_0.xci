@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "hdmi_text_controller_0",
     "component_reference": "xilinx.com:user:hdmi_text_controller:1.0",
-    "ip_revision": "6",
+    "ip_revision": "8",
     "gen_directory": "../../../../lab7_1.gen/sources_1/ip/hdmi_text_controller_0",
     "parameters": {
       "component_parameters": {
@@ -34,7 +34,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "6" } ],
+        "IPREVISION": [ { "value": "8" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../lab7_1.gen/sources_1/ip/hdmi_text_controller_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 -- IP VLNV: xilinx.com:user:hdmi_text_controller:1.0
--- IP Revision: 6
+-- IP Revision: 8
 
 -- The following code must appear in the VHDL architecture header.
 

@@ -12,6 +12,8 @@
 source mb_usb_hdmi_top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/ip_repo/hdmi_text_controller_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_tx_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
@@ -28,25 +30,25 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24604
+INFO: [Synth 8-7075] Helper process launched with PID 6728
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1213.461 ; gain = 409.113
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1214.484 ; gain = 409.062
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/mb_usb_hdmi_top.sv:14]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_hdmi_text_controller_0_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_hdmi_text_controller_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_hdmi_text_controller_0_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_hdmi_text_controller_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_1' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_microblaze_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_1' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_microblaze_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_hdmi_text_controller_0_1' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_hdmi_text_controller_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_hdmi_text_controller_0_1' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_hdmi_text_controller_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_1' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_1' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_microblaze_0_axi_intc_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:420]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1016]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1016]
@@ -56,30 +58,30 @@ INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Users/cur
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (0#1) [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1280]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1660]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1660]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_xbar_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (0#1) [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:420]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1426]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_dlmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1572]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1572]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_ilmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1618]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1618]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_lmb_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1643]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1643]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1643]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:1426]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-41176-Curtis-Laptop/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/.Xil/Vivado-23060-Curtis-Laptop/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:409]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:409]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/synth/design_1.v:409]
@@ -148,18 +150,18 @@ WARNING: [Synth 8-7129] Port hex_gridB[0] in module mb_usb_hdmi_top is either un
 WARNING: [Synth 8-7129] Port gpio_usb_int_tri_i[0] in module mb_usb_hdmi_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port usb_spi_miso in module mb_usb_hdmi_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.512 ; gain = 506.164
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1311.195 ; gain = 505.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.512 ; gain = 506.164
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1311.195 ; gain = 505.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.512 ; gain = 506.164
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1311.195 ; gain = 505.773
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1310.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1311.195 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -188,8 +190,8 @@ Parsing XDC File [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects
 Finished Parsing XDC File [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0_1/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_block_i/rst_clk_wiz_1_100M'
 Parsing XDC File [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block_i/axi_uartlite_0'
 Finished Parsing XDC File [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block_i/axi_uartlite_0'
-Parsing XDC File [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/design_1_hdmi_text_controller_0_0/design_1_hdmi_text_controller_0_0_in_context.xdc] for cell 'mb_block_i/hdmi_text_controller_0'
-Finished Parsing XDC File [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/design_1_hdmi_text_controller_0_0/design_1_hdmi_text_controller_0_0_in_context.xdc] for cell 'mb_block_i/hdmi_text_controller_0'
+Parsing XDC File [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1_in_context.xdc] for cell 'mb_block_i/hdmi_text_controller_0'
+Finished Parsing XDC File [c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1_in_context.xdc] for cell 'mb_block_i/hdmi_text_controller_0'
 Parsing XDC File [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc]
 CRITICAL WARNING: [Constraints 18-1056] Clock 'clk_100' completely overrides clock 'Clk'.
 New: create_clock -period 10.000 -name clk_100 -waveform {0.000 5.000} [get_ports Clk], [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc:1]
@@ -202,24 +204,24 @@ Parsing XDC File [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects
 Finished Parsing XDC File [C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1321.730 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1328.859 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1321.730 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1328.859 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.859 ; gain = 523.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.859 ; gain = 523.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -242,10 +244,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/rst_clk_wiz_1_100M. (c
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/axi_uartlite_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/hdmi_text_controller_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.859 ; gain = 523.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.859 ; gain = 523.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -306,25 +308,25 @@ WARNING: [Synth 8-7129] Port hex_gridB[0] in module mb_usb_hdmi_top is either un
 WARNING: [Synth 8-7129] Port gpio_usb_int_tri_i[0] in module mb_usb_hdmi_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port usb_spi_miso in module mb_usb_hdmi_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1328.859 ; gain = 523.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.859 ; gain = 523.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.859 ; gain = 523.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.859 ; gain = 523.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -342,37 +344,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.660 ; gain = 527.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.660 ; gain = 527.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.660 ; gain = 527.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.660 ; gain = 527.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.660 ; gain = 527.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.660 ; gain = 527.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -385,7 +387,7 @@ Report BlackBoxes:
 |1     |design_1_xbar_0                   |         1|
 |2     |design_1_axi_uartlite_0_0         |         1|
 |3     |design_1_clk_wiz_1_0              |         1|
-|4     |design_1_hdmi_text_controller_0_0 |         1|
+|4     |design_1_hdmi_text_controller_0_1 |         1|
 |5     |design_1_mdm_1_0                  |         1|
 |6     |design_1_microblaze_0_1           |         1|
 |7     |design_1_microblaze_0_axi_intc_0  |         1|
@@ -420,25 +422,25 @@ Report Cell Usage:
 |17    |OBUFT                           |    28|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.660 ; gain = 527.238
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1321.730 ; gain = 506.164
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.730 ; gain = 517.383
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1332.660 ; gain = 509.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.660 ; gain = 527.238
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1329.750 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1344.766 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1340.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1348.637 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 8e5ec4d4
+Synth Design complete, checksum: 35c39281
 INFO: [Common 17-83] Releasing license: Synthesis
-67 Infos, 113 Warnings, 1 Critical Warnings and 0 Errors encountered.
+68 Infos, 114 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1340.312 ; gain = 909.117
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1348.637 ; gain = 918.797
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.runs/synth_1/mb_usb_hdmi_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_usb_hdmi_top_utilization_synth.rpt -pb mb_usb_hdmi_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 31 14:58:29 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 00:24:37 2024...
