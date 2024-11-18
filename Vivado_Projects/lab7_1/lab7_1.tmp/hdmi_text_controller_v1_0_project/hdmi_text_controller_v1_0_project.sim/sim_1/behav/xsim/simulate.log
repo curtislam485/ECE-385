@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Info: Read back of control register: 001f6000
+Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial262_904  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv Line: 288
+$finish called at time : 192360 ns : File "c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" Line 297

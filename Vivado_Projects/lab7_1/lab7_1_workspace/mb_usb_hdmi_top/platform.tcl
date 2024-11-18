@@ -22,3 +22,24 @@ platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado
 platform clean
 platform clean
 platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/Downloads/lab7_new (2)/lab7_new/lab_7_1/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform config -updatehw {C:/Users/curti/Downloads/lab7_new (2)/lab7_new/lab_7_1/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/Downloads/lab7_new (2)/lab7_new/lab_7_1/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform clean
+platform generate

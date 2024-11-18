@@ -13,7 +13,7 @@ module hdmi_text_controller_v1_0 #
     // Modify parameters as necessary for access of full VRAM range
 
     parameter integer C_AXI_DATA_WIDTH	= 32,
-    parameter integer C_AXI_ADDR_WIDTH	= 12
+    parameter integer C_AXI_ADDR_WIDTH	= 16
 )
 (
     // Users to add ports here
@@ -71,7 +71,7 @@ hdmi_text_controller_v1_0_AXI # (
     .C_S_AXI_DATA_WIDTH(C_AXI_DATA_WIDTH),
     .C_S_AXI_ADDR_WIDTH(C_AXI_ADDR_WIDTH)
 ) hdmi_text_controller_v1_0_AXI_inst (
-    .slv_regs(slv_regs),
+//    .slv_regs(slv_regs),
     .S_AXI_ACLK(axi_aclk),
     .S_AXI_ARESETN(axi_aresetn),
     .S_AXI_AWADDR(axi_awaddr),
@@ -98,6 +98,7 @@ hdmi_text_controller_v1_0_AXI # (
 //Instiante clocking wizard, VGA sync generator modules, and VGA-HDMI IP here. For a hint, refer to the provided
 //top-level from the previous lab. You should get the IP to generate a valid HDMI signal (e.g. blue screen or gradient)
 //prior to working on the text drawing.
+
 
 //clock wizard configured with a 1x and 5x clock for HDMI
 clk_wiz_0 clk_wiz (

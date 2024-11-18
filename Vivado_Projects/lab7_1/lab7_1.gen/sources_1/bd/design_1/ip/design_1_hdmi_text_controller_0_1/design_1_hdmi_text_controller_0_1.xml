@@ -821,11 +821,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 10:17:55 UTC 2024</spirit:value>
+            <spirit:value>Fri Nov 01 16:57:06 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5b5b481c</spirit:value>
+            <spirit:value>9:9e273962</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -836,7 +836,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5b5b481c</spirit:value>
+            <spirit:value>9:9e273962</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -852,11 +852,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 10:17:55 UTC 2024</spirit:value>
+            <spirit:value>Fri Nov 01 16:57:06 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5b5b481c</spirit:value>
+            <spirit:value>9:9e273962</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -872,11 +872,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 10:17:55 UTC 2024</spirit:value>
+            <spirit:value>Fri Nov 01 16:57:06 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1f065997</spirit:value>
+            <spirit:value>9:da7a28e9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -892,11 +892,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 10:17:55 UTC 2024</spirit:value>
+            <spirit:value>Fri Nov 01 16:57:06 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1f065997</spirit:value>
+            <spirit:value>9:da7a28e9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -910,11 +910,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 10:17:55 UTC 2024</spirit:value>
+            <spirit:value>Fri Nov 01 16:57:06 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5b5b481c</spirit:value>
+            <spirit:value>9:9e273962</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -928,11 +928,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 10:20:50 UTC 2024</spirit:value>
+            <spirit:value>Fri Nov 01 16:59:32 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5b5b481c</spirit:value>
+            <spirit:value>9:9e273962</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1361,7 +1361,7 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/34c3/src/hdmi_text_controller_v1_0_AXI.sv</spirit:name>
+        <spirit:name>../../ipshared/180a/src/hdmi_text_controller_v1_0_AXI.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1369,7 +1369,7 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/34c3/src/hdmi_text_controller_v1_0.sv</spirit:name>
+        <spirit:name>../../ipshared/180a/src/hdmi_text_controller_v1_0.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1402,7 +1402,7 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/34c3/src/hdmi_text_controller_v1_0_AXI.sv</spirit:name>
+        <spirit:name>../../ipshared/180a/src/hdmi_text_controller_v1_0_AXI.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1410,7 +1410,7 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/34c3/src/hdmi_text_controller_v1_0.sv</spirit:name>
+        <spirit:name>../../ipshared/180a/src/hdmi_text_controller_v1_0.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1545,7 +1545,7 @@
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>16</xilinx:coreRevision>
+      <xilinx:coreRevision>17</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -1608,7 +1608,7 @@
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="edcb2ad1"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="60746b78"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b5871e32"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="83b80c6c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="7c3857ea"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="f7819e12"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="fe424520"/>

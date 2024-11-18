@@ -34,7 +34,7 @@ module hdmi_text_controller_v1_0_AXI #
     // Width of S_AXI data bus
     parameter integer C_S_AXI_DATA_WIDTH	= 32,
     // Width of S_AXI address bus
-    parameter integer C_S_AXI_ADDR_WIDTH	= 12
+    parameter integer C_S_AXI_ADDR_WIDTH	= 16
 )
 (
     // Users to add ports here
@@ -141,6 +141,27 @@ logic	 slv_reg_wren;
 logic [C_S_AXI_DATA_WIDTH-1:0]	 reg_data_out;
 integer	 byte_index;
 logic	 aw_en;
+
+// block mem gen
+
+logic [10:0] addra, addrb;
+logic [31:0] dina, dinb, douta, doutb;
+logic [0:0] wea,web;
+logic rctrl,wctrl;
+
+blk_mem_gen_0 bram(
+    .addra(addra),
+    .addrb(addrb),
+    .clka(S_AXI_ACLK),
+    .clkb(S_AXI_ACLK),
+    .dina(dina),
+    .dinb(dinb),
+    .douta(douta),
+    .doutb(doutb),
+    .wea(wea),
+    .web(web)
+);
+
 
 // I/O Connections assignments
 
@@ -368,6 +389,14 @@ always_comb
 begin
       // Address decoding for reading registers
      reg_data_out = slv_regs[axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB]];
+     
+    if (rctrl == 1'b1) begin
+        reg_data_out = slv_regs[S_AXI_ARADDR[4:2]];
+    end
+    
+    else begin
+        reg_data_out = douta;
+    end
 end
 
 // Output register or memory read data

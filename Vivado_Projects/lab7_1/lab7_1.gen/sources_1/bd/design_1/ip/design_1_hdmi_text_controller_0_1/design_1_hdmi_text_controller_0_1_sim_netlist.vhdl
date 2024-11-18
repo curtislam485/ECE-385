@@ -1,7 +1,7 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Fri Nov  1 05:20:48 2024
+-- Date        : Fri Nov  1 11:59:30 2024
 -- Host        : Curtis-Laptop running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab7_1/lab7_1.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_1/design_1_hdmi_text_controller_0_1_sim_netlist.vhdl
