@@ -1885,3 +1885,305 @@ con
 22:23:06 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
 22:23:06 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
 22:23:06 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:36:12 DEBUG : Logs will be stored at 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/IDE.log'.
+02:36:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\workspace\temp_xsdb_launch_script.tcl
+02:36:23 INFO  : XSCT server has started successfully.
+02:36:24 INFO  : plnx-install-location is set to ''
+02:36:24 INFO  : Successfully done setting XSCT server connection channel  
+02:36:24 INFO  : Successfully done setting workspace for the tool. 
+02:36:27 INFO  : Platform repository initialization has completed.
+02:36:28 INFO  : Registering command handlers for Vitis TCF services
+02:36:34 INFO  : Successfully done query RDI_DATADIR 
+02:38:34 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+02:38:46 INFO  : Result from executing command 'removePlatformRepo': 
+02:38:52 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+02:39:08 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+02:39:08 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+02:39:09 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:43:07 DEBUG : Logs will be stored at 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/IDE.log'.
+02:43:07 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\workspace\temp_xsdb_launch_script.tcl
+02:43:10 INFO  : XSCT server has started successfully.
+02:43:10 INFO  : plnx-install-location is set to ''
+02:43:10 INFO  : Successfully done setting XSCT server connection channel  
+02:43:10 INFO  : Successfully done setting workspace for the tool. 
+02:43:11 INFO  : Registering command handlers for Vitis TCF services
+02:43:11 INFO  : Platform repository initialization has completed.
+02:43:12 INFO  : Successfully done query RDI_DATADIR 
+02:45:05 DEBUG : Logs will be stored at 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/IDE.log'.
+02:45:06 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\workspace\temp_xsdb_launch_script.tcl
+02:45:09 INFO  : XSCT server has started successfully.
+02:45:09 INFO  : plnx-install-location is set to ''
+02:45:09 INFO  : Successfully done setting XSCT server connection channel  
+02:45:09 INFO  : Successfully done setting workspace for the tool. 
+02:45:10 INFO  : Platform repository initialization has completed.
+02:45:10 INFO  : Successfully done query RDI_DATADIR 
+02:45:11 INFO  : Registering command handlers for Vitis TCF services
+02:45:33 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+02:45:40 INFO  : Result from executing command 'removePlatformRepo': 
+02:45:44 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+02:45:55 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+02:45:55 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+02:45:55 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:46:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:46:07 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+02:46:07 INFO  : 'jtag frequency' command is executed.
+02:46:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:46:09 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:46:09 INFO  : Context for processor 'microblaze_0' is selected.
+02:46:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:46:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:46:09 INFO  : Context for processor 'microblaze_0' is selected.
+02:46:09 INFO  : System reset is completed.
+02:46:12 INFO  : 'after 3000' command is executed.
+02:46:12 INFO  : Context for processor 'microblaze_0' is selected.
+02:46:12 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+02:46:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+02:46:12 INFO  : Context for processor 'microblaze_0' is selected.
+02:46:12 INFO  : 'con' command is executed.
+02:46:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:46:12 INFO  : Disconnected from the channel tcfchan#4.
+02:46:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:46:56 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+02:46:56 INFO  : 'jtag frequency' command is executed.
+02:46:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:46:57 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:46:58 INFO  : Context for processor 'microblaze_0' is selected.
+02:46:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:46:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:46:58 INFO  : Context for processor 'microblaze_0' is selected.
+02:46:58 INFO  : System reset is completed.
+02:47:01 INFO  : 'after 3000' command is executed.
+02:47:01 INFO  : Context for processor 'microblaze_0' is selected.
+02:47:01 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+02:47:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+02:47:01 INFO  : Context for processor 'microblaze_0' is selected.
+02:47:01 INFO  : 'con' command is executed.
+02:47:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:47:01 INFO  : Disconnected from the channel tcfchan#5.
+02:52:21 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+02:52:33 INFO  : Result from executing command 'removePlatformRepo': 
+02:52:36 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+02:52:50 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+02:53:07 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+02:53:07 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+02:53:07 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:53:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:53:18 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+02:53:18 INFO  : 'jtag frequency' command is executed.
+02:53:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:53:20 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:53:20 INFO  : Context for processor 'microblaze_0' is selected.
+02:53:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:53:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:53:20 INFO  : Context for processor 'microblaze_0' is selected.
+02:53:20 INFO  : System reset is completed.
+02:53:23 INFO  : 'after 3000' command is executed.
+02:53:23 INFO  : Context for processor 'microblaze_0' is selected.
+02:53:23 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+02:53:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+02:53:24 INFO  : Context for processor 'microblaze_0' is selected.
+02:53:24 INFO  : 'con' command is executed.
+02:53:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:53:24 INFO  : Disconnected from the channel tcfchan#9.
+02:54:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:54:14 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+02:54:14 INFO  : 'jtag frequency' command is executed.
+02:54:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+02:54:16 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+02:54:16 INFO  : Context for processor 'microblaze_0' is selected.
+02:54:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+02:54:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:54:16 INFO  : Context for processor 'microblaze_0' is selected.
+02:54:16 INFO  : System reset is completed.
+02:54:19 INFO  : 'after 3000' command is executed.
+02:54:19 INFO  : Context for processor 'microblaze_0' is selected.
+02:54:19 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+02:54:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+02:54:19 INFO  : Context for processor 'microblaze_0' is selected.
+02:54:19 INFO  : 'con' command is executed.
+02:54:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:54:19 INFO  : Disconnected from the channel tcfchan#10.
+02:59:01 INFO  : Result from executing command 'getProjects': Final_Project;mb_usb_hdmi_top
+02:59:01 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+02:59:01 INFO  : Platform 'Final_Project' is added to custom repositories.
+02:59:01 ERROR : 
+org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/Final_Project'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createEmptyProject(AppCreationHandler.java:112) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:57) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+Caused by: java.lang.Exception: A resource exists with a different case: '/Final_Project'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	... 22 more
+02:59:01 ERROR : Failed to create application project
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.cleanupProject(StandaloneProjectHandler.java:204) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:149) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+03:00:30 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+03:00:37 INFO  : Result from executing command 'removePlatformRepo': 
+03:00:50 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+03:01:07 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:01:07 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+03:01:08 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+03:01:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:01:16 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:01:16 INFO  : 'jtag frequency' command is executed.
+03:01:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:01:18 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:01:18 INFO  : Context for processor 'microblaze_0' is selected.
+03:01:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:01:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:01:18 INFO  : Context for processor 'microblaze_0' is selected.
+03:01:18 INFO  : System reset is completed.
+03:01:21 INFO  : 'after 3000' command is executed.
+03:01:21 INFO  : Context for processor 'microblaze_0' is selected.
+03:01:21 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+03:01:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+03:01:21 INFO  : Context for processor 'microblaze_0' is selected.
+03:01:22 INFO  : 'con' command is executed.
+03:01:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:01:22 INFO  : Disconnected from the channel tcfchan#14.
+03:02:23 INFO  : Result from executing command 'removePlatformRepo': 
+03:02:28 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+03:03:12 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+03:03:57 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:03:57 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+03:03:58 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+03:34:34 DEBUG : Logs will be stored at 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/IDE.log'.
+03:34:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\workspace\temp_xsdb_launch_script.tcl
+03:34:37 INFO  : XSCT server has started successfully.
+03:34:37 INFO  : plnx-install-location is set to ''
+03:34:37 INFO  : Successfully done setting XSCT server connection channel  
+03:34:37 INFO  : Successfully done setting workspace for the tool. 
+03:34:39 INFO  : Platform repository initialization has completed.
+03:34:39 INFO  : Successfully done query RDI_DATADIR 
+03:34:39 INFO  : Registering command handlers for Vitis TCF services
+03:35:09 INFO  : Result from executing command 'removePlatformRepo': 
+03:35:13 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+03:36:17 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+03:37:53 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:37:53 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+03:37:54 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+03:37:58 INFO  : The hardware specification used by project 'mb_usb' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+03:37:58 INFO  : The file 'C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\workspace\mb_usb\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+03:37:58 INFO  : The file 'C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\workspace\mb_usb\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+03:37:58 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\workspace\mb_usb\_ide\bitstream' in project 'mb_usb'.

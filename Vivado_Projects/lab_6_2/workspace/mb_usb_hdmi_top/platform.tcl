@@ -45,3 +45,31 @@ platform active {mb_usb_hdmi_top}
 platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/mb_usb_hdmi_top.xsa}
 platform clean
 platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform clean
+platform clean
+platform generate
+platform active {mb_usb_hdmi_top}
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform clean
+platform clean
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/mb_usb_hdmi_top.xsa}
+platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/Final_Project.xsa}
+platform clean
+platform clean
+platform clean
+platform clean
+platform generate
+platform clean
+platform clean
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/Final_Project.xsa}
+platform generate

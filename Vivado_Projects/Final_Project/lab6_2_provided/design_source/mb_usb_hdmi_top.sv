@@ -146,41 +146,60 @@ module mb_usb_hdmi_top(
 
     
     //Ball Module
-    ball ball_instance(
-        .Reset(reset_ah),
-        .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
-        .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
-        .BallX(ballxsig),
-        .BallY(ballysig),
-        .BallS(ballsizesig)
-    );
+//    ball ball_instance(
+//        .Reset(reset_ah),
+//        .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
+//        .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
+//        .BallX(ballxsig),
+//        .BallY(ballysig),
+//        .BallS(ballsizesig)
+//    );
     
-    //Color Mapper Module   
-    color_mapper color_instance(
-        .BallX(ballxsig),
-        .BallY(ballysig),
-        .DrawX(drawX),
-        .DrawY(drawY),
-        .Ball_size(ballsizesig),
-        .Red(red),
-        .Green(green),
-        .Blue(blue)
-    );
+//    //Color Mapper Module   
+//    color_mapper color_instance(
+//        .BallX(ballxsig),
+//        .BallY(ballysig),
+//        .DrawX(drawX),
+//        .DrawY(drawY),
+//        .Ball_size(ballsizesig),
+//        .Red(red),
+//        .Green(green),
+//        .Blue(blue)
+//    );
     
     // potential locations for each ball (column), hold the y coordinate of locations, if -1, the arrow has not been initialized
     
+    int random_num;
+    int testCounter = 0;
     // column 1 array x = 127
     // signed 9 bit integer
-    logic signed [8:0] col_array_1 [0:MAX_PER_COLUMN - 1];
-    logic signed [8:0] current_col_array_1 [0:MAX_PER_COLUMN - 1];
+    logic signed [8:0] col_array [0:3][0:MAX_PER_COLUMN - 1];
+    logic signed [8:0] current_col_array [0:3][0:MAX_PER_COLUMN - 1];
+    
     logic signed [8:0] active_array_1 [0:MAX_PER_COLUMN - 1];
     logic signed [8:0] hit_array_1 [0:MAX_PER_COLUMN - 1];
     logic signed [8:0] missed_array_1 [0:MAX_PER_COLUMN - 1];
     
     // fill array
     initial begin
-        for (int i = 0; i < MAX_PER_COLUMN; i++) begin
-            col_array_1[i] = -1; // Initialize all elements to -1
+        testCounter = 1;
+        for (int i = 0; i < 4; i++) begin  // 4 columns
+            // Initialize all elements to -1
+            for (int j = 0; j < MAX_PER_COLUMN; j++) begin
+                col_array[i][j] = -1; 
+            end
+        end
+    end
+    
+    always_ff @ (posedge vsync)
+    begin
+        random_num = $random;
+        if (random_num % 100 == 0) begin
+            // create a ball here randomly in one of the 4 columns
+        end
+        if (testCounter == 1) begin
+            col_array[0][0] = 0; // test to create 1 ball in column 0 that constantly cycles
+            testCounter = 0;
         end
     end
     
@@ -208,20 +227,28 @@ module mb_usb_hdmi_top(
 //    output logic        Hit,           // Whether the arrow has been hit
 //    output logic        Missed         // Whether the arrow has been missed
     
-    arrow arrow_instance_1( // locked x position
+    // might not even need this
+    // make one arrow for now
+    arrow arrow1( // locked x position
         .Reset(reset_ah),
         .frame_clk(vsync),
         .keycode(keycode0_gpio[7:0]),
-        .ArrowX(127),
-        .ArrowY(col_array_1[0]),
-        .enable(1),
-        .Speed(1),
+        .ArrowY(col_array[0][0]),
+        .Speed(10),
         .Direction(0),
         
-        .CurrentY(current_col_array_1[0]),
-        .Active(active_array_1[0]),
+        .CurrentY(current_col_array[0][0]),
         .Hit(hit_array_1[0]),
         .Missed(missed_array_1[0])
+    );
+    
+    arrow_mapper arrow_instance(
+        .DrawX(drawX),
+        .DrawY(drawY),
+        .ColArray(col_array),
+        .Red(red),
+        .Green(green),
+        .Blue(blue)
     );
     
 endmodule
