@@ -73,3 +73,8 @@ platform clean
 platform active {mb_usb_hdmi_top}
 platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/Final_Project.xsa}
 platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/asldkfjeadf/Final_Project_V2/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate

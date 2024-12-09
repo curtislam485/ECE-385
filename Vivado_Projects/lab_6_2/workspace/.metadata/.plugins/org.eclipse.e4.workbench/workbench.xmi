@@ -40,7 +40,7 @@
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedKernelWizard</tags>
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedPlatformWizard</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_gHlsMZJoEe-J2OUjGPaitw" selectedElement="_gHlsN5JoEe-J2OUjGPaitw" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_gHlsMpJoEe-J2OUjGPaitw" containerData="2500" selectedElement="_gHlsNZJoEe-J2OUjGPaitw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_gHlsMpJoEe-J2OUjGPaitw" containerData="2500" selectedElement="_gHlsM5JoEe-J2OUjGPaitw">
               <children xsi:type="basic:PartStack" xmi:id="_gHlsM5JoEe-J2OUjGPaitw" elementId="com.xilinx.ide.projectExplorerMStack" containerData="5000" selectedElement="_gHlsNJJoEe-J2OUjGPaitw">
                 <children xsi:type="advanced:Placeholder" xmi:id="_gHlsNJJoEe-J2OUjGPaitw" elementId="com.xilinx.ide.projectExplorer" ref="_gHXpwJJoEe-J2OUjGPaitw" closeable="true">
                   <tags>View</tags>
@@ -54,7 +54,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_gHlsN5JoEe-J2OUjGPaitw" containerData="7500" selectedElement="_gHlsOJJoEe-J2OUjGPaitw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_gHlsN5JoEe-J2OUjGPaitw" containerData="7500" selectedElement="_gHlsPJJoEe-J2OUjGPaitw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_gHlsOJJoEe-J2OUjGPaitw" containerData="7500" selectedElement="_gHlsOZJoEe-J2OUjGPaitw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_gHlsOZJoEe-J2OUjGPaitw" elementId="org.eclipse.ui.editorss" containerData="8000" ref="_gHN4wJJoEe-J2OUjGPaitw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_gHlsOpJoEe-J2OUjGPaitw" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="2000" selectedElement="_gHlsO5JoEe-J2OUjGPaitw">
@@ -412,7 +412,7 @@
           <tags>com.xilinx.sdx.ui.settingseditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_jUoagJJpEe-J2OUjGPaitw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MAX3421E.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;MAX3421E.c&quot; partName=&quot;MAX3421E.c&quot; title=&quot;MAX3421E.c&quot; tooltip=&quot;mb_usb/src/lw_usb/MAX3421E.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mb_usb/src/lw_usb/MAX3421E.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;322&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;MAX3421E.c&quot; partName=&quot;MAX3421E.c&quot; title=&quot;MAX3421E.c&quot; tooltip=&quot;mb_usb/src/lw_usb/MAX3421E.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mb_usb/src/lw_usb/MAX3421E.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;484&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
@@ -508,6 +508,9 @@
         <tags>menuContribution:popup</tags>
       </menus>
       <menus xsi:type="menu:PopupMenu" xmi:id="_AHO9YKZZEe-afYEq7Ptm9w" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_3iAuwKcuEe-jtuW7QxFJ-A" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
         <tags>menuContribution:popup</tags>
       </menus>
       <toolbar xmi:id="_gP6hwJJoEe-J2OUjGPaitw" elementId="com.xilinx.ide.projectExplorer"/>
@@ -3512,7 +3515,7 @@
   <addons xmi:id="_f1SbV5JoEe-J2OUjGPaitw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_f1SbWJJoEe-J2OUjGPaitw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_f1Yh4JJoEe-J2OUjGPaitw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="__B8JQKZYEe-afYEq7Ptm9w" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_f3DV0JJoEe-J2OUjGPaitw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_meBhcJJ2Ee-BT5awBArLlA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
@@ -3538,6 +3541,7 @@
   <addons xmi:id="_0Dw2YKZWEe-BKd4jURL5wg" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_cxrlEaZYEe-MAqdJ9LwlcA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="__CPrQKZYEe-afYEq7Ptm9w" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_2GBR4acuEe-jtuW7QxFJ-A" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_f16tYJJoEe-J2OUjGPaitw" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_f16tYZJoEe-J2OUjGPaitw" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_f16tYpJoEe-J2OUjGPaitw" elementId="org.eclipse.ui.category.edit" name="Edit"/>

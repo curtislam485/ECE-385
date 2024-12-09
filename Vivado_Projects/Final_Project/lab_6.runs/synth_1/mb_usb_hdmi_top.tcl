@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 5
+set_msg_config  -id {DRC MDRV-1}  -string {{ERROR: [DRC MDRV-1] Multiple Driver Nets: Net arrow1/Q[0] has multiple drivers: arrow1/arrow_y_reg[0]/Q, and current_col_array_reg[0][0][0]/Q.}}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 

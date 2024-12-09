@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module arrow#(
     parameter MAX_PER_COLUMN = 4  // Define the default value here
 )  
@@ -27,47 +26,46 @@ module arrow#(
     input  logic        Reset,
     input  logic        frame_clk,
     input  logic [7:0]  keycode,
-    input  logic [9:0]  ArrowY,
-    input  logic [9:0]  Speed,         // Speed of the arrow
-    input  logic [1:0]  Direction,     // 0: Up, 1: Down, 2: Left, 3: Right
+    input  int          ArrowY,          // Initial Y position
+    input  logic [9:0]  Speed,           // Speed of the arrow
+    input  logic [1:0]  Direction,       // 0: Up, 1: Down, 2: Left, 3: Right
     
-    output logic [9:0]  CurrentY,      // Current Y position of the arrow
-    output logic        Hit,           // Whether the arrow has been hit
-    output logic        Missed         // Whether the arrow has been missed
+    output int          NextY,           // Next Y position of the arrow
+    output logic        Hit,             // Whether the arrow has been hit
+    output logic        Missed           // Whether the arrow has been missed
 );
-    // Internal logic goes here
-    logic [9:0] arrow_y;
+
+    // Internal signals
+    int arrow_y;
     logic hit, missed;
 
+    // Sequential logic for arrow movement
     always_ff @(posedge frame_clk or posedge Reset) begin
-        if ((Reset) || (ArrowY == -9'sd1)) begin    // reset or dont move if -1
-            arrow_y <= ArrowY;
+        if (Reset || ArrowY == -1) begin
+            // Reset or uninitialized arrow
+            arrow_y <= ArrowY; // Reset to initial position or -1
             hit <= 1'b0;
             missed <= 1'b0;
-        end
-        else begin // Move the arrow
+        end else begin
+            // Update arrow position
             arrow_y <= arrow_y + Speed;
-            
-            // Check for hit
-            if (keycode == 8'hFF) begin
-                hit <= 1'b1;
-            end
-            
-            // Check if arrow has gone off screen
-//            if (arrow_y >= 480) begin
-//                missed <= 1'b1;
-//                active <= 1'b0;
-//            end
-            
-            // temporary, if arrow has gone off screen, go back to the top and go down
+
+            // Check for out-of-bounds (missed arrow)
             if (arrow_y >= 480) begin
-                arrow_y = 0;
+                arrow_y <= 0;  // Reset position (loop back)
+                missed <= 1'b1;
+            end
+
+            // Check for hit condition
+            if (keycode == 8'hFF) begin // Assuming 8'hFF is the "hit" code
+                hit <= 1'b1;
             end
         end
     end
 
-    // Assign outputs
-    assign CurrentY = arrow_y;
+    // Output assignments
+    assign NextY = arrow_y;
     assign Hit = hit;
     assign Missed = missed;
+
 endmodule

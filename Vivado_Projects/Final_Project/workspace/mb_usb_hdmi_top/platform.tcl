@@ -76,3 +76,205 @@ platform clean
 platform active {mb_usb_hdmi_top}
 platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/Final_Project.xsa}
 platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/Final_Project.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform clean
+platform clean
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform clean
+platform clean
+platform generate
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform clean
+platform clean
+platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa}
+platform generate -domains 

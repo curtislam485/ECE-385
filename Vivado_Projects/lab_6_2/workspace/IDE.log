@@ -2179,3 +2179,36 @@ con
 ----------------End of Script----------------
 
 03:33:42 INFO  : Disconnected from the channel tcfchan#5.
+05:01:56 DEBUG : Logs will be stored at 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/IDE.log'.
+05:01:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab_6_2\workspace\temp_xsdb_launch_script.tcl
+05:02:02 INFO  : XSCT server has started successfully.
+05:02:02 INFO  : plnx-install-location is set to ''
+05:02:02 INFO  : Successfully done setting XSCT server connection channel  
+05:02:02 INFO  : Successfully done setting workspace for the tool. 
+05:02:03 INFO  : Platform repository initialization has completed.
+05:02:03 INFO  : Successfully done query RDI_DATADIR 
+05:02:04 INFO  : Registering command handlers for Vitis TCF services
+05:02:18 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+05:02:27 INFO  : Result from executing command 'removePlatformRepo': 
+05:02:35 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+05:05:07 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+05:05:07 INFO  : Result from executing command 'getPlatforms': 
+05:05:07 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+05:05:14 INFO  : The hardware specification used by project 'mb_usb' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+05:05:14 INFO  : The file 'C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab_6_2\workspace\mb_usb\_ide\bitstream\Final_Project.bit' stored in project is removed.
+05:05:14 INFO  : The file 'C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab_6_2\workspace\mb_usb\_ide\bitstream\Final_Project.mmi' stored in project is removed.
+05:05:14 INFO  : The file 'C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab_6_2\workspace\mb_usb\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+05:05:14 INFO  : The file 'C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab_6_2\workspace\mb_usb\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+05:05:14 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\lab_6_2\workspace\mb_usb\_ide\bitstream' in project 'mb_usb'.
+05:05:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:05:28 INFO  : Jtag cable 'RealDigital Boo 887100000005A' is selected.
+05:05:28 INFO  : 'jtag frequency' command is executed.
+05:05:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:05:28 ERROR : couldn't open "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb/_ide/bitstream/Final_Project.bit": no such file or directory
+05:05:28 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb/_ide/bitstream/Final_Project.bit": no such file or directory
+05:05:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+05:05:28 ERROR : couldn't open "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb/_ide/bitstream/Final_Project.bit": no such file or directory

@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config  -id {DRC MDRV-1}  -string {{ERROR: [DRC MDRV-1] Multiple Driver Nets: Net arrow1/Q[0] has multiple drivers: arrow1/arrow_y_reg[0]/Q, and current_col_array_reg[0][0][0]/Q.}}  -suppress 
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }

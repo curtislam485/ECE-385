@@ -63,22 +63,6 @@ module mb_usb_hdmi_top(
     parameter MAX_PER_COLUMN = 4;     // Maximum number of arrows per column
     parameter TOTAL_ARROWS = MAX_PER_COLUMN * 4;    // max total arrows
     
-    //Keycode HEX drivers
-    hex_driver HexA (
-        .clk(Clk),
-        .reset(reset_ah),
-        .in({keycode0_gpio[31:28], keycode0_gpio[27:24], keycode0_gpio[23:20], keycode0_gpio[19:16]}),
-        .hex_seg(hex_segA),
-        .hex_grid(hex_gridA)
-    );
-    
-    hex_driver HexB (
-        .clk(Clk),
-        .reset(reset_ah),
-        .in({keycode0_gpio[15:12], keycode0_gpio[11:8], keycode0_gpio[7:4], keycode0_gpio[3:0]}),
-        .hex_seg(hex_segB),
-        .hex_grid(hex_gridB)
-    );
     
     mb_block mb_block_i (
         .clk_100MHz(Clk),
@@ -170,38 +154,55 @@ module mb_usb_hdmi_top(
     // potential locations for each ball (column), hold the y coordinate of locations, if -1, the arrow has not been initialized
     
     int random_num;
-    int testCounter = 0;
+    int counter = 0;
     // column 1 array x = 127
     // signed 9 bit integer
-    logic signed [8:0] col_array [0:3][0:MAX_PER_COLUMN - 1];
-    logic signed [8:0] current_col_array [0:3][0:MAX_PER_COLUMN - 1];
+    int col_array [0:3][0:MAX_PER_COLUMN - 1];
+    int current_col_array [0:3][0:MAX_PER_COLUMN - 1];
+
     
     logic signed [8:0] active_array_1 [0:MAX_PER_COLUMN - 1];
     logic signed [8:0] hit_array_1 [0:MAX_PER_COLUMN - 1];
     logic signed [8:0] missed_array_1 [0:MAX_PER_COLUMN - 1];
     
-    // fill array
-    initial begin
-        testCounter = 1;
-        for (int i = 0; i < 4; i++) begin  // 4 columns
-            // Initialize all elements to -1
-            for (int j = 0; j < MAX_PER_COLUMN; j++) begin
-                col_array[i][j] = -1; 
+    always_ff @ (posedge vsync or posedge reset_ah)
+    begin
+        if (reset_ah) begin
+            counter <= 0; // Reset counter on reset
+            for (int i = 0; i < 4; i++) begin  // 4 columns
+                // Initialize all elements to -1
+                for (int j = 0; j < MAX_PER_COLUMN; j++) begin
+                    col_array[i][j] <= -1;
+                    current_col_array[i][j] <= -1;
+                end
             end
+            col_array[0][0] <= 0;
+            current_col_array[0][0] <= 0;
+        end
+        else begin
+            random_num = $random;
+            if (random_num % 100 == 0) begin
+                // create a ball here randomly in one of the 4 columns
+            end
+            // test ball
+            if (counter == 200) begin
+//                current_col_array[0][0] = 0;
+            end
+            
+            for (int i = 0; i < 4; i++) begin
+                for (int j = 0; j < MAX_PER_COLUMN; j++) begin                    
+                    col_array[i][j] <= current_col_array[i][j]; // the problem is that current_col_array isnt updating into col_array
+                end
+            end
+            
+            // Dynamically update the first arrow's position
+            current_col_array[0][0] <= arrow1.NextY;
+            
+            counter <= counter + 1;
         end
     end
     
-    always_ff @ (posedge vsync)
-    begin
-        random_num = $random;
-        if (random_num % 100 == 0) begin
-            // create a ball here randomly in one of the 4 columns
-        end
-        if (testCounter == 1) begin
-            col_array[0][0] = 0; // test to create 1 ball in column 0 that constantly cycles
-            testCounter = 0;
-        end
-    end
+    int temp;
     
     // column 2 array x = 255
     
@@ -234,10 +235,10 @@ module mb_usb_hdmi_top(
         .frame_clk(vsync),
         .keycode(keycode0_gpio[7:0]),
         .ArrowY(col_array[0][0]),
-        .Speed(10),
+        .Speed(1),
         .Direction(0),
         
-        .CurrentY(current_col_array[0][0]),
+        .NextY(temp), // change this back to current_col_array[0][0]
         .Hit(hit_array_1[0]),
         .Missed(missed_array_1[0])
     );
@@ -249,6 +250,23 @@ module mb_usb_hdmi_top(
         .Red(red),
         .Green(green),
         .Blue(blue)
+    );
+    
+    //Keycode HEX drivers
+    hex_driver HexA (
+        .clk(Clk),
+        .reset(reset_ah),
+        .in({temp[7:4], temp[3:0], counter[7:4], counter[3:0]}),
+        .hex_seg(hex_segA),
+        .hex_grid(hex_gridA)
+    );
+    
+    hex_driver HexB (
+        .clk(Clk),
+        .reset(reset_ah),
+        .in({col_array[0][0][7:4], col_array[0][0][3:0], current_col_array[0][0][7:4], current_col_array[0][0][3:0]}),
+        .hex_seg(hex_segB),
+        .hex_grid(hex_gridB)
     );
     
 endmodule

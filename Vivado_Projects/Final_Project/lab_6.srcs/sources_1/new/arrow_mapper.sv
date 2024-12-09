@@ -27,7 +27,7 @@ module arrow_mapper #(
 (
     input  logic [9:0] DrawX,
     input  logic [9:0] DrawY,
-    input  logic signed [8:0] ColArray [0:3][0:MAX_PER_COLUMN-1],
+    input  int ColArray [0:3][0:MAX_PER_COLUMN-1],
     
     output logic [3:0] Red,
     output logic [3:0] Green,
@@ -35,40 +35,44 @@ module arrow_mapper #(
 );
     
     logic ball_on;
-    logic [9:0] DistX, DistY, Size;
+    int DistX, DistY, Size;
+    int BallX, BallY;
     assign Size = BALL_RADIUS;
+    
+//    assign BallX = 200;
+//    assign BallY = 200;
 
     always_comb begin
         ball_on = 1'b0;
-        Red = 4'h0;
-        Green = 4'h0;
-        Blue = 4'h0;
-
+        Red = 4'hF;   // White background
+        Green = 4'hF;
+        Blue = 4'hF;
+    
         for (int col = 0; col < 4; col++) begin
             for (int row = 0; row < MAX_PER_COLUMN; row++) begin
-                if (ColArray[col][row] != -9'sd1) begin  // Check if there's a ball
+                if (ColArray[col][row] != -1) begin  // Check if there's a ball
                     // Calculate the center of the ball
-                    logic [9:0] BallX = (col * 128) + 127;  // Assuming 128 pixels per column
-                    logic [9:0] BallY = ColArray[col][row];
-
+                    BallX = (col * 128) + 127;  // Assuming 128 pixels per column
+                    BallY = ColArray[col][row];
+    
                     // Check if DrawX and DrawY are within the ball
                     DistX = DrawX - BallX;
                     DistY = DrawY - BallY;
                     if ((DistX * DistX + DistY * DistY) <= (Size * Size)) begin
                         ball_on = 1'b1;
-                        Red = 4'hF;   // You can change these colors
-                        Green = 4'hF; // to whatever you want
-                        Blue = 4'hF;  // for the ball
+                        Red = 4'h0;   // Green ball
+                        Green = 4'hF;
+                        Blue = 4'h0;
                     end
                 end
             end
         end
-
-        // If not drawing a ball, you can set a background color here
+    
+        // If not drawing a ball, keep the background color
         if (!ball_on) begin
-            Red = 4'h0;   // Black background
-            Green = 4'hF; // You can change these
-            Blue = 4'h0;  // to any background color
+            Red = 4'hF;   // White background
+            Green = 4'hF;
+            Blue = 4'hF;
         end
     end
 endmodule
