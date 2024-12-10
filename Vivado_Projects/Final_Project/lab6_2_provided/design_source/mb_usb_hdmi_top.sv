@@ -161,16 +161,15 @@ module mb_usb_hdmi_top(
     int current_col_array [0:3][0:MAX_PER_COLUMN - 1];
 
     
-    logic signed [8:0] active_array_1 [0:MAX_PER_COLUMN - 1];
-    logic signed [8:0] hit_array_1 [0:MAX_PER_COLUMN - 1];
-    logic signed [8:0] missed_array_1 [0:MAX_PER_COLUMN - 1];
-    
-    always_ff @ (posedge vsync or posedge reset_ah)
-    begin
+    logic signed [8:0] active_array [0:3][0:MAX_PER_COLUMN - 1];
+    logic signed [8:0] hit_array [0:3][0:MAX_PER_COLUMN - 1];
+    logic signed [8:0] missed_array [0:3][0:MAX_PER_COLUMN - 1];
+
+    // Block to update current_col_array based on the counter and arrow1.NextY
+    always_ff @(posedge vsync or posedge reset_ah) begin
         if (reset_ah) begin
-            counter <= 0; // Reset counter on reset
-            for (int i = 0; i < 4; i++) begin  // 4 columns
-                // Initialize all elements to -1
+            counter <= 0;
+            for (int i = 0; i < 4; i++) begin
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin
                     col_array[i][j] <= -1;
                     current_col_array[i][j] <= -1;
@@ -178,31 +177,32 @@ module mb_usb_hdmi_top(
             end
             col_array[0][0] <= 0;
             current_col_array[0][0] <= 0;
+            col_array[2][0] <= 0;
+            current_col_array[3][0] <= 0;
+        end
+//        else if (counter % 200 == 0) begin
+//            // Update current_col_array[0][0] based on counter
+//            col_array[0][0] <= 0;
+//            current_col_array[0][0] <= 0;
+//        end 
+        else if (counter == 200) begin
+            col_array[0][1] <= 0;
+            current_col_array[0][1] <= 0;
         end
         else begin
-            random_num = $random;
-            if (random_num % 100 == 0) begin
-                // create a ball here randomly in one of the 4 columns
-            end
-            // test ball
-            if (counter == 200) begin
-//                current_col_array[0][0] = 0;
-            end
-            
+            current_col_array[0][0] <= arrow1.NextY;
+            current_col_array[0][1] <= arrow2.NextY;
             for (int i = 0; i < 4; i++) begin
-                for (int j = 0; j < MAX_PER_COLUMN; j++) begin                    
-                    col_array[i][j] <= current_col_array[i][j]; // the problem is that current_col_array isnt updating into col_array
+                for (int j = 0; j < MAX_PER_COLUMN; j++) begin
+                    col_array[i][j] <= current_col_array[i][j];
                 end
             end
-            
-            // Dynamically update the first arrow's position
-            current_col_array[0][0] <= arrow1.NextY;
-            
-            counter <= counter + 1;
         end
+        counter <= counter + 1;
     end
     
-    int temp;
+    int temp1;
+    int temp2;
     
     // column 2 array x = 255
     
@@ -238,9 +238,23 @@ module mb_usb_hdmi_top(
         .Speed(1),
         .Direction(0),
         
-        .NextY(temp), // change this back to current_col_array[0][0]
-        .Hit(hit_array_1[0]),
-        .Missed(missed_array_1[0])
+        .NextY(temp1), // change this back to current_col_array[0][0]
+        .Hit(hit_array[0][0]),
+        .Missed(missed_array[0][0])
+    );
+    
+    
+    arrow arrow2( // locked x position
+        .Reset(reset_ah),
+        .frame_clk(vsync),
+        .keycode(keycode0_gpio[7:0]),
+        .ArrowY(col_array[0][1]),
+        .Speed(1),
+        .Direction(0),
+        
+        .NextY(temp2), // change this back to current_col_array[0][0]
+        .Hit(hit_array[0][1]),
+        .Missed(missed_array[0][1])
     );
     
     arrow_mapper arrow_instance(
@@ -256,7 +270,7 @@ module mb_usb_hdmi_top(
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({temp[7:4], temp[3:0], counter[7:4], counter[3:0]}),
+        .in({temp1[3:0], counter[11:8], counter[7:4], counter[3:0]}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
