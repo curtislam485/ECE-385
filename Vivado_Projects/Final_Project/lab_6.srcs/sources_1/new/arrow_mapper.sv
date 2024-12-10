@@ -21,7 +21,7 @@
 
 
 module arrow_mapper #(
-    parameter MAX_PER_COLUMN = 4,  // Define the default value here
+    parameter MAX_PER_COLUMN = 24,  // Define the default value here
     parameter BALL_RADIUS = 20      // temporarily making balls
 )
 (

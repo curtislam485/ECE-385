@@ -7452,3 +7452,328 @@ con
 20:23:06 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
 20:23:06 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
 20:23:07 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+20:23:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:23:11 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:23:11 INFO  : 'jtag frequency' command is executed.
+20:23:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:23:13 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit"
+20:23:13 INFO  : Context for processor 'microblaze_0' is selected.
+20:23:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+20:23:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:23:13 INFO  : Context for processor 'microblaze_0' is selected.
+20:23:13 INFO  : System reset is completed.
+20:23:16 INFO  : 'after 3000' command is executed.
+20:23:16 INFO  : Context for processor 'microblaze_0' is selected.
+20:23:16 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+20:23:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+20:23:16 INFO  : Context for processor 'microblaze_0' is selected.
+20:23:16 INFO  : 'con' command is executed.
+20:23:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:23:16 INFO  : Disconnected from the channel tcfchan#49.
+12:54:57 DEBUG : Logs will be stored at 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/IDE.log'.
+12:54:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\workspace\temp_xsdb_launch_script.tcl
+12:55:02 INFO  : Registering command handlers for Vitis TCF services
+12:55:02 INFO  : Platform repository initialization has completed.
+12:55:02 INFO  : XSCT server has started successfully.
+12:55:07 INFO  : plnx-install-location is set to ''
+12:55:07 INFO  : Successfully done setting XSCT server connection channel  
+12:55:07 INFO  : Successfully done query RDI_DATADIR 
+12:55:07 INFO  : Successfully done setting workspace for the tool. 
+12:55:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:55:44 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+12:55:44 INFO  : 'jtag frequency' command is executed.
+12:55:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+12:55:46 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit"
+12:55:46 INFO  : Context for processor 'microblaze_0' is selected.
+12:55:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+12:55:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:55:46 INFO  : Context for processor 'microblaze_0' is selected.
+12:55:46 INFO  : System reset is completed.
+12:55:49 INFO  : 'after 3000' command is executed.
+12:55:49 INFO  : Context for processor 'microblaze_0' is selected.
+12:55:49 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+12:55:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+12:55:49 INFO  : Context for processor 'microblaze_0' is selected.
+12:55:49 INFO  : 'con' command is executed.
+12:55:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:55:49 INFO  : Disconnected from the channel tcfchan#1.
+13:37:47 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+13:38:01 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+13:38:01 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+13:38:01 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+13:44:06 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+13:44:16 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+13:44:16 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+13:44:16 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+13:44:43 WARN  : Failed to closehw "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa"
+Reason: Cannot close hw design 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+Design is not opened in the current session.
+
+13:44:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:44:46 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+13:44:46 INFO  : 'jtag frequency' command is executed.
+13:44:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+13:44:47 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit"
+13:44:47 INFO  : Context for processor 'microblaze_0' is selected.
+13:44:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+13:44:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:44:48 INFO  : Context for processor 'microblaze_0' is selected.
+13:44:48 INFO  : System reset is completed.
+13:44:51 INFO  : 'after 3000' command is executed.
+13:44:51 INFO  : Context for processor 'microblaze_0' is selected.
+13:44:51 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+13:44:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+13:44:51 INFO  : Context for processor 'microblaze_0' is selected.
+13:44:51 INFO  : 'con' command is executed.
+13:44:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:44:51 INFO  : Disconnected from the channel tcfchan#4.
+14:00:09 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+14:00:22 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+14:00:22 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+14:00:22 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+14:00:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:00:28 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+14:00:28 INFO  : 'jtag frequency' command is executed.
+14:00:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:00:29 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit"
+14:00:29 INFO  : Context for processor 'microblaze_0' is selected.
+14:00:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+14:00:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:00:29 INFO  : Context for processor 'microblaze_0' is selected.
+14:00:29 INFO  : System reset is completed.
+14:00:32 INFO  : 'after 3000' command is executed.
+14:00:32 INFO  : Context for processor 'microblaze_0' is selected.
+14:00:33 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+14:00:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+14:00:33 INFO  : Context for processor 'microblaze_0' is selected.
+14:00:33 INFO  : 'con' command is executed.
+14:00:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:00:33 INFO  : Disconnected from the channel tcfchan#6.
+17:00:26 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+17:00:37 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+17:00:37 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+17:00:37 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+17:00:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:43 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:00:43 INFO  : 'jtag frequency' command is executed.
+17:00:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:00:44 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit"
+17:00:44 INFO  : Context for processor 'microblaze_0' is selected.
+17:00:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+17:00:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:00:44 INFO  : Context for processor 'microblaze_0' is selected.
+17:00:44 INFO  : System reset is completed.
+17:00:47 INFO  : 'after 3000' command is executed.
+17:00:47 INFO  : Context for processor 'microblaze_0' is selected.
+17:00:48 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:00:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:00:48 INFO  : Context for processor 'microblaze_0' is selected.
+17:00:48 INFO  : 'con' command is executed.
+17:00:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:00:48 INFO  : Disconnected from the channel tcfchan#8.
+17:13:57 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+17:14:06 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+17:14:06 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+17:14:06 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+17:14:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:14:12 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:14:12 INFO  : 'jtag frequency' command is executed.
+17:14:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:14:14 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit"
+17:14:14 INFO  : Context for processor 'microblaze_0' is selected.
+17:14:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+17:14:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:14:14 INFO  : Context for processor 'microblaze_0' is selected.
+17:14:14 INFO  : System reset is completed.
+17:14:17 INFO  : 'after 3000' command is executed.
+17:14:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:14:17 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:14:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:14:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:14:17 INFO  : 'con' command is executed.
+17:14:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:14:17 INFO  : Disconnected from the channel tcfchan#10.
+17:21:43 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+17:22:01 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+17:22:01 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+17:22:02 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+17:22:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:07 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:22:07 INFO  : 'jtag frequency' command is executed.
+17:22:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:22:09 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit"
+17:22:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:22:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+17:22:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:22:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:22:09 INFO  : System reset is completed.
+17:22:12 INFO  : 'after 3000' command is executed.
+17:22:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:22:12 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:22:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:22:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:22:12 INFO  : 'con' command is executed.
+17:22:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:22:12 INFO  : Disconnected from the channel tcfchan#12.
+17:29:36 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+17:29:54 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+17:29:54 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+17:29:54 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+17:30:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:30:12 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:30:12 INFO  : 'jtag frequency' command is executed.
+17:30:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:30:13 INFO  : Device configured successfully with "C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit"
+17:30:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa'.
+17:30:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:30:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:13 INFO  : System reset is completed.
+17:30:17 INFO  : 'after 3000' command is executed.
+17:30:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:17 INFO  : The application 'C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:30:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:30:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:17 INFO  : 'con' command is executed.
+17:30:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:30:17 INFO  : Disconnected from the channel tcfchan#14.
+17:39:51 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+17:40:00 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+17:40:00 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+17:40:00 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...

@@ -60,7 +60,7 @@ module mb_usb_hdmi_top(
     const logic [9:0] Y_Max = 479;     // Bottommost point on the Y axis
     
     
-    parameter MAX_PER_COLUMN = 4;     // Maximum number of arrows per column
+    parameter MAX_PER_COLUMN = 24;     // Maximum number of arrows per column
     parameter TOTAL_ARROWS = MAX_PER_COLUMN * 4;    // max total arrows
     
     
@@ -156,13 +156,14 @@ module mb_usb_hdmi_top(
     int random_num;
     int counter = 0;
     int speed_level = 2;
+    int score = 0;
+    
     // column 1 array x = 127
     // signed 9 bit integer
     int col_array [0:3][0:MAX_PER_COLUMN - 1];
     int current_col_array [0:3][0:MAX_PER_COLUMN - 1];
     int temp_array [0:3][0:MAX_PER_COLUMN - 1];
     
-    logic signed [8:0] active_array [0:3][0:MAX_PER_COLUMN - 1];
     logic signed [8:0] hit_array [0:3][0:MAX_PER_COLUMN - 1];
     logic signed [8:0] missed_array [0:3][0:MAX_PER_COLUMN - 1];
 
@@ -179,31 +180,48 @@ module mb_usb_hdmi_top(
             col_array[0][0] <= 0;
             current_col_array[0][0] <= 0; // you need to set both to spawn it in
             col_array[2][0] <= 0;
+            current_col_array[2][0] <= 0;
+            col_array[3][0] <= 0;
             current_col_array[3][0] <= 0;
         end
-//        else if (counter % 200 == 0) begin
-//            // Update current_col_array[0][0] based on counter
-//            col_array[0][0] <= 0;
-//            current_col_array[0][0] <= 0;
-//        end 
-        else if (counter == 200) begin
-            col_array[0][1] <= 0;
-            current_col_array[0][1] <= 0;
-            col_array[1][0] <= 0;
-            current_col_array[1][0] <= 0;
-        end
+//        else if (counter == 200) begin
+//            col_array[0][1] <= 0;
+//            current_col_array[0][1] <= 0;
+//            col_array[1][0] <= 0;
+//            current_col_array[1][0] <= 0;
+//        end
         
-        else begin
-            current_col_array[0][0] <= arrow0.NextY;
-            current_col_array[0][1] <= arrow1.NextY;
-            current_col_array[0][2] <= arrow2.NextY;
-            current_col_array[0][3] <= arrow3.NextY;
-            current_col_array[1][0] <= arrow4.NextY;
+        else begin            
             for (int i = 0; i < 4; i++) begin
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin
+                    current_col_array[i][j] <= temp_array[i][j];
                     col_array[i][j] <= current_col_array[i][j];
+                    // if value is greater than or equal to Y_Max, set it to -1 and decrease score
                 end
             end
+            if (counter == 200) begin
+                col_array[0][1] <= 0;
+                current_col_array[0][1] <= 0;
+                col_array[1][0] <= 0;
+                current_col_array[1][0] <= 0;
+           end
+            
+//            if () begin // if d keystroke detected
+//                // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
+                
+                
+//                // if within a certain bound, set it to -1 and increase score
+//                // if there is nothing within bound, decrease score
+//            end
+//            if () begin // if f keystroke detected
+//            end
+//            if () begin // if j keystroke detected
+//            end
+//            if () begin // if k keystroke detected
+//            end
+            
+            
+            
         end
         counter <= counter + 1;
     end
@@ -219,70 +237,77 @@ module mb_usb_hdmi_top(
     // for testing sake lets just start off with column 1
     
     // make one arrow for now
-    arrow arrow0( // locked x position
-        .Reset(reset_ah),
-        .frame_clk(vsync),
-        .keycode(keycode0_gpio[7:0]),
-        .ArrowY(col_array[0][0]),
-        .Speed(speed_level),
-        .Direction(0),
+//    arrow arrow0( // locked x position
+//        .Reset(reset_ah),
+//        .frame_clk(vsync),
+//        .keycode(keycode0_gpio[7:0]),
+//        .ArrowY(col_array[0][0]),
+//        .Speed(speed_level),
+//        .Direction(0),
         
-        .NextY(temp_array[0][0]),
-        .Hit(hit_array[0][0]),
-        .Missed(missed_array[0][0])
-    );
+//        .NextY(temp_array[0][0])
+//    );
     
-    arrow arrow1( // locked x position
-        .Reset(reset_ah),
-        .frame_clk(vsync),
-        .keycode(keycode0_gpio[7:0]),
-        .ArrowY(col_array[0][1]),
-        .Speed(speed_level),
-        .Direction(0),
+//    arrow arrow1( // locked x position
+//        .Reset(reset_ah),
+//        .frame_clk(vsync),
+//        .keycode(keycode0_gpio[7:0]),
+//        .ArrowY(col_array[0][1]),
+//        .Speed(speed_level),
+//        .Direction(0),
         
-        .NextY(temp_array[0][1]),
-        .Hit(hit_array[0][1]),
-        .Missed(missed_array[0][1])
-    );
+//        .NextY(temp_array[0][1])
+//    );
     
-    arrow arrow2( // locked x position
-        .Reset(reset_ah),
-        .frame_clk(vsync),
-        .keycode(keycode0_gpio[7:0]),
-        .ArrowY(col_array[0][2]),
-        .Speed(speed_level),
-        .Direction(0),
+//    arrow arrow2( // locked x position
+//        .Reset(reset_ah),
+//        .frame_clk(vsync),
+//        .keycode(keycode0_gpio[7:0]),
+//        .ArrowY(col_array[0][2]),
+//        .Speed(speed_level),
+//        .Direction(0),
         
-        .NextY(temp_array[0][2]),
-        .Hit(hit_array[0][2]),
-        .Missed(missed_array[0][2])
-    );
+//        .NextY(temp_array[0][2])
+//    );
     
-    arrow arrow3( // locked x position
-        .Reset(reset_ah),
-        .frame_clk(vsync),
-        .keycode(keycode0_gpio[7:0]),
-        .ArrowY(col_array[0][3]),
-        .Speed(speed_level),
-        .Direction(0),
+//    arrow arrow3( // locked x position
+//        .Reset(reset_ah),
+//        .frame_clk(vsync),
+//        .keycode(keycode0_gpio[7:0]),
+//        .ArrowY(col_array[0][3]),
+//        .Speed(speed_level),
+//        .Direction(0),
         
-        .NextY(temp_array[0][3]),
-        .Hit(hit_array[0][3]),
-        .Missed(missed_array[0][3])
-    );
+//        .NextY(temp_array[0][3])
+//    );
     
-    arrow arrow4( // locked x position
-        .Reset(reset_ah),
-        .frame_clk(vsync),
-        .keycode(keycode0_gpio[7:0]),
-        .ArrowY(col_array[1][0]),
-        .Speed(speed_level),
-        .Direction(0),
+//    arrow arrow4( // locked x position
+//        .Reset(reset_ah),
+//        .frame_clk(vsync),
+//        .keycode(keycode0_gpio[7:0]),
+//        .ArrowY(col_array[0][4]),
+//        .Speed(speed_level),
+//        .Direction(0),
         
-        .NextY(temp_array[1][0]),
-        .Hit(hit_array[1][0]),
-        .Missed(missed_array[1][0])
-    );
+//        .NextY(temp_array[0][4])
+//    );
+    
+    genvar i, j;
+    generate
+        for (i = 0; i < 4; i = i + 1) begin : row_gen
+            for (j = 0; j < MAX_PER_COLUMN; j = j + 1) begin : col_gen
+                arrow arrow_instance (
+                    .Reset(reset_ah),
+                    .frame_clk(vsync),
+                    .keycode(keycode0_gpio[7:0]),
+                    .ArrowY(col_array[i][j]),
+                    .Speed(speed_level),
+                    .Direction(0),
+                    .NextY(temp_array[i][j])
+                );
+            end
+         end
+    endgenerate
     
     arrow_mapper arrow_instance(
         .DrawX(drawX),
