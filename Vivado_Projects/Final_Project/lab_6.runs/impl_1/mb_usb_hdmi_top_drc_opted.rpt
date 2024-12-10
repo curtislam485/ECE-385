@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Mon Dec  9 19:35:01 2024
+| Date         : Mon Dec  9 20:20:56 2024
 | Host         : Curtis-Laptop running 64-bit major release  (build 9200)
 | Command      : report_drc -file mb_usb_hdmi_top_drc_opted.rpt -pb mb_usb_hdmi_top_drc_opted.pb -rpx mb_usb_hdmi_top_drc_opted.rpx
 | Design       : mb_usb_hdmi_top
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 43
+             Violations found: 67
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| DPIP-1   | Warning  | Input pipelining                                    | 42         |
+| DPIP-1   | Warning  | Input pipelining                                    | 66         |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -179,80 +179,200 @@ Related violations: <none>
 
 DPIP-1#27 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__2 input arrow_instance/ball_on3__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__17 input arrow_instance/ball_on3__17/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#28 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__2 input arrow_instance/ball_on3__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__17 input arrow_instance/ball_on3__17/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#29 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__3 input arrow_instance/ball_on3__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__18 input arrow_instance/ball_on3__18/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#30 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__3 input arrow_instance/ball_on3__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__18 input arrow_instance/ball_on3__18/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#31 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__4 input arrow_instance/ball_on3__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__19 input arrow_instance/ball_on3__19/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#32 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__4 input arrow_instance/ball_on3__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__19 input arrow_instance/ball_on3__19/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#33 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__5 input arrow_instance/ball_on3__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__2 input arrow_instance/ball_on3__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#34 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__5 input arrow_instance/ball_on3__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__2 input arrow_instance/ball_on3__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#35 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__6 input arrow_instance/ball_on3__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__20 input arrow_instance/ball_on3__20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#36 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__6 input arrow_instance/ball_on3__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__20 input arrow_instance/ball_on3__20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#37 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__7 input arrow_instance/ball_on3__7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__21 input arrow_instance/ball_on3__21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#38 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__7 input arrow_instance/ball_on3__7/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__21 input arrow_instance/ball_on3__21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#39 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__8 input arrow_instance/ball_on3__8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__22 input arrow_instance/ball_on3__22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#40 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__8 input arrow_instance/ball_on3__8/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__22 input arrow_instance/ball_on3__22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#41 Warning
 Input pipelining  
-DSP arrow_instance/ball_on3__9 input arrow_instance/ball_on3__9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP arrow_instance/ball_on3__23 input arrow_instance/ball_on3__23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#42 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__23 input arrow_instance/ball_on3__23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__24 input arrow_instance/ball_on3__24/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__24 input arrow_instance/ball_on3__24/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__25 input arrow_instance/ball_on3__25/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__25 input arrow_instance/ball_on3__25/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__26 input arrow_instance/ball_on3__26/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__26 input arrow_instance/ball_on3__26/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__27 input arrow_instance/ball_on3__27/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__27 input arrow_instance/ball_on3__27/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__28 input arrow_instance/ball_on3__28/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__28 input arrow_instance/ball_on3__28/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__3 input arrow_instance/ball_on3__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__3 input arrow_instance/ball_on3__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#55 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__4 input arrow_instance/ball_on3__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#56 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__4 input arrow_instance/ball_on3__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#57 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__5 input arrow_instance/ball_on3__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#58 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__5 input arrow_instance/ball_on3__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#59 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__6 input arrow_instance/ball_on3__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#60 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__6 input arrow_instance/ball_on3__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#61 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__7 input arrow_instance/ball_on3__7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#62 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__7 input arrow_instance/ball_on3__7/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#63 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__8 input arrow_instance/ball_on3__8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#64 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__8 input arrow_instance/ball_on3__8/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#65 Warning
+Input pipelining  
+DSP arrow_instance/ball_on3__9 input arrow_instance/ball_on3__9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#66 Warning
 Input pipelining  
 DSP arrow_instance/ball_on3__9 input arrow_instance/ball_on3__9/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>

@@ -155,11 +155,12 @@ module mb_usb_hdmi_top(
     
     int random_num;
     int counter = 0;
+    int speed_level = 2;
     // column 1 array x = 127
     // signed 9 bit integer
     int col_array [0:3][0:MAX_PER_COLUMN - 1];
     int current_col_array [0:3][0:MAX_PER_COLUMN - 1];
-
+    int temp_array [0:3][0:MAX_PER_COLUMN - 1];
     
     logic signed [8:0] active_array [0:3][0:MAX_PER_COLUMN - 1];
     logic signed [8:0] hit_array [0:3][0:MAX_PER_COLUMN - 1];
@@ -176,7 +177,7 @@ module mb_usb_hdmi_top(
                 end
             end
             col_array[0][0] <= 0;
-            current_col_array[0][0] <= 0;
+            current_col_array[0][0] <= 0; // you need to set both to spawn it in
             col_array[2][0] <= 0;
             current_col_array[3][0] <= 0;
         end
@@ -188,10 +189,16 @@ module mb_usb_hdmi_top(
         else if (counter == 200) begin
             col_array[0][1] <= 0;
             current_col_array[0][1] <= 0;
+            col_array[1][0] <= 0;
+            current_col_array[1][0] <= 0;
         end
+        
         else begin
-            current_col_array[0][0] <= arrow1.NextY;
-            current_col_array[0][1] <= arrow2.NextY;
+            current_col_array[0][0] <= arrow0.NextY;
+            current_col_array[0][1] <= arrow1.NextY;
+            current_col_array[0][2] <= arrow2.NextY;
+            current_col_array[0][3] <= arrow3.NextY;
+            current_col_array[1][0] <= arrow4.NextY;
             for (int i = 0; i < 4; i++) begin
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin
                     col_array[i][j] <= current_col_array[i][j];
@@ -200,9 +207,6 @@ module mb_usb_hdmi_top(
         end
         counter <= counter + 1;
     end
-    
-    int temp1;
-    int temp2;
     
     // column 2 array x = 255
     
@@ -214,47 +218,70 @@ module mb_usb_hdmi_top(
     // arrows are generated randomly, and there are a maximum of 4 arrows per column (for now)
     // for testing sake lets just start off with column 1
     
-//    input  logic        Reset,
-//    input  logic        frame_clk,
-//    input  logic [7:0]  keycode,
-//    input  logic [9:0]  ArrowX,
-//    input  logic [9:0]  ArrowY,
-//    input  logic        enable,
-//    input  logic [9:0]  Speed,         // Speed of the arrow
-//    input  logic [1:0]  Direction,     // 0: Up, 1: Down, 2: Left, 3: Right
-    
-//    output logic [9:0]  CurrentY,      // Current Y position of the arrow
-//    output logic        Active,        // Whether the arrow is currently active
-//    output logic        Hit,           // Whether the arrow has been hit
-//    output logic        Missed         // Whether the arrow has been missed
-    
-    // might not even need this
     // make one arrow for now
-    arrow arrow1( // locked x position
+    arrow arrow0( // locked x position
         .Reset(reset_ah),
         .frame_clk(vsync),
         .keycode(keycode0_gpio[7:0]),
         .ArrowY(col_array[0][0]),
-        .Speed(1),
+        .Speed(speed_level),
         .Direction(0),
         
-        .NextY(temp1), // change this back to current_col_array[0][0]
+        .NextY(temp_array[0][0]),
         .Hit(hit_array[0][0]),
         .Missed(missed_array[0][0])
     );
     
+    arrow arrow1( // locked x position
+        .Reset(reset_ah),
+        .frame_clk(vsync),
+        .keycode(keycode0_gpio[7:0]),
+        .ArrowY(col_array[0][1]),
+        .Speed(speed_level),
+        .Direction(0),
+        
+        .NextY(temp_array[0][1]),
+        .Hit(hit_array[0][1]),
+        .Missed(missed_array[0][1])
+    );
     
     arrow arrow2( // locked x position
         .Reset(reset_ah),
         .frame_clk(vsync),
         .keycode(keycode0_gpio[7:0]),
-        .ArrowY(col_array[0][1]),
-        .Speed(1),
+        .ArrowY(col_array[0][2]),
+        .Speed(speed_level),
         .Direction(0),
         
-        .NextY(temp2), // change this back to current_col_array[0][0]
-        .Hit(hit_array[0][1]),
-        .Missed(missed_array[0][1])
+        .NextY(temp_array[0][2]),
+        .Hit(hit_array[0][2]),
+        .Missed(missed_array[0][2])
+    );
+    
+    arrow arrow3( // locked x position
+        .Reset(reset_ah),
+        .frame_clk(vsync),
+        .keycode(keycode0_gpio[7:0]),
+        .ArrowY(col_array[0][3]),
+        .Speed(speed_level),
+        .Direction(0),
+        
+        .NextY(temp_array[0][3]),
+        .Hit(hit_array[0][3]),
+        .Missed(missed_array[0][3])
+    );
+    
+    arrow arrow4( // locked x position
+        .Reset(reset_ah),
+        .frame_clk(vsync),
+        .keycode(keycode0_gpio[7:0]),
+        .ArrowY(col_array[1][0]),
+        .Speed(speed_level),
+        .Direction(0),
+        
+        .NextY(temp_array[1][0]),
+        .Hit(hit_array[1][0]),
+        .Missed(missed_array[1][0])
     );
     
     arrow_mapper arrow_instance(
@@ -270,7 +297,7 @@ module mb_usb_hdmi_top(
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({temp1[3:0], counter[11:8], counter[7:4], counter[3:0]}),
+        .in({keycode0_gpio[7:4], keycode0_gpio[3:0], counter[7:4], counter[3:0]}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
