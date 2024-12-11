@@ -45,9 +45,9 @@ module arrow#(
             arrow_y = ArrowY + Speed;
 
             // Check for out-of-bounds (missed arrow)
-            if (arrow_y >= 480) begin
-                arrow_y = 0;  // Reset position (loop back)
-            end
+//            if (arrow_y >= 480) begin
+//                arrow_y = 0;  // Reset position (loop back)
+//            end
 
             // Check for hit condition
             if (keycode == 8'hFF) begin // Assuming 8'hFF is the "hit" code

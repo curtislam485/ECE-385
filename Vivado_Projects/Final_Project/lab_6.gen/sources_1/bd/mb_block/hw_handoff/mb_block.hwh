@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 24 22:26:42 2024" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Dec 10 18:26:28 2024" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s50" NAME="mb_block" PACKAGE="csga324" SPEEDGRADE="-1"/>
 
@@ -1083,6 +1083,9 @@
             <CONNECTION INSTANCE="timer_usb_axi" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M06_ACLK"/>
             <CONNECTION INSTANCE="spi_usb" PORT="ext_spi_clk"/>
+            <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M07_ACLK"/>
+            <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M08_ACLK"/>
+            <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M09_ACLK"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_1_locked">
@@ -4658,7 +4661,7 @@
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="NUM_SI" VALUE="1"/>
-        <PARAMETER NAME="NUM_MI" VALUE="7"/>
+        <PARAMETER NAME="NUM_MI" VALUE="10"/>
         <PARAMETER NAME="STRATEGY" VALUE="0"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="0"/>
         <PARAMETER NAME="ENABLE_PROTOCOL_CHECKERS" VALUE="0"/>
@@ -5769,6 +5772,93 @@
             <CONNECTION INSTANCE="timer_usb_axi" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="M07_ACLK" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M07_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M07_AXI_awaddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_awvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_awready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_wdata" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_wstrb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_wvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_wready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_bresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_bvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_bready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_araddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_arvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_arready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_rdata" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_rresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_rvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_rready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_ACLK" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M08_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M08_AXI_awaddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_awvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_AXI_awready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_wdata" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_wstrb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_wvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_AXI_wready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_AXI_bresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_AXI_bvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_bready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_araddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_arvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_AXI_arready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_AXI_rdata" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_AXI_rresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M08_AXI_rvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M08_AXI_rready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_ACLK" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M09_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M09_AXI_awaddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_awvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_AXI_awready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_wdata" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_wstrb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_wvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_AXI_wready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_AXI_bresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_AXI_bvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_bready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_araddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_arvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_AXI_arready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_AXI_rdata" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_AXI_rresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M09_AXI_rvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_rready" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="microblaze_0_M_AXI_DP" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -5953,6 +6043,75 @@
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M06_AXI_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M06_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M06_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="M07_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="M07_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M07_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M07_AXI_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="M07_AXI_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="M07_AXI_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M07_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="M07_AXI_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="M07_AXI_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="M07_AXI_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="M07_AXI_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="M07_AXI_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M07_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M07_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M07_AXI_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M07_AXI_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="M07_AXI_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="M07_AXI_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="M07_AXI_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="M07_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="M08_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="M08_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M08_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M08_AXI_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="M08_AXI_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="M08_AXI_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M08_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="M08_AXI_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="M08_AXI_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="M08_AXI_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="M08_AXI_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="M08_AXI_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M08_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M08_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M08_AXI_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M08_AXI_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="M08_AXI_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="M08_AXI_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="M08_AXI_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="M08_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="M09_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="M09_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M09_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M09_AXI_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="M09_AXI_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="M09_AXI_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M09_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="M09_AXI_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="M09_AXI_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="M09_AXI_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="M09_AXI_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="M09_AXI_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M09_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M09_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M09_AXI_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M09_AXI_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="M09_AXI_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="M09_AXI_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="M09_AXI_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="M09_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -6998,6 +7157,9 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M05_ARESETN"/>
             <CONNECTION INSTANCE="timer_usb_axi" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M06_ARESETN"/>
+            <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M07_ARESETN"/>
+            <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M08_ARESETN"/>
+            <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M09_ARESETN"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

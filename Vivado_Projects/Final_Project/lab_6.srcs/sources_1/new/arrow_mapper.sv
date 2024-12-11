@@ -28,6 +28,7 @@ module arrow_mapper #(
     input  logic [9:0] DrawX,
     input  logic [9:0] DrawY,
     input  int ColArray [0:3][0:MAX_PER_COLUMN-1],
+    input  logic    Clock,
     
     output logic [3:0] Red,
     output logic [3:0] Green,
@@ -39,11 +40,21 @@ module arrow_mapper #(
     int BallX, BallY;
     assign Size = BALL_RADIUS;
     
-//    assign BallX = 200;
-//    assign BallY = 200;
+    logic [14:0] rom_address;
+    logic [3:0] rom_q;
+    logic [3:0] palette_red, palette_green, palette_blue;
+    assign rom_address = ((DrawX * 200) / 640) + (((DrawY * 100) / 480) * 200);
+    logic negedge_vga_clk;
+
+    // read from ROM on negedge, set pixel on posedge
+    assign negedge_vga_clk = ~Clock;
 
     always_comb begin
         ball_on = 1'b0;
+        // default to background
+//        Red = palette_red;
+//		Green = palette_green;
+//		Blue = palette_blue;
         Red = 4'hF;   // White background
         Green = 4'hF;
         Blue = 4'hF;
@@ -75,4 +86,18 @@ module arrow_mapper #(
             Blue = 4'hF;
         end
     end
+
+//background2_rom background2_rom (
+//	.clka   (negedge_vga_clk),
+//	.addra (rom_address),
+//	.douta       (rom_q)
+//);
+
+//background2_palette background2_palette (
+//	.index (rom_q),
+//	.red   (palette_red),
+//	.green (palette_green),
+//	.blue  (palette_blue)
+//);    
+    
 endmodule

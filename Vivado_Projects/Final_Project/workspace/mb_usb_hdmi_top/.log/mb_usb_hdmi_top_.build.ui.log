@@ -1,6 +1,6 @@
-2024-12-10T17:39:55.936968900255-17:39:55 **** Incremental Build of project mb_usb_hdmi_top ****
-000-buildplatform.bat 50314 mb_usb_hdmi_top no_domain_build 
-000-xsct% XSDB Server Channel: tcfchan#15
+2024-12-11T02:53:10.59798600255-02:53:10 **** Incremental Build of project mb_usb_hdmi_top ****
+000-buildplatform.bat 51527 mb_usb_hdmi_top no_domain_build 
+000-xsct% XSDB Server Channel: tcfchan#5
 000-C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
 000-Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
 000-make --no-print-directory seq_libs
@@ -83,11 +83,11 @@
 000-
 000-"Running Make libs in microblaze_0/libsrc/spi_v4_9/src"
 000-
-000-"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
-000-
 000-make -C microblaze_0/libsrc/spi_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
 000-AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPIL
 000-ER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
 000-
 000-make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
 000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
@@ -145,5 +145,5 @@
 000-'Finished building libraries'
 000-
 00255-
-17:40:00 Build Finished (took 4s.817ms)
+02:53:20 Build Finished (took 10s.293ms)
 

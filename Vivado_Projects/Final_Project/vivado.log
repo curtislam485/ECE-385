@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Dec 10 12:52:54 2024
-# Process ID: 30128
+# Start of session at: Wed Dec 11 01:27:45 2024
+# Process ID: 23016
 # Current directory: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2744 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\lab_6.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26268 C:\Users\curti\OneDrive\Documents\UIUC\ECE-385\Vivado_Projects\Final_Project\lab_6.xpr
 # Log file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/vivado.log
 # Journal file: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project\vivado.jou
 # Running On: Curtis-Laptop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34014 MB
@@ -81,38 +81,26 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/RD_hdmi_ip2020'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1206.945 ; gain = 426.191
-INFO: [Vivado 12-8231] Launching Vitis
-INFO: [Vivado 12-417] Running vitis
-INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1180.973 ; gain = 373.859
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 13:17:42 2024] Launched synth_1...
+[Wed Dec 11 01:29:07 2024] Launched synth_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 13:17:42 2024] Launched impl_1...
+[Wed Dec 11 01:29:07 2024] Launched impl_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
 reset_run synth_1
-update_compile_order -fileset sources_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1
+
 launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 13:24:32 2024] Launched synth_1...
+[Wed Dec 11 01:41:37 2024] Launched synth_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 13:24:32 2024] Launched impl_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 13:25:45 2024] Launched synth_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 13:25:45 2024] Launched impl_1...
+[Wed Dec 11 01:41:37 2024] Launched impl_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
 open_run impl_1
 INFO: [Device 21-403] Loading part xc7s50csga324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.252 . Memory (MB): peak = 1677.199 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1700 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 1586.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1277 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2022.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -125,12 +113,12 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2283.293 ; gain = 3.219
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2283.293 ; gain = 3.219
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.770 . Memory (MB): peak = 2215.367 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.771 . Memory (MB): peak = 2215.367 ; gain = 0.000
 Generating merged BMM file for the design top 'mb_usb_hdmi_top'...
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/data/mb_bootloop_le.elf 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2283.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2215.367 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 246 instances were transformed.
   LUT6_2 => LUT6_2 (LUT5, LUT6): 143 instances
@@ -139,64 +127,32 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 68 instances
   SRLC16E => SRL16E: 1 instance 
 
-open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 2430.055 ; gain = 1140.316
-open_report: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2481.523 ; gain = 37.012
-write_hw_platform -fixed -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2022.2/data/embeddedsw) loading 1 seconds
-file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2364.984 ; gain = 1135.016
 reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 13:49:42 2024] Launched synth_1...
+[Wed Dec 11 01:51:15 2024] Launched synth_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 13:49:42 2024] Launched impl_1...
+[Wed Dec 11 01:51:15 2024] Launched impl_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 13:50:54 2024] Launched synth_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 13:50:54 2024] Launched impl_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-reset_run impl_1
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 13:55:03 2024] Launched synth_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 13:55:03 2024] Launched impl_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-write_hw_platform -fixed -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
 write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
 INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ...
 INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
 INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2022.2/data/embeddedsw) loading 0 seconds
 file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
 reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 16:40:52 2024] Launched synth_1...
+[Wed Dec 11 02:00:38 2024] Launched synth_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 16:40:52 2024] Launched impl_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 16:47:23 2024] Launched synth_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 16:47:23 2024] Launched impl_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 16:55:08 2024] Launched synth_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 16:55:08 2024] Launched impl_1...
+[Wed Dec 11 02:00:38 2024] Launched impl_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
 INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
 write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
@@ -207,49 +163,15 @@ file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/
 reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 17:09:03 2024] Launched synth_1...
+[Wed Dec 11 02:06:28 2024] Launched synth_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 17:09:03 2024] Launched impl_1...
+[Wed Dec 11 02:06:28 2024] Launched impl_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
 reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 17:16:04 2024] Launched synth_1...
+[Wed Dec 11 02:22:34 2024] Launched synth_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 17:16:04 2024] Launched impl_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 17:23:58 2024] Launched synth_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 17:23:58 2024] Launched impl_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
-write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
-file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Dec 10 17:32:41 2024] Launched synth_1...
-Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log
-[Tue Dec 10 17:32:41 2024] Launched impl_1...
+[Wed Dec 11 02:22:34 2024] Launched impl_1...
 Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log
 write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa
 INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ...
