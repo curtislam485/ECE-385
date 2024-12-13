@@ -141,7 +141,7 @@ module mb_usb_hdmi_top(
     int current_col_array [0:3][0:MAX_PER_COLUMN - 1];
     int temp_array [0:3][0:MAX_PER_COLUMN - 1];
     
-    logic [3:0] rand_num;
+    int rand_num;
     
     assign pressed_1 = keycode0_gpio[31:24] == 8'h1E || keycode0_gpio[23:16] == 8'h1E || keycode0_gpio[15:8] == 8'h1E || keycode0_gpio[7:0] == 8'h1E;
     assign pressed_2 = keycode0_gpio[31:24] == 8'h1F || keycode0_gpio[23:16] == 8'h1F || keycode0_gpio[15:8] == 8'h1F || keycode0_gpio[7:0] == 8'h1F;
@@ -156,7 +156,6 @@ module mb_usb_hdmi_top(
         if (reset_ah) begin
             counter <= 0;
             speed_level <= 1;
-            rand_num <= 4'b1011;
             for (int i = 0; i < 4; i++) begin
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin  //MAX_PER_COLUMN
                     col_array[i][j] <= -1;
@@ -177,14 +176,14 @@ module mb_usb_hdmi_top(
 //            current_col_array[1][0] <= 0;
 //        end
         
-        else begin   
-            rand_num <= {rand_num[2:0], rand_num[3] ^ rand_num[2]};         
+        else begin
             for (int i = 0; i < 4; i++) begin
                 found = 0; // Track if an empty slot is found in this column
+                rand_num = $random % 4;
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin
 //                    col_array[i][j] <= current_col_array[i][j];
                     
-                    if (!found && current_col_array[i][j] < Y_Min && counter % 100 == 0) begin// counter % 100 == 0 && rand_num[1:0] == i 
+                    if (!found && current_col_array[i][j] < Y_Min && counter % 100 == 0 && rand_num == 0) begin// counter % 100 == 0 && rand_num[1:0] == i 
                         current_col_array[i][j] <= 0;
                         col_array[i][j] <= 0;
                         found = 1; // Mark this column as updated

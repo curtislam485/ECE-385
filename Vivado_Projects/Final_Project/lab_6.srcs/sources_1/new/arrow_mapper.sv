@@ -35,7 +35,7 @@ module arrow_mapper #(
     output logic [3:0] Blue
 );
     
-    logic ball_on;
+    logic ball_on, line_on;
     int DistX, DistY, Size;
     int BallX, BallY;
     assign Size = BALL_RADIUS;
@@ -52,6 +52,7 @@ module arrow_mapper #(
 
     always_comb begin
         ball_on = 1'b0;
+        line_on = 1'b0;
         // default to background
         Red = palette_red;
 		Green = palette_green;
@@ -76,12 +77,18 @@ module arrow_mapper #(
                         Green = 4'hF;
                         Blue = 4'h0;
                     end
+                    else if (DrawY >= 395 && DrawY <= 405) begin
+                        line_on = 1'b1;
+                        Red = 4'h0; // black line
+                        Green = 4'h0;
+                        Blue = 4'h0;
+                    end
                 end
             end
         end
     
         // If not drawing a ball, keep the background color
-        if (!ball_on) begin
+        if (!ball_on && !line_on) begin
 //            Red = 4'hF;   // White background
 //            Green = 4'hF;
 //            Blue = 4'hF;
@@ -103,18 +110,5 @@ background1 background1_instance (
     .bg1_green  (palette_green),
     .bg1_blue   (palette_blue)
 );
-    
-//background1_rom background1_rom (
-//	.clka   (negedge_vga_clk),
-//	.addra (rom_address),
-//	.douta       (rom_q)
-//);
-
-//background1_palette background1_palette (
-//	.index (rom_q),
-//	.red   (palette_red),
-//	.green (palette_green),
-//	.blue  (palette_blue)
-//);
     
 endmodule

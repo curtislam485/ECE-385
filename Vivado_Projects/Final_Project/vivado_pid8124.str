@@ -5480,3 +5480,626 @@ setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/F
 selectButton("OptionPane.button", "OK"); // JButton
 // Tcl Message: file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit 
 selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 51 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 259, 117); // ac
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Mapper.sv", 8); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Mapper.sv", 8); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "arrow_mapper.sv", 2); // o
+selectCodeEditor("arrow_mapper.sv", 358, 312); // ac
+selectCodeEditor("arrow_mapper.sv", 346, 320); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectCodeEditor("arrow_mapper.sv", 616, 304); // ac
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("arrow_mapper.sv", 196, 176); // ac
+selectCodeEditor("arrow_mapper.sv", 196, 176, false, false, false, false, true); // ac - Double Click
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("arrow_mapper.sv", 372, 205); // ac
+selectCodeEditor("arrow_mapper.sv", 244, 287, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("arrow_mapper.sv", 416, 159); // ac
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arrow_mapper.sv", 554, 175); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arrow_mapper.sv", 557, 181, true, false, false, false, false); // ac - Shift Key
+typeControlKey((HResource) null, "arrow_mapper.sv", 'c'); // ac
+selectCodeEditor("arrow_mapper.sv", 497, 196); // ac
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+selectCodeEditor("arrow_mapper.sv", 228, 222); // ac
+selectCodeEditor("arrow_mapper.sv", 228, 222, false, false, false, false, true); // ac - Double Click
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("arrow_mapper.sv", 226, 241); // ac
+selectCodeEditor("arrow_mapper.sv", 226, 241, false, false, false, false, true); // ac - Double Click
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("arrow_mapper.sv", 312, 209); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("arrow_mapper.sv", 565, 184); // ac
+selectCodeEditor("arrow_mapper.sv", 150, 141); // ac
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arrow_mapper.sv", 226, 149); // ac
+selectCodeEditor("arrow_mapper.sv", 216, 135); // ac
+selectCodeEditor("arrow_mapper.sv", 216, 135, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "arrow_mapper.sv", 'c'); // ac
+selectCodeEditor("arrow_mapper.sv", 223, 224); // ac
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arrow_mapper.sv", 556, 139); // ac
+// TclEventType: DG_GRAPH_STALE
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+selectCodeEditor("arrow_mapper.sv", 180, 160); // ac
+selectCodeEditor("arrow_mapper.sv", 297, 160); // ac
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arrow_mapper.sv", 241, 161); // ac
+selectCodeEditor("arrow_mapper.sv", 241, 161, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "arrow_mapper.sv", 'c'); // ac
+selectCodeEditor("arrow_mapper.sv", 179, 309); // ac
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 43, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // cz
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 20:37:27 2024] Launched synth_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log [Thu Dec 12 20:37:27 2024] Launched impl_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,367 MB. GUI used memory: 209 MB. Current time: 12/12/24, 8:50:29 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,367 MB. GUI used memory: 208 MB. Current time: 12/12/24, 9:20:29 PM CST
+// Elapsed time: 2673 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Export Hardware Platform"); // e
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+// Tcl Message: INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ... 
+// Tcl Message: INFO: [Project 1-1943] The Hardware Platform can be used for Hardware INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+dismissDialog("Export Hardware Platform"); // bq
+// Elapsed time: 57 seconds
+selectCodeEditor("arrow_mapper.sv", 289, 255); // ac
+selectCodeEditor("arrow_mapper.sv", 367, 100); // ac
+selectCodeEditor("arrow_mapper.sv", 358, 243); // ac
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 4); // o
+selectCodeEditor("mb_usb_hdmi_top.sv", 276, 173); // ac
+// Elapsed time: 19 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Export Hardware Platform"); // e
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+// Tcl Message: INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ... 
+// Tcl Message: INFO: [Project 1-1943] The Hardware Platform can be used for Hardware INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+dismissDialog("Export Hardware Platform"); // bq
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit");
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit 
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "arrow_mapper.sv", 2); // o
+selectCodeEditor("arrow_mapper.sv", 309, 135); // ac
+selectCodeEditor("arrow_mapper.sv", 322, 134); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arrow_mapper.sv", 303, 182); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arrow_mapper.sv", 380, 267); // ac
+selectCodeEditor("arrow_mapper.sv", 257, 368); // ac
+selectCodeEditor("arrow_mapper.sv", 423, 112); // ac
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+selectCodeEditor("arrow_mapper.sv", 175, 264); // ac
+selectCodeEditor("arrow_mapper.sv", 179, 263, false, false, false, false, true); // ac - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "background1_palette.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hex_driver.sv", 7); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Mapper.sv", 8); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "background1_example.sv", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "arrow.sv", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 4); // o
+selectCodeEditor("mb_usb_hdmi_top.sv", 784, 202); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 43, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 41 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 42 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Thu Dec 12 21:26:51 2024] Launched synth_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log [Thu Dec 12 21:26:51 2024] Launched impl_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 268 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SCHEMATIC, "Import Schematic..."); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Export Hardware Platform"); // e
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+// Tcl Message: INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ... 
+// Tcl Message: INFO: [Project 1-1943] The Hardware Platform can be used for Hardware INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+dismissDialog("Export Hardware Platform"); // bq
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit");
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit 
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 49 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 206, 127); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 312, 266); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 626, 71); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 622, 74); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 642, 71); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 735, 77); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 759, 73); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 777, 73); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mb_usb_hdmi_top.sv", 397, 62); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 623, 221); // ac
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("mb_usb_hdmi_top.sv", 416, 114, true, false, false, false, false); // ac - Shift Key
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("mb_usb_hdmi_top.sv", 612, 196); // ac
+typeControlKey((HResource) null, "mb_usb_hdmi_top.sv", 'v'); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 106, 220); // ac
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mb_usb_hdmi_top.sv", 258, 219); // ac
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("mb_usb_hdmi_top.sv", 258, 219, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "mb_usb_hdmi_top.sv", 'c'); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 711, 268); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 711, 268, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "mb_usb_hdmi_top.sv", 'v'); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 804, 267); // ac
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("mb_usb_hdmi_top.sv", 403, 215); // ac
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 43, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Thu Dec 12 21:33:46 2024] Launched synth_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log [Thu Dec 12 21:33:46 2024] Launched impl_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 165 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), arrow_instance : arrow_mapper (arrow_mapper.sv)]", 6, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), arrow_instance : arrow_mapper (arrow_mapper.sv)]", 6, true, false, false, false, false, true); // D - Double Click - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 63 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Export Hardware Platform"); // e
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+// Tcl Message: INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ... 
+// Tcl Message: INFO: [Project 1-1943] The Hardware Platform can be used for Hardware INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+dismissDialog("Export Hardware Platform"); // bq
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit");
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit 
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 4); // o
+// Elapsed time: 22 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 414, 232); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 411, 220); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 443, 94); // ac
+// Elapsed time: 16 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 681, 36); // ac
+typeControlKey((HResource) null, "mb_usb_hdmi_top.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 450, 170); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 508, 184); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 410, 183); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand_num", true); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand_num"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand_num"); // d.c
+selectCodeEditor("mb_usb_hdmi_top.sv", 317, 282); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 307, 265, true, false, false, false, false); // ac - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mb_usb_hdmi_top.sv", 232, 97); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 141, 94); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mb_usb_hdmi_top.sv", 125, 103); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 125, 103, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "mb_usb_hdmi_top.sv", 'c'); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 151, 223); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 151, 223, false, false, false, false, true); // ac - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+typeControlKey((HResource) null, "mb_usb_hdmi_top.sv", 'c'); // ac
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "background1_palette.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "background1_example.sv", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "arrow_mapper.sv", 2); // o
+// Elapsed time: 17 seconds
+selectCodeEditor("arrow_mapper.sv", 362, 242); // ac
+selectCodeEditor("arrow_mapper.sv", 359, 256); // ac
+selectCodeEditor("arrow_mapper.sv", 344, 285); // ac
+selectCodeEditor("arrow_mapper.sv", 75, 340); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+selectCodeEditor("arrow_mapper.sv", 248, 265); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("arrow_mapper.sv", 104, 285); // ac
+typeControlKey((HResource) null, "arrow_mapper.sv", 'c'); // ac
+selectCodeEditor("arrow_mapper.sv", 272, 179); // ac
+typeControlKey((HResource) null, "arrow_mapper.sv", 'v'); // ac
+selectCodeEditor("arrow_mapper.sv", 241, 206, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("arrow_mapper.sv", 422, 223); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 43, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: DG_GRAPH_STALE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cz
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 21:42:28 2024] Launched synth_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log [Thu Dec 12 21:42:28 2024] Launched impl_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3376.926 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 251 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Export Hardware Platform"); // e
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+// Tcl Message: INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ... 
+// Tcl Message: INFO: [Project 1-1943] The Hardware Platform can be used for Hardware INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+dismissDialog("Export Hardware Platform"); // bq
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit");
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit 
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 54 seconds
+selectCodeEditor("arrow_mapper.sv", 239, 247); // ac
+selectCodeEditor("arrow_mapper.sv", 233, 158, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("arrow_mapper.sv", 348, 215); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("arrow_mapper.sv", 243, 369); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 43, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/mb_usb_hdmi_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Launch Runs"); // cz
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "background1_palette.sv", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 4); // o
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Thu Dec 12 21:48:18 2024] Launched synth_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/synth_1/runme.log [Thu Dec 12 21:48:18 2024] Launched impl_1... Run output will be captured here: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 3376.926 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,367 MB. GUI used memory: 215 MB. Current time: 12/12/24, 9:50:30 PM CST
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// Elapsed time: 293 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Export Hardware Platform"); // e
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+// Tcl Message: INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa ... 
+// Tcl Message: INFO: [Project 1-1943] The Hardware Platform can be used for Hardware INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.xsa 
+dismissDialog("Export Hardware Platform"); // bq
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit");
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit 
+selectButton("OptionPane.button", "OK"); // JButton
