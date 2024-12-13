@@ -60,7 +60,7 @@ module mb_usb_hdmi_top(
     const logic [9:0] Y_Max = 479;     // Bottommost point on the Y axis
     
     
-    parameter MAX_PER_COLUMN = 24;     // Maximum number of arrows per column
+    parameter MAX_PER_COLUMN = 4;     // Maximum number of arrows per column
     parameter TOTAL_ARROWS = MAX_PER_COLUMN * 4;    // max total arrows
     
     
@@ -127,29 +127,6 @@ module mb_usb_hdmi_top(
         .TMDS_DATA_P(hdmi_tmds_data_p),         
         .TMDS_DATA_N(hdmi_tmds_data_n)          
     );
-
-    
-    //Ball Module
-//    ball ball_instance(
-//        .Reset(reset_ah),
-//        .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
-//        .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
-//        .BallX(ballxsig),
-//        .BallY(ballysig),
-//        .BallS(ballsizesig)
-//    );
-    
-//    //Color Mapper Module   
-//    color_mapper color_instance(
-//        .BallX(ballxsig),
-//        .BallY(ballysig),
-//        .DrawX(drawX),
-//        .DrawY(drawY),
-//        .Ball_size(ballsizesig),
-//        .Red(red),
-//        .Green(green),
-//        .Blue(blue)
-//    );
     
     // potential locations for each ball (column), hold the y coordinate of locations, if -1, the arrow has not been initialized
     
@@ -157,25 +134,26 @@ module mb_usb_hdmi_top(
     int counter = 0;
     int speed_level = 3;    // default speed (1)
     int score = 0;
+    logic pressed_d, pressed_f, pressed_j, pressed_k, pressed_1, pressed_2, pressed_3;
     
-    // column 1 array x = 127
-    // signed 9 bit integer
     int col_array [0:3][0:MAX_PER_COLUMN - 1];
     int current_col_array [0:3][0:MAX_PER_COLUMN - 1];
     int temp_array [0:3][0:MAX_PER_COLUMN - 1];
     
     logic [3:0] rand_num;
     
-    logic signed [8:0] hit_array [0:3][0:MAX_PER_COLUMN - 1];
-    logic signed [8:0] missed_array [0:3][0:MAX_PER_COLUMN - 1];
+    assign pressed_1 = keycode0_gpio[31:24] == 8'h1E || keycode0_gpio[23:16] == 8'h1E || keycode0_gpio[15:8] == 8'h1E || keycode0_gpio[7:0] == 8'h1E;
+    assign pressed_2 = keycode0_gpio[31:24] == 8'h1F || keycode0_gpio[23:16] == 8'h1F || keycode0_gpio[15:8] == 8'h1F || keycode0_gpio[7:0] == 8'h1F;
+    assign pressed_3 = keycode0_gpio[31:24] == 8'h20 || keycode0_gpio[23:16] == 8'h20 || keycode0_gpio[15:8] == 8'h20 || keycode0_gpio[7:0] == 8'h20; 
 
     // Block to update current_col_array based on the counter and arrow1.NextY
     always_ff @(posedge vsync or posedge reset_ah) begin
         if (reset_ah) begin
             counter <= 0;
+            speed_level <= 1;
             rand_num <= 4'b1011;
             for (int i = 0; i < 4; i++) begin
-                for (int j = 0; j < MAX_PER_COLUMN; j++) begin
+                for (int j = 0; j < MAX_PER_COLUMN; j++) begin  //MAX_PER_COLUMN
                     col_array[i][j] <= -1;
                     current_col_array[i][j] <= -1;
                 end
@@ -201,18 +179,18 @@ module mb_usb_hdmi_top(
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin
 //                    col_array[i][j] <= current_col_array[i][j];
                     
-                    if (!found && current_col_array[i][j] < Y_Min && rand_num[1:0] == i && counter == 100) begin  // current_col_array[i][j] < 0 doesnt work
-                        current_col_array[i][j] <= 0;
-                        col_array[i][j] <= 0;
-                        counter = 0;
-                        found = 1; // Mark this column as updated
-                    end
+//                    if (!found && current_col_array[i][j] < Y_Min) begin// counter % 100 == 0 && rand_num[1:0] == i 
+//                        current_col_array[i][j] <= 0;
+//                        col_array[i][j] <= 0;
+//                        counter = 0;
+//                        found = 1; // Mark this column as updated
+//                    end
                     
                     // if value is greater than or equal to Y_Max, set it to -1 and decrease score
                     // Reset values that reach the boundary
-                    else if (current_col_array[i][j] >= Y_Max) begin
-                        current_col_array[i][j] <= -1;
-                        col_array[i][j] <= -1;
+                    if (current_col_array[i][j] >= Y_Max) begin
+                        current_col_array[i][j] <= 0;
+                        col_array[i][j] <= 0;
                     end
                     
                     else begin
@@ -223,15 +201,16 @@ module mb_usb_hdmi_top(
                 end
             end
             
-//            if () begin  // if 1 is pressed, change speed to 3
-//                speed_level <= 3;
-//            end
-//            if () begin  // if 2 is pressed, change speed to 5
-//                speed_level <= 5;
-//            end
-//            if () begin  // if 3 is pressed, change speed to 7
-//                speed_level <= 7;
-//            end
+            // Update speed_level based on pressed buttons
+            if (pressed_1) begin
+                speed_level <= 3;
+            end else if (pressed_2) begin
+                speed_level <= 5;
+            end else if (pressed_3) begin
+                speed_level <= 7;
+            end else begin
+                speed_level <= speed_level; // Maintain the current speed level when no key is pressed
+            end
             
 //            if () begin // if d keystroke detected
 //                // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
@@ -256,14 +235,12 @@ module mb_usb_hdmi_top(
     genvar i, j;
     generate
         for (i = 0; i < 4; i = i + 1) begin : row_gen
-            for (j = 0; j < MAX_PER_COLUMN; j = j + 1) begin : col_gen
+            for (j = 0; j < MAX_PER_COLUMN; j = j + 1) begin : col_gen  // MAX_PER_COLUMN
                 arrow arrow_instance (
                     .Reset(reset_ah),
                     .frame_clk(vsync),
-                    .keycode(keycode0_gpio[7:0]),
                     .ArrowY(col_array[i][j]),
                     .Speed(speed_level),
-                    .Direction(0),
                     .NextY(temp_array[i][j])
                 );
             end
@@ -284,7 +261,7 @@ module mb_usb_hdmi_top(
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[7:4], keycode0_gpio[3:0], counter[7:4], counter[3:0]}),
+        .in({keycode0_gpio[15:12], keycode0_gpio[11:8], keycode0_gpio[7:4], keycode0_gpio[3:0]}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -292,7 +269,7 @@ module mb_usb_hdmi_top(
     hex_driver HexB (
         .clk(Clk),
         .reset(reset_ah),
-        .in({{2'b00, rand_num[1:0]}, found, current_col_array[0][0][7:4], current_col_array[0][0][3:0]}),
+        .in({keycode0_gpio[31:28], keycode0_gpio[27:24], keycode0_gpio[23:20], keycode0_gpio[19:16]}),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );

@@ -1,6 +1,6 @@
-02:53:10 **** Incremental Build of project mb_usb_hdmi_top ****
-buildplatform.bat 51527 mb_usb_hdmi_top no_domain_build 
-xsct% XSDB Server Channel: tcfchan#5
+20:02:44 **** Incremental Build of project mb_usb_hdmi_top ****
+buildplatform.bat 55849 mb_usb_hdmi_top no_domain_build 
+xsct% XSDB Server Channel: tcfchan#27
 C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
 Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
 make --no-print-directory seq_libs
@@ -145,5 +145,5 @@ mb-ar: creating microblaze_0/lib/libxil.a
 'Finished building libraries'
 
 
-02:53:20 Build Finished (took 10s.293ms)
+20:02:49 Build Finished (took 5s.523ms)
 

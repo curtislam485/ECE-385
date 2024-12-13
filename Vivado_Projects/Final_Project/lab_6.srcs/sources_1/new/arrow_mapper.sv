@@ -21,7 +21,7 @@
 
 
 module arrow_mapper #(
-    parameter MAX_PER_COLUMN = 24,  // Define the default value here
+    parameter MAX_PER_COLUMN = 4,  // Define the default value here
     parameter BALL_RADIUS = 20      // temporarily making balls
 )
 (
@@ -45,6 +45,7 @@ module arrow_mapper #(
     logic [3:0] palette_red, palette_green, palette_blue;
     assign rom_address = ((DrawX * 200) / 640) + (((DrawY * 100) / 480) * 200);
     logic negedge_vga_clk;
+    logic temp;
 
     // read from ROM on negedge, set pixel on posedge
     assign negedge_vga_clk = ~Clock;
@@ -52,12 +53,12 @@ module arrow_mapper #(
     always_comb begin
         ball_on = 1'b0;
         // default to background
-//        Red = palette_red;
-//		Green = palette_green;
-//		Blue = palette_blue;
-        Red = 4'hF;   // White background
-        Green = 4'hF;
-        Blue = 4'hF;
+        Red = palette_red;
+		Green = palette_green;
+		Blue = palette_blue;
+//        Red = 4'hF;   // White background
+//        Green = 4'hF;
+//        Blue = 4'hF;
     
         for (int col = 0; col < 4; col++) begin
             for (int row = 0; row < MAX_PER_COLUMN; row++) begin
@@ -81,23 +82,39 @@ module arrow_mapper #(
     
         // If not drawing a ball, keep the background color
         if (!ball_on) begin
-            Red = 4'hF;   // White background
-            Green = 4'hF;
-            Blue = 4'hF;
+//            Red = 4'hF;   // White background
+//            Green = 4'hF;
+//            Blue = 4'hF;
+            
+            Red = palette_red;
+            Green = palette_green;
+            Blue = palette_blue;
         end
     end
+    
 
-//background2_rom background2_rom (
+background1 background1_instance (
+    .status (4'b0001),
+    .clock  (Clock),
+    .DrawX  (DrawX),
+    .DrawY  (DrawY),
+    .is_background1 (temp),
+    .bg1_red    (palette_red),
+    .bg1_green  (palette_green),
+    .bg1_blue   (palette_blue)
+);
+    
+//background1_rom background1_rom (
 //	.clka   (negedge_vga_clk),
 //	.addra (rom_address),
 //	.douta       (rom_q)
 //);
 
-//background2_palette background2_palette (
+//background1_palette background1_palette (
 //	.index (rom_q),
 //	.red   (palette_red),
 //	.green (palette_green),
 //	.blue  (palette_blue)
-//);    
+//);
     
 endmodule

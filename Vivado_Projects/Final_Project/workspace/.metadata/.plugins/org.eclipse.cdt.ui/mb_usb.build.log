@@ -1,6 +1,6 @@
-02:53:21 **** Incremental Build of configuration Debug for project mb_usb ****
+20:02:49 **** Incremental Build of configuration Debug for project mb_usb ****
 make all 
 make: Nothing to be done for 'all'.
 
-02:53:21 Build Finished (took 159ms)
+20:02:49 Build Finished (took 191ms)
 

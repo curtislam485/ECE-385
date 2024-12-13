@@ -691,3 +691,15 @@ setFileChooser("C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/F
 selectButton("OptionPane.button", "OK"); // JButton
 // Tcl Message: file copy -force C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/impl_1/mb_usb_hdmi_top.bit C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/mb_usb_hdmi_top.bit 
 selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 1174 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 566, 173); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 579, 174); // ac
+// Elapsed time: 32 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 476, 285); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,187 MB. GUI used memory: 140 MB. Current time: 12/11/24, 2:56:04 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  35537869 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,187 MB. GUI used memory: 140 MB. Current time: 12/11/24, 12:50:35 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 35538633 ms. Increasing delay to 106615899 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9339 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3341 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,187 MB. GUI used memory: 139 MB. Current time: 12/11/24, 1:20:39 PM CST

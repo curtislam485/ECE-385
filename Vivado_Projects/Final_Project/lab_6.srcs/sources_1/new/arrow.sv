@@ -20,15 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module arrow#(
-    parameter MAX_PER_COLUMN = 24  // Define the default value here
+    parameter MAX_PER_COLUMN = 4  // Define the default value here
 )  
 (
     input  logic        Reset,
     input  logic        frame_clk,
-    input  logic [7:0]  keycode,
     input  int          ArrowY,          // Initial Y position
     input  logic [9:0]  Speed,           // Speed of the arrow
-    input  logic [1:0]  Direction,       // 0: Up, 1: Down, 2: Left, 3: Right
     
     output int          NextY           // Next Y position of the arrow
 );
@@ -49,9 +47,6 @@ module arrow#(
 //                arrow_y = 0;  // Reset position (loop back)
 //            end
 
-            // Check for hit condition
-            if (keycode == 8'hFF) begin // Assuming 8'hFF is the "hit" code
-            end
         end
     end
 
