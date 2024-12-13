@@ -132,15 +132,17 @@ module mb_usb_hdmi_top(
     
     int random_num;
     int counter = 0;
-    int speed_level = 3;    // default speed (1)
+    int speed_level = 4;    // default speed (1)
     int level_mod = 100;
-    int score = 0;
+    int score1 = 0;
+    int score2 = 0;
     int found;
-    logic pressed_d, pressed_f, pressed_j, pressed_k, pressed_1, pressed_2, pressed_3, pressed_4;
+    logic pressed_d, pressed_f, pressed_j, pressed_k, pressed_1, pressed_2, pressed_3, pressed_4, toggle_mode;
     logic d_flag = 0;
     logic f_flag = 0;
     logic j_flag = 0;
     logic k_flag = 0;
+    logic toggle_flag = 0;
     
     int col_array [0:3][0:MAX_PER_COLUMN - 1];
     int current_col_array [0:3][0:MAX_PER_COLUMN - 1];
@@ -160,6 +162,7 @@ module mb_usb_hdmi_top(
     };
     
     int random_tracker;
+    logic singlePlayerMode = 1;
     
     assign pressed_1 = keycode0_gpio[31:24] == 8'h1E || keycode0_gpio[23:16] == 8'h1E || keycode0_gpio[15:8] == 8'h1E || keycode0_gpio[7:0] == 8'h1E;
     assign pressed_2 = keycode0_gpio[31:24] == 8'h1F || keycode0_gpio[23:16] == 8'h1F || keycode0_gpio[15:8] == 8'h1F || keycode0_gpio[7:0] == 8'h1F;
@@ -170,14 +173,17 @@ module mb_usb_hdmi_top(
     assign pressed_f = keycode0_gpio[31:24] == 8'h09 || keycode0_gpio[23:16] == 8'h09 || keycode0_gpio[15:8] == 8'h09 || keycode0_gpio[7:0] == 8'h09;
     assign pressed_j = keycode0_gpio[31:24] == 8'h0D || keycode0_gpio[23:16] == 8'h0D || keycode0_gpio[15:8] == 8'h0D || keycode0_gpio[7:0] == 8'h0D;
     assign pressed_k = keycode0_gpio[31:24] == 8'h0E || keycode0_gpio[23:16] == 8'h0E || keycode0_gpio[15:8] == 8'h0E || keycode0_gpio[7:0] == 8'h0E;
+    
+    assign toggle_mode = keycode0_gpio[31:24] == 8'h28 || keycode0_gpio[23:16] == 8'h28 || keycode0_gpio[15:8] == 8'h28 || keycode0_gpio[7:0] == 8'h28;
 
     // Block to update current_col_array based on the counter and arrow1.NextY
     always_ff @(posedge vsync or posedge reset_ah) begin
         if (reset_ah) begin
             random_tracker = 0;
+            singlePlayerMode = 1;
             level_mod = 100;
             counter <= 0;
-            speed_level <= 3;
+            speed_level <= 4;
             for (int i = 0; i < 4; i++) begin
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin  //MAX_PER_COLUMN
                     col_array[i][j] <= -1;
@@ -221,16 +227,16 @@ module mb_usb_hdmi_top(
             
             // Update speed_level based on pressed buttons
             if (pressed_1) begin
-                speed_level <= 3;
+                speed_level <= 4;
                 level_mod <= 100;
             end else if (pressed_2) begin
-                speed_level <= 5;
+                speed_level <= 6;
                 level_mod <= 50;
             end else if (pressed_3) begin
-                speed_level <= 7;
+                speed_level <= 8;
                 level_mod <= 25;
             end else if (pressed_4) begin
-                speed_level <= 9;
+                speed_level <= 10;
                 level_mod <= 10;
             end
             else begin
@@ -249,14 +255,17 @@ module mb_usb_hdmi_top(
                         maxIndex = i;
                     end
                 end
-                if (col_array[0][maxIndex] <= 410 && col_array[0][maxIndex] >= 390) begin
+                if (col_array[0][maxIndex] <= 415 && col_array[0][maxIndex] >= 385) begin
                     col_array[0][maxIndex] <= -1;
                     current_col_array[0][maxIndex] <= -1;
-                    score = score + speed_level;
+                    score1 = score1 + 1;
                 end
                 else begin
-                    if (score - speed_level > 0) begin
-                        score = score - speed_level;
+                    if (score1 - 1 < 0) begin
+                        score1 = 0;
+                    end
+                    else begin
+                        score1 = score1 - 1;
                     end
                 end
             end
@@ -278,14 +287,17 @@ module mb_usb_hdmi_top(
                         maxIndex = i;
                     end
                 end
-                if (col_array[1][maxIndex] <= 410 && col_array[1][maxIndex] >= 390) begin
+                if (col_array[1][maxIndex] <= 415 && col_array[1][maxIndex] >= 385) begin
                     col_array[1][maxIndex] <= -1;
                     current_col_array[1][maxIndex] <= -1;
-                    score = score + speed_level;
+                    score1 = score1 + 1;
                 end
                 else begin
-                    if (score - speed_level > 0) begin
-                        score = score - speed_level;
+                    if (score1 - 1 < 0) begin
+                        score1 = 0;
+                    end
+                    else begin
+                        score1 = score1 - 1;
                     end
                 end
             end
@@ -305,14 +317,32 @@ module mb_usb_hdmi_top(
                         maxIndex = i;
                     end
                 end
-                if (col_array[2][maxIndex] <= 410 && col_array[2][maxIndex] >= 390) begin
+                if (col_array[2][maxIndex] <= 415 && col_array[2][maxIndex] >= 385) begin
                     col_array[2][maxIndex] <= -1;
-                    current_col_array[1][maxIndex] <= -1;
-                    score = score + speed_level;
+                    current_col_array[2][maxIndex] <= -1;
+                    if (!singlePlayerMode) begin
+                        score2 = score2 + 1;
+                    end
+                    else begin
+                        score1 = score1 + 1;
+                    end
                 end
                 else begin
-                    if (score - speed_level > 0) begin
-                        score = score - speed_level;
+                    if (!singlePlayerMode) begin
+                        if (score2 - 1 < 0) begin
+                            score2 = 0;
+                        end
+                        else begin
+                            score2 = score2 - 1;
+                        end
+                    end
+                    else begin
+                        if (score1 - 1 < 0) begin
+                            score1 = 0;
+                        end
+                        else begin
+                            score1 = score1 - 1;
+                        end
                     end
                 end
             end
@@ -332,14 +362,32 @@ module mb_usb_hdmi_top(
                         maxIndex = i;
                     end
                 end
-                if (col_array[3][maxIndex] <= 410 && col_array[3][maxIndex] >= 390) begin
+                if (col_array[3][maxIndex] <= 415 && col_array[3][maxIndex] >= 385) begin
                     col_array[3][maxIndex] <= -1;
                     current_col_array[3][maxIndex] <= -1;
-                    score = score + speed_level;
+                    if (!singlePlayerMode) begin
+                        score2 = score2 + 1;
+                    end
+                    else begin
+                        score1 = score1 + 1;
+                    end
                 end
                 else begin
-                    if (score - speed_level > 0) begin
-                        score = score - speed_level;
+                    if (!singlePlayerMode) begin
+                        if (score2 - 1 < 0) begin
+                            score2 = 0;
+                        end
+                        else begin
+                            score2 = score2 - 1;
+                        end
+                    end
+                    else begin
+                        if (score1 - 1 < 0) begin
+                            score1 = 0;
+                        end
+                        else begin
+                            score1 = score1 - 1;
+                        end
                     end
                 end
             end
@@ -348,7 +396,19 @@ module mb_usb_hdmi_top(
                 k_flag = 0;
             end
             
+            if (toggle_mode && !toggle_flag) begin
+                toggle_flag = 1;
+                if (singlePlayerMode == 1) begin
+                    singlePlayerMode = 0; // go to multi player mode
+                end
+                else begin
+                    singlePlayerMode = 1;
+                end
+            end
             
+            if (toggle_flag && !toggle_mode) begin
+                toggle_flag = 0;
+            end
             
         end
         counter <= counter + 1;
@@ -372,6 +432,7 @@ module mb_usb_hdmi_top(
     arrow_mapper arrow_instance(
         .DrawX(drawX),
         .DrawY(drawY),
+        .SingleMode (singlePlayerMode),
         .ColArray(col_array),
         .Clock_125MHZ(clk_125MHz),
         .Red(red),
@@ -383,7 +444,7 @@ module mb_usb_hdmi_top(
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[15:12], keycode0_gpio[11:8], keycode0_gpio[7:4], keycode0_gpio[3:0]}),
+        .in({{3'b0,singlePlayerMode}, keycode0_gpio[11:8], keycode0_gpio[7:4], keycode0_gpio[3:0]}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -391,7 +452,7 @@ module mb_usb_hdmi_top(
     hex_driver HexB (
         .clk(Clk),
         .reset(reset_ah),
-        .in({speed_level[3:0], keycode0_gpio[27:24], score[7:4], score[3:0]}),
+        .in({score1[7:4], score1[3:0], score2[7:4], score2[3:0]}),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );

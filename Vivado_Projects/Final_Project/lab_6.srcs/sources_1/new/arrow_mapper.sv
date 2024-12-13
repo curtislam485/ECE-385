@@ -27,6 +27,7 @@ module arrow_mapper #(
 (
     input  logic [9:0] DrawX,
     input  logic [9:0] DrawY,
+    input  logic SingleMode,
     input  int ColArray [0:3][0:MAX_PER_COLUMN-1],
     input  logic    Clock_125MHZ,
     
@@ -45,7 +46,6 @@ module arrow_mapper #(
     logic [3:0] rom_q;
     logic [3:0] bg1_red, bg1_green, bg1_blue;
     assign rom_address = ((DrawX * 200) / 640) + (((DrawY * 100) / 480) * 200);
-    logic negedge_vga_clk;
     logic temp;
 
     // read from ROM on negedge, set pixel on posedge
@@ -72,20 +72,25 @@ module arrow_mapper #(
                     // Check if DrawX and DrawY are within the ball
                     DistX = DrawX - BallX;
                     DistY = DrawY - BallY;
-                    if (DrawY >= 395 && DrawY <= 405) begin
-                        line_on = 1'b1;
-                        Red = 4'h0; // black line
-                        Green = 4'h0;
-                        Blue = 4'h0;
-                        Red = 4'hF; // white line
-                        Green = 4'hF;
-                        Blue = 4'hF;
-                    end
                     if ((DistX * DistX + DistY * DistY) <= (Size * Size)) begin
                         ball_on = 1'b1;
                         Red = 4'h0;   // Green ball
                         Green = 4'hF;
                         Blue = 4'h0;
+                    end
+                    else if (DrawY >= 395 && DrawY <= 405) begin
+                        line_on = 1'b1;
+                        Red = 4'hF; // white line
+                        Green = 4'hF;
+                        Blue = 4'hF;
+                    end
+                    if (!SingleMode) begin
+                        if (DrawX >= 317 && DrawX <= 323) begin
+                            line_on = 1'b1;
+                            Red = 4'hF; // white line
+                            Green = 4'hF;
+                            Blue = 4'hF;
+                        end
                     end
                 end
             end
