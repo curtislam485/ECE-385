@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 5
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {DRC MDRV-1}  -string {{ERROR: [DRC MDRV-1] Multiple Driver Nets: Net arrow1/Q[0] has multiple drivers: arrow1/arrow_y_reg[0]/Q, and current_col_array_reg[0][0][0]/Q.}}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
@@ -91,12 +90,12 @@ set_property ip_output_repo c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivad
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/Sprites/background1/background1.COE
+add_files C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/Sprites/background1/background1.COE
 read_verilog -library xil_defaultlib -sv {
   C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab6_2_provided/design_source/VGA_controller.sv
   C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/new/arrow.sv
   C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/new/arrow_mapper.sv
-  C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/Sprites/background1/background1_palette.sv
+  C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/new/background1.sv
   C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab6_2_provided/design_source/hex_driver.sv
   C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab6_2_provided/design_source/mb_usb_hdmi_top.sv
 }
@@ -149,8 +148,8 @@ set_property used_in_implementation false [get_files -all c:/Users/curti/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/ip/background1_rom_1/background1_rom.xci
-set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.gen/sources_1/ip/background1_rom_1/background1_rom_ooc.xdc]
+read_ip -quiet C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.srcs/sources_1/ip/background1_rom_2/background1_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.gen/sources_1/ip/background1_rom_2/background1_rom_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

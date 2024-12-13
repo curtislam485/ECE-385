@@ -60,7 +60,7 @@ module mb_usb_hdmi_top(
     const int         Y_Max = 479;     // Bottommost point on the Y axis
     
     
-    parameter MAX_PER_COLUMN = 4;     // Maximum number of arrows per column
+    parameter MAX_PER_COLUMN = 8;     // Maximum number of arrows per column
     parameter TOTAL_ARROWS = MAX_PER_COLUMN * 4;    // max total arrows
     
     
@@ -133,19 +133,39 @@ module mb_usb_hdmi_top(
     int random_num;
     int counter = 0;
     int speed_level = 3;    // default speed (1)
+    int level_mod = 100;
     int score = 0;
     int found;
-    logic pressed_d, pressed_f, pressed_j, pressed_k, pressed_1, pressed_2, pressed_3;
+    logic pressed_d, pressed_f, pressed_j, pressed_k, pressed_1, pressed_2, pressed_3, pressed_4;
+    logic d_flag = 0;
+    logic f_flag = 0;
+    logic j_flag = 0;
+    logic k_flag = 0;
     
     int col_array [0:3][0:MAX_PER_COLUMN - 1];
     int current_col_array [0:3][0:MAX_PER_COLUMN - 1];
     int temp_array [0:3][0:MAX_PER_COLUMN - 1];
     
-    int rand_num;
+    int rand_array[100] = '{
+        2, 1, 3, 0, 2, 3, 1, 0, 2, 3,  // 10 values
+        1, 0, 3, 2, 1, 0, 3, 2, 1, 0,  // 20 values
+        3, 2, 0, 1, 3, 2, 1, 0, 2, 3,  // 30 values
+        1, 0, 3, 2, 0, 1, 3, 2, 1, 0,  // 40 values
+        2, 3, 0, 1, 3, 2, 1, 0, 3, 2,  // 50 values
+        1, 0, 2, 3, 0, 1, 2, 3, 1, 0,  // 60 values
+        3, 2, 0, 1, 3, 2, 1, 0, 3, 2,  // 70 values
+        1, 0, 2, 3, 1, 0, 3, 2, 1, 0,  // 80 values
+        3, 2, 0, 1, 2, 3, 0, 1, 3, 2,  // 90 values
+        1, 0, 2, 3, 1, 0, 3, 2, 1, 0   // 100 values
+    };
+    
+    int random_tracker;
     
     assign pressed_1 = keycode0_gpio[31:24] == 8'h1E || keycode0_gpio[23:16] == 8'h1E || keycode0_gpio[15:8] == 8'h1E || keycode0_gpio[7:0] == 8'h1E;
     assign pressed_2 = keycode0_gpio[31:24] == 8'h1F || keycode0_gpio[23:16] == 8'h1F || keycode0_gpio[15:8] == 8'h1F || keycode0_gpio[7:0] == 8'h1F;
     assign pressed_3 = keycode0_gpio[31:24] == 8'h20 || keycode0_gpio[23:16] == 8'h20 || keycode0_gpio[15:8] == 8'h20 || keycode0_gpio[7:0] == 8'h20;
+    assign pressed_4 = keycode0_gpio[31:24] == 8'h21 || keycode0_gpio[23:16] == 8'h21 || keycode0_gpio[15:8] == 8'h21 || keycode0_gpio[7:0] == 8'h21;
+
     assign pressed_d = keycode0_gpio[31:24] == 8'h07 || keycode0_gpio[23:16] == 8'h07 || keycode0_gpio[15:8] == 8'h07 || keycode0_gpio[7:0] == 8'h07;
     assign pressed_f = keycode0_gpio[31:24] == 8'h09 || keycode0_gpio[23:16] == 8'h09 || keycode0_gpio[15:8] == 8'h09 || keycode0_gpio[7:0] == 8'h09;
     assign pressed_j = keycode0_gpio[31:24] == 8'h0D || keycode0_gpio[23:16] == 8'h0D || keycode0_gpio[15:8] == 8'h0D || keycode0_gpio[7:0] == 8'h0D;
@@ -154,39 +174,32 @@ module mb_usb_hdmi_top(
     // Block to update current_col_array based on the counter and arrow1.NextY
     always_ff @(posedge vsync or posedge reset_ah) begin
         if (reset_ah) begin
+            random_tracker = 0;
+            level_mod = 100;
             counter <= 0;
-            speed_level <= 1;
+            speed_level <= 3;
             for (int i = 0; i < 4; i++) begin
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin  //MAX_PER_COLUMN
                     col_array[i][j] <= -1;
                     current_col_array[i][j] <= -1;
                 end
             end
-            col_array[0][0] <= 0;
-            current_col_array[0][0] <= 0; // you need to set both to spawn it in
-            col_array[2][0] <= 0;
-            current_col_array[2][0] <= 0;
-            col_array[3][0] <= 0;
-            current_col_array[3][0] <= 0;
         end
-//        else if (counter == 200) begin
-//            col_array[0][1] <= 0;
-//            current_col_array[0][1] <= 0;
-//            col_array[1][0] <= 0;
-//            current_col_array[1][0] <= 0;
-//        end
         
         else begin
             for (int i = 0; i < 4; i++) begin
                 found = 0; // Track if an empty slot is found in this column
-                rand_num = $random % 4;
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin
-//                    col_array[i][j] <= current_col_array[i][j];
-                    
-                    if (!found && current_col_array[i][j] < Y_Min && counter % 100 == 0 && rand_num == 0) begin// counter % 100 == 0 && rand_num[1:0] == i 
-                        current_col_array[i][j] <= 0;
-                        col_array[i][j] <= 0;
+                    if (random_tracker > 10000) begin
+                        random_tracker = 5;
+                    end
+                    if (!found && current_col_array[i][j] < Y_Min && counter % level_mod == 0) begin
                         found = 1; // Mark this column as updated
+                        if (rand_array[random_tracker % 100] == i) begin
+                            current_col_array[i][j] <= 0;
+                            col_array[i][j] <= 0;
+                        end
+                        random_tracker = random_tracker + i;
                     end
                     
                     // if value is greater than or equal to Y_Max, set it to -1 and decrease score
@@ -194,11 +207,13 @@ module mb_usb_hdmi_top(
                     else if (current_col_array[i][j] >= Y_Max) begin
                         current_col_array[i][j] <= -1;
                         col_array[i][j] <= -1;
+                        random_tracker = random_tracker + 18;
                     end
                     
                     else begin
                         current_col_array[i][j] <= temp_array[i][j];
                         col_array[i][j] <= current_col_array[i][j];
+                        random_tracker = random_tracker + 3;
                     end
                     
                 end
@@ -207,27 +222,131 @@ module mb_usb_hdmi_top(
             // Update speed_level based on pressed buttons
             if (pressed_1) begin
                 speed_level <= 3;
+                level_mod <= 100;
             end else if (pressed_2) begin
                 speed_level <= 5;
+                level_mod <= 50;
             end else if (pressed_3) begin
                 speed_level <= 7;
-            end else begin
+                level_mod <= 25;
+            end else if (pressed_4) begin
+                speed_level <= 9;
+                level_mod <= 10;
+            end
+            else begin
                 speed_level <= speed_level; // Maintain the current speed level when no key is pressed
+                level_mod <= level_mod;
             end
             
-//            if () begin // if d keystroke detected
-//                // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
-                
-                
-//                // if within a certain bound, set it to -1 and increase score
-//                // if there is nothing within bound, decrease score
-//            end
-//            if () begin // if f keystroke detected
-//            end
-//            if () begin // if j keystroke detected
-//            end
-//            if () begin // if k keystroke detected
-//            end
+            if (pressed_d && !d_flag) begin // if d keystroke detected
+                // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
+                int maxIndex = 0;
+                d_flag = 1;
+                for (int i = 0; i < MAX_PER_COLUMN; i++) begin
+                    // if within a certain bound, set it to -1 and increase score
+                    // if there is nothing within bound, decrease score
+                    if (col_array[0][i] > col_array[0][maxIndex]) begin
+                        maxIndex = i;
+                    end
+                end
+                if (col_array[0][maxIndex] <= 410 && col_array[0][maxIndex] >= 390) begin
+                    col_array[0][maxIndex] <= -1;
+                    current_col_array[0][maxIndex] <= -1;
+                    score = score + speed_level;
+                end
+                else begin
+                    if (score - speed_level > 0) begin
+                        score = score - speed_level;
+                    end
+                end
+            end
+            
+            if (d_flag && !pressed_d) begin
+                d_flag = 0;
+            end
+            
+            
+            
+            if (pressed_f && !f_flag) begin // if d keystroke detected
+                // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
+                int maxIndex = 0;
+                f_flag = 1;
+                for (int i = 0; i < MAX_PER_COLUMN; i++) begin
+                    // if within a certain bound, set it to -1 and increase score
+                    // if there is nothing within bound, decrease score
+                    if (col_array[1][i] > col_array[1][maxIndex]) begin
+                        maxIndex = i;
+                    end
+                end
+                if (col_array[1][maxIndex] <= 410 && col_array[1][maxIndex] >= 390) begin
+                    col_array[1][maxIndex] <= -1;
+                    current_col_array[1][maxIndex] <= -1;
+                    score = score + speed_level;
+                end
+                else begin
+                    if (score - speed_level > 0) begin
+                        score = score - speed_level;
+                    end
+                end
+            end
+            
+            if (f_flag && !pressed_f) begin
+                f_flag = 0;
+            end
+            
+            if (pressed_j && !j_flag) begin // if d keystroke detected
+                // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
+                int maxIndex = 0;
+                j_flag = 1;
+                for (int i = 0; i < MAX_PER_COLUMN; i++) begin
+                    // if within a certain bound, set it to -1 and increase score
+                    // if there is nothing within bound, decrease score
+                    if (col_array[2][i] > col_array[2][maxIndex]) begin
+                        maxIndex = i;
+                    end
+                end
+                if (col_array[2][maxIndex] <= 410 && col_array[2][maxIndex] >= 390) begin
+                    col_array[2][maxIndex] <= -1;
+                    current_col_array[1][maxIndex] <= -1;
+                    score = score + speed_level;
+                end
+                else begin
+                    if (score - speed_level > 0) begin
+                        score = score - speed_level;
+                    end
+                end
+            end
+            
+            if (j_flag && !pressed_j) begin
+                j_flag = 0;
+            end
+            
+            if (pressed_k && !k_flag) begin // if d keystroke detected
+                // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
+                int maxIndex = 0;
+                k_flag = 1;
+                for (int i = 0; i < MAX_PER_COLUMN; i++) begin
+                    // if within a certain bound, set it to -1 and increase score
+                    // if there is nothing within bound, decrease score
+                    if (col_array[3][i] > col_array[3][maxIndex]) begin
+                        maxIndex = i;
+                    end
+                end
+                if (col_array[3][maxIndex] <= 410 && col_array[3][maxIndex] >= 390) begin
+                    col_array[3][maxIndex] <= -1;
+                    current_col_array[3][maxIndex] <= -1;
+                    score = score + speed_level;
+                end
+                else begin
+                    if (score - speed_level > 0) begin
+                        score = score - speed_level;
+                    end
+                end
+            end
+            
+            if (k_flag && !pressed_k) begin
+                k_flag = 0;
+            end
             
             
             
@@ -254,7 +373,7 @@ module mb_usb_hdmi_top(
         .DrawX(drawX),
         .DrawY(drawY),
         .ColArray(col_array),
-        .Clock(vsync),
+        .Clock_125MHZ(clk_125MHz),
         .Red(red),
         .Green(green),
         .Blue(blue)
@@ -272,7 +391,7 @@ module mb_usb_hdmi_top(
     hex_driver HexB (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[31:28], keycode0_gpio[27:24], keycode0_gpio[23:20], keycode0_gpio[19:16]}),
+        .in({speed_level[3:0], keycode0_gpio[27:24], score[7:4], score[3:0]}),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );

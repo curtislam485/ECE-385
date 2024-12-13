@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module arrow#(
-    parameter MAX_PER_COLUMN = 4  // Define the default value here
+    parameter MAX_PER_COLUMN = 8  // Define the default value here
 )  
 (
     input  logic        Reset,
