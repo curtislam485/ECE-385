@@ -1,0 +1,2 @@
+a_rom.v,verilog,xil_defaultlib,../../../../lab_6.gen/sources_1/ip/a_rom/sim/a_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/background1_rom_synth_1'
+HD_PWD='C:/Users/curti/OneDrive/Documents/UIUC/Duplicate/ECE-385/Vivado_Projects/Final_Project/lab_6.runs/background1_rom_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

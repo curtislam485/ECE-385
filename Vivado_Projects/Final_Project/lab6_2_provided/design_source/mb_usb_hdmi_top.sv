@@ -137,11 +137,11 @@ module mb_usb_hdmi_top(
     int score1 = 0;
     int score2 = 0;
     int found;
-    logic pressed_d, pressed_f, pressed_j, pressed_k, pressed_1, pressed_2, pressed_3, pressed_4, toggle_mode;
+    logic pressed_a, pressed_d, pressed_l, pressed_r, pressed_1, pressed_2, pressed_3, pressed_4, toggle_mode;
+    logic a_flag = 0;
     logic d_flag = 0;
-    logic f_flag = 0;
-    logic j_flag = 0;
-    logic k_flag = 0;
+    logic l_flag = 0;
+    logic r_flag = 0;
     logic toggle_flag = 0;
     
     int col_array [0:3][0:MAX_PER_COLUMN - 1];
@@ -169,10 +169,10 @@ module mb_usb_hdmi_top(
     assign pressed_3 = keycode0_gpio[31:24] == 8'h20 || keycode0_gpio[23:16] == 8'h20 || keycode0_gpio[15:8] == 8'h20 || keycode0_gpio[7:0] == 8'h20;
     assign pressed_4 = keycode0_gpio[31:24] == 8'h21 || keycode0_gpio[23:16] == 8'h21 || keycode0_gpio[15:8] == 8'h21 || keycode0_gpio[7:0] == 8'h21;
 
+    assign pressed_a = keycode0_gpio[31:24] == 8'h04 || keycode0_gpio[23:16] == 8'h04 || keycode0_gpio[15:8] == 8'h04 || keycode0_gpio[7:0] == 8'h04;
     assign pressed_d = keycode0_gpio[31:24] == 8'h07 || keycode0_gpio[23:16] == 8'h07 || keycode0_gpio[15:8] == 8'h07 || keycode0_gpio[7:0] == 8'h07;
-    assign pressed_f = keycode0_gpio[31:24] == 8'h09 || keycode0_gpio[23:16] == 8'h09 || keycode0_gpio[15:8] == 8'h09 || keycode0_gpio[7:0] == 8'h09;
-    assign pressed_j = keycode0_gpio[31:24] == 8'h0D || keycode0_gpio[23:16] == 8'h0D || keycode0_gpio[15:8] == 8'h0D || keycode0_gpio[7:0] == 8'h0D;
-    assign pressed_k = keycode0_gpio[31:24] == 8'h0E || keycode0_gpio[23:16] == 8'h0E || keycode0_gpio[15:8] == 8'h0E || keycode0_gpio[7:0] == 8'h0E;
+    assign pressed_l = keycode0_gpio[31:24] == 8'h50 || keycode0_gpio[23:16] == 8'h50 || keycode0_gpio[15:8] == 8'h50 || keycode0_gpio[7:0] == 8'h50;
+    assign pressed_r = keycode0_gpio[31:24] == 8'h4F || keycode0_gpio[23:16] == 8'h4F || keycode0_gpio[15:8] == 8'h4F || keycode0_gpio[7:0] == 8'h4F;
     
     assign toggle_mode = keycode0_gpio[31:24] == 8'h28 || keycode0_gpio[23:16] == 8'h28 || keycode0_gpio[15:8] == 8'h28 || keycode0_gpio[7:0] == 8'h28;
 
@@ -213,6 +213,15 @@ module mb_usb_hdmi_top(
                     else if (current_col_array[i][j] >= Y_Max) begin
                         current_col_array[i][j] <= -1;
                         col_array[i][j] <= -1;
+//                        if (!singlePlayerMode) begin
+//                            if (i == 1 || i == 0) begin // Player 1
+//                                score1 = (score1 > 0) ? score1 - 1 : 0;
+//                            end else begin // Player 2
+//                                score2 = (score2 > 0) ? score2 - 1 : 0;
+//                            end
+//                        end else begin // Single Player Mode
+//                            score1 = (score1 > 0) ? score1 - 1 : 0;
+//                        end
                         random_tracker = random_tracker + 18;
                     end
                     
@@ -244,10 +253,10 @@ module mb_usb_hdmi_top(
                 level_mod <= level_mod;
             end
             
-            if (pressed_d && !d_flag) begin // if d keystroke detected
+            if (pressed_a && !a_flag) begin // if d keystroke detected
                 // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
                 int maxIndex = 0;
-                d_flag = 1;
+                a_flag = 1;
                 for (int i = 0; i < MAX_PER_COLUMN; i++) begin
                     // if within a certain bound, set it to -1 and increase score
                     // if there is nothing within bound, decrease score
@@ -270,16 +279,16 @@ module mb_usb_hdmi_top(
                 end
             end
             
-            if (d_flag && !pressed_d) begin
-                d_flag = 0;
+            if (a_flag && !pressed_a) begin
+                a_flag = 0;
             end
             
             
             
-            if (pressed_f && !f_flag) begin // if d keystroke detected
+            if (pressed_d && !d_flag) begin // if d keystroke detected
                 // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
                 int maxIndex = 0;
-                f_flag = 1;
+                d_flag = 1;
                 for (int i = 0; i < MAX_PER_COLUMN; i++) begin
                     // if within a certain bound, set it to -1 and increase score
                     // if there is nothing within bound, decrease score
@@ -302,14 +311,14 @@ module mb_usb_hdmi_top(
                 end
             end
             
-            if (f_flag && !pressed_f) begin
-                f_flag = 0;
+            if (d_flag && !pressed_d) begin
+                d_flag = 0;
             end
             
-            if (pressed_j && !j_flag) begin // if d keystroke detected
+            if (pressed_l && !l_flag) begin // if left arrow keystroke detected
                 // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
                 int maxIndex = 0;
-                j_flag = 1;
+                l_flag = 1;
                 for (int i = 0; i < MAX_PER_COLUMN; i++) begin
                     // if within a certain bound, set it to -1 and increase score
                     // if there is nothing within bound, decrease score
@@ -347,14 +356,14 @@ module mb_usb_hdmi_top(
                 end
             end
             
-            if (j_flag && !pressed_j) begin
-                j_flag = 0;
+            if (l_flag && !pressed_l) begin
+                l_flag = 0;
             end
             
-            if (pressed_k && !k_flag) begin // if d keystroke detected
+            if (pressed_r && !r_flag) begin // if d keystroke detected
                 // iterate through col_array[0][0:MAX_PER_COLUMN - 1] to find greatest value above the line
                 int maxIndex = 0;
-                k_flag = 1;
+                r_flag = 1;
                 for (int i = 0; i < MAX_PER_COLUMN; i++) begin
                     // if within a certain bound, set it to -1 and increase score
                     // if there is nothing within bound, decrease score
@@ -392,12 +401,15 @@ module mb_usb_hdmi_top(
                 end
             end
             
-            if (k_flag && !pressed_k) begin
-                k_flag = 0;
+            if (r_flag && !pressed_r) begin
+                r_flag = 0;
             end
             
             if (toggle_mode && !toggle_flag) begin
                 toggle_flag = 1;
+                // reset scores
+                score1 = 0;
+                score2 = 0;
                 if (singlePlayerMode == 1) begin
                     singlePlayerMode = 0; // go to multi player mode
                 end
@@ -434,7 +446,10 @@ module mb_usb_hdmi_top(
         .DrawY(drawY),
         .SingleMode (singlePlayerMode),
         .ColArray(col_array),
+        .score1 (score1),
+        .score2 (score2),
         .Clock_125MHZ(clk_125MHz),
+        .vsync(vsync),
         .Red(red),
         .Green(green),
         .Blue(blue)

@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 -- Date        : Fri Dec 13 02:18:12 2024
 -- Host        : Curtis-Laptop running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/lab_6.gen/sources_1/ip/background1_rom_2/background1_rom_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top background1_rom -prefix
+--               background1_rom_ background1_rom_stub.vhdl
 -- Design      : background1_rom
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s50csga324-1

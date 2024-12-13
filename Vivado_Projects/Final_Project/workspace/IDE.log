@@ -10225,3 +10225,16 @@ con
 04:01:54 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
 04:01:54 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
 04:01:55 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+10:03:02 DEBUG : Logs will be stored at 'C:/Users/curti/OneDrive/Documents/UIUC/Duplicate/ECE-385/Vivado_Projects/Final_Project/workspace/IDE.log'.
+10:03:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\curti\OneDrive\Documents\UIUC\Duplicate\ECE-385\Vivado_Projects\Final_Project\workspace\temp_xsdb_launch_script.tcl
+10:03:07 INFO  : Registering command handlers for Vitis TCF services
+10:03:07 INFO  : Platform repository initialization has completed.
+10:03:09 INFO  : XSCT server has started successfully.
+10:03:16 INFO  : plnx-install-location is set to ''
+10:03:16 INFO  : Successfully done setting XSCT server connection channel  
+10:03:16 INFO  : Successfully done query RDI_DATADIR 
+10:03:16 INFO  : Successfully done setting workspace for the tool. 
+10:05:09 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+10:05:25 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+10:05:25 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/Final_Project/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;mb_usb_hdmi_top|C:/Users/curti/OneDrive/Documents/UIUC/ECE-385/Vivado_Projects/lab_6_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+10:05:25 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
