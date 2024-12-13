@@ -56,8 +56,8 @@ module mb_usb_hdmi_top(
     const logic [9:0] Y_Center = 240;  // Center position on the Y axis
     const logic [9:0] X_Min = 0;       // Leftmost point on the X axis
     const logic [9:0] X_Max = 639;     // Rightmost point on the X axis
-    const logic [9:0] Y_Min = 0;       // Topmost point on the Y axis
-    const logic [9:0] Y_Max = 479;     // Bottommost point on the Y axis
+    const int         Y_Min = 0;       // Topmost point on the Y axis
+    const int         Y_Max = 479;     // Bottommost point on the Y axis
     
     
     parameter MAX_PER_COLUMN = 4;     // Maximum number of arrows per column
@@ -134,6 +134,7 @@ module mb_usb_hdmi_top(
     int counter = 0;
     int speed_level = 3;    // default speed (1)
     int score = 0;
+    int found;
     logic pressed_d, pressed_f, pressed_j, pressed_k, pressed_1, pressed_2, pressed_3;
     
     int col_array [0:3][0:MAX_PER_COLUMN - 1];
@@ -144,7 +145,11 @@ module mb_usb_hdmi_top(
     
     assign pressed_1 = keycode0_gpio[31:24] == 8'h1E || keycode0_gpio[23:16] == 8'h1E || keycode0_gpio[15:8] == 8'h1E || keycode0_gpio[7:0] == 8'h1E;
     assign pressed_2 = keycode0_gpio[31:24] == 8'h1F || keycode0_gpio[23:16] == 8'h1F || keycode0_gpio[15:8] == 8'h1F || keycode0_gpio[7:0] == 8'h1F;
-    assign pressed_3 = keycode0_gpio[31:24] == 8'h20 || keycode0_gpio[23:16] == 8'h20 || keycode0_gpio[15:8] == 8'h20 || keycode0_gpio[7:0] == 8'h20; 
+    assign pressed_3 = keycode0_gpio[31:24] == 8'h20 || keycode0_gpio[23:16] == 8'h20 || keycode0_gpio[15:8] == 8'h20 || keycode0_gpio[7:0] == 8'h20;
+    assign pressed_d = keycode0_gpio[31:24] == 8'h07 || keycode0_gpio[23:16] == 8'h07 || keycode0_gpio[15:8] == 8'h07 || keycode0_gpio[7:0] == 8'h07;
+    assign pressed_f = keycode0_gpio[31:24] == 8'h09 || keycode0_gpio[23:16] == 8'h09 || keycode0_gpio[15:8] == 8'h09 || keycode0_gpio[7:0] == 8'h09;
+    assign pressed_j = keycode0_gpio[31:24] == 8'h0D || keycode0_gpio[23:16] == 8'h0D || keycode0_gpio[15:8] == 8'h0D || keycode0_gpio[7:0] == 8'h0D;
+    assign pressed_k = keycode0_gpio[31:24] == 8'h0E || keycode0_gpio[23:16] == 8'h0E || keycode0_gpio[15:8] == 8'h0E || keycode0_gpio[7:0] == 8'h0E;
 
     // Block to update current_col_array based on the counter and arrow1.NextY
     always_ff @(posedge vsync or posedge reset_ah) begin
@@ -175,22 +180,21 @@ module mb_usb_hdmi_top(
         else begin   
             rand_num <= {rand_num[2:0], rand_num[3] ^ rand_num[2]};         
             for (int i = 0; i < 4; i++) begin
-                int found = 0; // Track if an empty slot is found in this column
+                found = 0; // Track if an empty slot is found in this column
                 for (int j = 0; j < MAX_PER_COLUMN; j++) begin
 //                    col_array[i][j] <= current_col_array[i][j];
                     
-//                    if (!found && current_col_array[i][j] < Y_Min) begin// counter % 100 == 0 && rand_num[1:0] == i 
-//                        current_col_array[i][j] <= 0;
-//                        col_array[i][j] <= 0;
-//                        counter = 0;
-//                        found = 1; // Mark this column as updated
-//                    end
+                    if (!found && current_col_array[i][j] < Y_Min && counter % 100 == 0) begin// counter % 100 == 0 && rand_num[1:0] == i 
+                        current_col_array[i][j] <= 0;
+                        col_array[i][j] <= 0;
+                        found = 1; // Mark this column as updated
+                    end
                     
                     // if value is greater than or equal to Y_Max, set it to -1 and decrease score
                     // Reset values that reach the boundary
-                    if (current_col_array[i][j] >= Y_Max) begin
-                        current_col_array[i][j] <= 0;
-                        col_array[i][j] <= 0;
+                    else if (current_col_array[i][j] >= Y_Max) begin
+                        current_col_array[i][j] <= -1;
+                        col_array[i][j] <= -1;
                     end
                     
                     else begin
